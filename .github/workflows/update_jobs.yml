@@ -1,0 +1,63 @@
+name: Update Job Listings
+
+on:
+  # Run daily at midnight UTC
+  schedule:
+    - cron: '0 0 * * *'
+
+  # Allow manual trigger
+  workflow_dispatch:
+
+  # Also run on push to main (for testing)
+  push:
+    branches:
+      - main
+
+jobs:
+  scrape-and-update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Full history for better git operations
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'  # Cache pip dependencies
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run scraper
+        run: |
+          python src/main.py
+        env:
+          # Add any API keys here if needed in the future
+          # ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
+          # ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
+          TZ: 'UTC'
+
+      - name: Check for changes
+        id: check_changes
+        run: |
+          git diff --quiet README.md data/jobs.json || echo "changed=true" >> $GITHUB_OUTPUT
+
+      - name: Commit and push if changed
+        if: steps.check_changes.outputs.changed == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "Job Scraper Bot"
+          git add README.md data/jobs.json
+          git commit -m "Update job listings - $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git push
+
+      - name: No changes
+        if: steps.check_changes.outputs.changed != 'true'
+        run: |
+          echo "No new jobs found - README unchanged"

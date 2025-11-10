@@ -1,0 +1,80 @@
+# Keyword configuration for filtering UI/UX design internships
+
+# Required: Job title MUST contain "intern" or equivalent
+internship_keywords:
+  - "intern"
+  - "internship"
+  - "co-op"
+  - "co op"
+  - "coop"
+  - "summer 2025"
+  - "summer 2026"
+  - "fall 2025"
+  - "spring 2026"
+
+# High value: UI/UX specific titles (score +3 each)
+include_title:
+  - "UI/UX"
+  - "UX Designer"
+  - "UI Designer"
+  - "Product Designer"
+  - "Interaction Designer"
+  - "Visual Designer"
+  - "Digital Designer"
+  - "Web Designer"
+  - "Experience Designer"
+  - "Design Intern"
+  - "User Experience"
+  - "User Interface"
+  - "UX/UI"
+
+# Exclude: Not relevant design roles (score -10 each)
+exclude_title:
+  - "Graphic"
+  - "Fashion"
+  - "Interior"
+  - "Mechanical"
+  - "Industrial Engineer"
+  - "Print"
+  - "Marketing Designer"
+  - "3D Artist"
+  - "CAD"
+  - "Motion Graphics"
+  - "Video Editor"
+  - "Animator"
+  - "Game Designer"
+  - "Hardware"
+  - "Electrical"
+  - "Civil"
+  - "Architectural"
+
+# Description keywords: Tools and skills (score +1 each)
+include_description:
+  - "Figma"
+  - "Sketch"
+  - "Adobe XD"
+  - "prototyp"
+  - "wireframe"
+  - "user interface"
+  - "user experience"
+  - "web design"
+  - "mobile design"
+  - "design system"
+  - "usability"
+  - "user research"
+  - "interaction design"
+  - "visual design"
+  - "design thinking"
+  - "user-centered"
+  - "user centered"
+  - "UI/UX"
+  - "UX/UI"
+  - "mockup"
+  - "user flow"
+  - "information architecture"
+  - "responsive design"
+  - "accessibility"
+  - "a11y"
+
+# Scoring thresholds
+minimum_match_score: 3  # Must score at least 3 points to be included
