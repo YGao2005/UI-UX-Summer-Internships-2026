@@ -2,15 +2,15 @@
 
 > Curated list of UI/UX design internships, updated daily via automated scraping.
 
-**Last Updated:** 2025-11-10 09:31 UTC
+**Last Updated:** 2025-11-10 09:35 UTC
 
 ## Quick Stats
 
 | Metric | Count |
 |--------|-------|
-| Total Internships | 23 |
-| Companies Hiring | 21 |
-| Remote Opportunities | 1 |
+| Total Internships | 92 |
+| Companies Hiring | 89 |
+| Remote Opportunities | 28 |
 
 ---
 
@@ -18,68 +18,212 @@
 
 | Company | Role | Location | Source | Apply |
 |---------|------|----------|--------|-------|
-| Activision Blizzard | 2026 US Summer Internships - UI/UX | US, California, Orange Coun... | Adzuna | [Apply](https://www.adzuna.com/details/5427043506?utm_medium=api&utm_source=2eec0eca) |
-| Airbnb | Lead Experience Designer, International | China | Greenhouse | [Apply](https://careers.airbnb.com/positions/7256544?gh_jid=7256544) |
-| Brunswick | Mercury Marine UX/UI Design Intern- Summer 2026 | US, Wisconsin, Fond du Lac ... | Adzuna | [Apply](https://www.adzuna.com/land/ad/5391540029?se=9rPtAxi-8BG8weq5Y2Q7aA&utm_medium=api&utm_source=2eec0eca&v=1D3EE1852E1AC888FDDE70B734915D3D9E908904) |
-| Coinbase | Product Design Intern | Hybrid - San Francisco | Greenhouse | [Apply](https://www.coinbase.com/careers/positions/7325051?gh_jid=7325051) |
-| Coinbase | Product Designer II (Consumer) - International  | Remote - Canada | Greenhouse | [Apply](https://www.coinbase.com/careers/positions/6972733?gh_jid=6972733) |
-| Daimler Truck North America | UX UI Design Intern | US, Oregon, Multnomah Count... | Adzuna | [Apply](https://www.adzuna.com/details/5487514934?utm_medium=api&utm_source=2eec0eca) |
-| Databricks | Product Design Intern | Seattle, Washington | Greenhouse | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=8143588002) |
-| DraconX | UI/UX Developer Intern | US | Adzuna | [Apply](https://www.adzuna.com/details/5484666996?utm_medium=api&utm_source=2eec0eca) |
-| Figma | Product Design Intern (2026)   | San Francisco, CA • New Yor... | Greenhouse | [Apply](https://boards.greenhouse.io/figma/jobs/5616453004?gh_jid=5616453004) |
-| Lyft | Product Design Intern (Summer 2026) | Toronto, Canada | Greenhouse | [Apply](https://app.careerpuck.com/job-board/lyft/job/8151582002?gh_jid=8151582002) |
-| Mastercard | Customer Experience and Design (UI/UX) Intern, ... | US, Missouri, Saint Charles... | Adzuna | [Apply](https://www.adzuna.com/land/ad/5447683965?se=9rPtAxi-8BG8weq5Y2Q7aA&utm_medium=api&utm_source=2eec0eca&v=DE97EAF8BE631BA1FF6F3E3B606C7356315DEB7B) |
-| Mitsubishi Electric US | UX/UI Design CO-OP - REQ  1237 | US, Georgia, Gwinnett Count... | Adzuna | [Apply](https://www.adzuna.com/land/ad/5196031825?se=9rPtAxi-8BG8weq5Y2Q7aA&utm_medium=api&utm_source=2eec0eca&v=6A6EAD348A1D56249F8648315D3408DC2957A4E8) |
-| Musing AI | UX/UI & Design Intern | US, Pennsylvania, Allegheny... | Adzuna | [Apply](https://www.adzuna.com/details/5466205504?utm_medium=api&utm_source=2eec0eca) |
-| Musing AI | UX/UI & Design Intern - Summer 2026 | US, Pennsylvania, Allegheny... | Adzuna | [Apply](https://www.adzuna.com/details/5466309393?utm_medium=api&utm_source=2eec0eca) |
 | Notion | Software Engineer Intern (Winter 2026) | San Francisco, California | Ashby | [Apply](https://jobs.ashbyhq.com/notion/fc762b58-24c9-4f34-bf5f-2af6e8adc644) |
-| Staples | Quill UX/UI Visual Designer Intern - June 2026 | US, Illinois, Lake County, ... | Adzuna | [Apply](https://www.adzuna.com/details/5444567113?utm_medium=api&utm_source=2eec0eca) |
+| S&P Global | Product Design Intern - Summer 2026 | Cambridge, MA, US | JobSpy (Indeed) | [Apply](https://www.indeed.com/viewjob?jk=3c02dc51e8187093) |
+| DraconX | UI/UX Developer Intern | US | Adzuna | [Apply](https://www.adzuna.com/details/5484666996?utm_medium=api&utm_source=2eec0eca) |
+| Insomniac Games | Design Intern - Undergraduate | United States, Burbank, CA | Greenhouse | [Apply](https://job-boards.greenhouse.io/insomniac/jobs/5686240004) |
+| Insomniac Games | User Experience Research Intern - Master's | United States, Burbank, CA | Greenhouse | [Apply](https://job-boards.greenhouse.io/insomniac/jobs/5685582004) |
+| Volvo Group | Intern: UX/UI Design (Summer 2026) | Greensboro, NC, US | JobSpy (Indeed) | [Apply](https://www.indeed.com/viewjob?jk=bff7aada8a2e0f50) |
+| Daimler Truck North America | UX UI Design Intern | Portland, OR, US | JobSpy (Indeed) | [Apply](https://www.indeed.com/viewjob?jk=546866e15d9a6392) |
+| Zynga | Level Design Intern | Barcelona, Spain | Greenhouse | [Apply](https://job-boards.greenhouse.io/zyngacareers/jobs/5659131004) |
+| PlayStation Global | UI Artist Intern - Undergraduate | Remote | JobSpy (Glassdoor) | [Apply](https://www.glassdoor.com/job-listing/j?jl=1009927778651) |
+| Keenfinity | Keenfinity: Technical Design Internship (m/f/div.) | Remote | RSS (We Work Remotely) | [Apply](https://weworkremotely.com/remote-jobs/keenfinity-technical-design-internship-m-f-div) |
+| PlayStation | UI Artist Intern - Undergraduate | Remote, US | JobSpy (Indeed) | [Apply](https://www.indeed.com/viewjob?jk=c5f26a8b136e4349) |
+| Topia | UX/UI Design (Remote Internship) | Remote | JobSpy (Glassdoor) | [Apply](https://www.glassdoor.com/job-listing/j?jl=1009927021441) |
+| Jack Henry & Associates | Product Desginer, Intern - Summer 2026 | US | JobSpy (Indeed) | [Apply](https://www.indeed.com/viewjob?jk=1c4fbeee7419c024) |
+| Hy-Vee, Inc. | UX Designer Intern- Summer 2026 | West Des Moines, IA, US | JobSpy (Indeed) | [Apply](https://www.indeed.com/viewjob?jk=fc970198a01d4da3) |
+| L.L. Bean, Inc. | Marketing - UX Designer Internship | Freeport, ME, US | JobSpy (Indeed) | [Apply](https://www.indeed.com/viewjob?jk=23ba5a4c7b394884) |
+| Coinbase | Product Designer II (Consumer) - International  | Remote - Canada | Greenhouse | [Apply](https://www.coinbase.com/careers/positions/6972733?gh_jid=6972733) |
+| SAS | Summer 2026 – Product Design Intern | Cary, NC, US | JobSpy (Indeed) | [Apply](https://www.indeed.com/viewjob?jk=a921487733dadbd7) |
+| Lenovo | Creative Design Intern - Summer 2026 | Chicago, IL, US | JobSpy (Indeed) | [Apply](https://www.indeed.com/viewjob?jk=c31c3715cd2fa6c2) |
+| The Mind Palace Academy | Scheduling Software Engineering Internship | Remote | JobSpy (Glassdoor) | [Apply](https://www.glassdoor.com/job-listing/j?jl=1009923298898) |
+| Remarkinfo Software Solutions | Figma Intern | Remote | JobSpy (Glassdoor) | [Apply](https://www.glassdoor.com/job-listing/j?jl=1009920843799) |
+| ACLU | Spring 2026 Undergraduate Intern, Product Desig... | New York, NY | JobSpy (Glassdoor) | [Apply](https://www.glassdoor.com/job-listing/j?jl=1009921282817) |
+| Coinbase | Product Design Intern | Hybrid - San Francisco | Greenhouse | [Apply](https://www.coinbase.com/careers/positions/7325051?gh_jid=7325051) |
+| Figma | Product Design Intern (2026)   | San Francisco, CA • New Yor... | Greenhouse | [Apply](https://boards.greenhouse.io/figma/jobs/5616453004?gh_jid=5616453004) |
+| American Civil Liberties Union | Spring 2026 Undergraduate Intern, Product Desig... | New York, NY, US | JobSpy (Indeed) | [Apply](https://www.indeed.com/viewjob?jk=e309c5856114db5d) |
+| Musing AI | UX/UI & Design Intern - Summer 2026 | US, Pennsylvania, Allegheny... | Adzuna | [Apply](https://www.adzuna.com/details/5466309393?utm_medium=api&utm_source=2eec0eca) |
+| Musing AI | UX/UI & Design Intern | US, Pennsylvania, Allegheny... | Adzuna | [Apply](https://www.adzuna.com/details/5466205504?utm_medium=api&utm_source=2eec0eca) |
+| Unknown | Product Design Intern (Spring 2026) | Burlington, MA, US | JobSpy (Indeed) | [Apply](https://www.indeed.com/viewjob?jk=a11f0d2258ab6adb) |
+| Travelers | Enterprise Experience Design Intern | Hartford, CT, US | JobSpy (Indeed) | [Apply](https://www.indeed.com/viewjob?jk=b65e2d0adc2ee62d) |
+| Little Caesars Pizza | UI/UX Intern | Detroit, MI, US | JobSpy (Indeed) | [Apply](https://www.indeed.com/viewjob?jk=1e385aab2786a695) |
 | TELUS Digital | Design (UX/UI) Intern (US) - Summer 2026 | US | Adzuna | [Apply](https://www.adzuna.com/details/5464027836?utm_medium=api&utm_source=2eec0eca) |
+| Adobe | 2026 Intern - Experience Design | San Francisco, CA, US | JobSpy (Indeed) | [Apply](https://www.indeed.com/viewjob?jk=050bff18c8905e0b) |
+| BMW Group | Intern, UX Engineer - Winter/Spring 2026 | Mountain View, CA, US | JobSpy (Indeed) | [Apply](https://www.indeed.com/viewjob?jk=77f430a9b9b55331) |
+| Delta Air Lines | Intern, Innovation - Designer (Summer 2026) | Atlanta, GA, US | JobSpy (Indeed) | [Apply](https://www.indeed.com/viewjob?jk=a3b5b64fc9d6ca0c) |
+| Token Metrics | Crypto UI/UX Designer Intern | US, Texas, Travis County, A... | Adzuna | [Apply](https://www.adzuna.com/land/ad/5454190550?se=VllGmxi-8BGThviApFbDhA&utm_medium=api&utm_source=2eec0eca&v=ACA2AA436EF71AA6D9EAE044ACB5C25E7594FE09) |
+| Rivian | Design Intern - Digital Product Designer (Winte... | Palo Alto, CA, US | JobSpy (Indeed) | [Apply](https://www.indeed.com/viewjob?jk=b8bf9f21c7f25221) |
+| Flo Labs R&D | UI/UX Design Intern | Remote | JobSpy (Glassdoor) | [Apply](https://www.glassdoor.com/job-listing/j?jl=1009907164835) |
+| 7-Eleven | Enterprise UX Designer Intern | Irving, TX, US | JobSpy (Indeed) | [Apply](https://www.indeed.com/viewjob?jk=f99970a1bc6f8bdc) |
+| Mastercard | Customer Experience and Design (UI/UX) Intern, ... | O'Fallon, MO, US | JobSpy (Indeed) | [Apply](https://www.indeed.com/viewjob?jk=a57993582670b8af) |
 | Tanium | User Experience Design Intern (UX/UI) | US, North Carolina, Durham ... | Adzuna | [Apply](https://www.adzuna.com/details/5444293266?utm_medium=api&utm_source=2eec0eca) |
-| Token Metrics | Crypto UI/UX Designer Intern | US, Texas, Travis County, A... | Adzuna | [Apply](https://www.adzuna.com/land/ad/5454190550?se=9rPtAxi-8BG8weq5Y2Q7aA&utm_medium=api&utm_source=2eec0eca&v=ACA2AA436EF71AA6D9EAE044ACB5C25E7594FE09) |
-| Volvo Group | Intern: UX/UI Design (Summer 2026) | US, North Carolina, Guilfor... | Adzuna | [Apply](https://www.adzuna.com/land/ad/5484172576?se=9rPtAxi-8BG8weq5Y2Q7aA&utm_medium=api&utm_source=2eec0eca&v=834CE247E37F8A2500E743FEFE12315670B50018) |
+| Staples | Quill UX/UI Visual Designer Intern - June 2026 | Lincolnshire, IL, US | JobSpy (Indeed) | [Apply](https://www.indeed.com/viewjob?jk=0f4f2d4e2e19f69a) |
+| Airbnb | Lead Experience Designer, International | China | Greenhouse | [Apply](https://careers.airbnb.com/positions/7256544?gh_jid=7256544) |
 | Wisdom Software | Ui/Ux Design-Full/Part-Time/Remote-Fresher/Intern | US | Adzuna | [Apply](https://www.adzuna.com/details/5435615010?utm_medium=api&utm_source=2eec0eca) |
+| Activision Blizzard | 2026 US Summer Internships - UI/UX | US, California, Orange Coun... | Adzuna | [Apply](https://www.adzuna.com/details/5427043506?utm_medium=api&utm_source=2eec0eca) |
+| Lyft | Product Design Intern (Summer 2026) | Toronto, Canada | Greenhouse | [Apply](https://app.careerpuck.com/job-board/lyft/job/8151582002?gh_jid=8151582002) |
 | Zurn Elkay Water Solutions | Intern – UI/UX Designer (Summer 2026) | US, Illinois, DuPage County... | Adzuna | [Apply](https://www.adzuna.com/details/5409169808?utm_medium=api&utm_source=2eec0eca) |
+| Databricks | Product Design Intern | Seattle, Washington | Greenhouse | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=8143588002) |
+| IDEO | Visual Communication Design Internship | Shanghai, China | Greenhouse | [Apply](https://job-boards.greenhouse.io/ideo/jobs/7244821) |
+| Brunswick | Mercury Marine UX/UI Design Intern- Summer 2026 | US, Wisconsin, Fond du Lac ... | Adzuna | [Apply](https://www.adzuna.com/land/ad/5391540029?se=VllGmxi-8BGThviApFbDhA&utm_medium=api&utm_source=2eec0eca&v=1D3EE1852E1AC888FDDE70B734915D3D9E908904) |
+| DELSYS | Software Engineer - UI/UX (Intern) | Natick, MA, US | JobSpy (Indeed) | [Apply](https://www.indeed.com/viewjob?jk=0aa3b60a91ba064f) |
+| Mitsubishi Electric US | UX/UI Design CO-OP - REQ  1237 | US, Georgia, Gwinnett Count... | Adzuna | [Apply](https://www.adzuna.com/land/ad/5196031825?se=VllGmxi-8BGThviApFbDhA&utm_medium=api&utm_source=2eec0eca&v=6A6EAD348A1D56249F8648315D3408DC2957A4E8) |
 | elixivity | UI/UX Designer Intern | US, New York, New York City... | Adzuna | [Apply](https://www.adzuna.com/details/4805318854?utm_medium=api&utm_source=2eec0eca) |
+| Telehealth | Design Internship | REMOTE | Hacker News | [Apply](https://news.ycombinator.com/item?id=22753397) |
+| IOMED | Design Internship | See posting | Hacker News | [Apply](https://news.ycombinator.com/item?id=22749090) |
+| Sr Web Developer, Engineers, Internships | Design Internship | Bellevue, WA | Hacker News | [Apply](https://news.ycombinator.com/item?id=22725797) |
+| Oscaro | Design Internship | remote | Hacker News | [Apply](https://news.ycombinator.com/item?id=22701417) |
+| Streamroot | Design Internship | Paris, FR | Hacker News | [Apply](https://news.ycombinator.com/item?id=22687114) |
+| Atlassian | Design Internship | remote | Hacker News | [Apply](https://news.ycombinator.com/item?id=22680961) |
+| Sourceability | Design Internship | Remote | Hacker News | [Apply](https://news.ycombinator.com/item?id=22677090) |
+| Strateos (YC W15) | Design Internship | Park, CA | Hacker News | [Apply](https://news.ycombinator.com/item?id=22676115) |
+| Sotheby's | Design Internship | NYC | Hacker News | [Apply](https://news.ycombinator.com/item?id=22675967) |
+| Open | Design Internship | REMOTE | Hacker News | [Apply](https://news.ycombinator.com/item?id=22675617) |
+| Minimax Labs | Design Internship | London, UK | Hacker News | [Apply](https://news.ycombinator.com/item?id=22674468) |
+| Proton Technologies AG | Design Internship | See posting | Hacker News | [Apply](https://news.ycombinator.com/item?id=22672810) |
+| Circadian Risk | Design Internship | REMOTE | Hacker News | [Apply](https://news.ycombinator.com/item?id=22672554) |
+| Nightwatch.io | Design Internship | Remote | Hacker News | [Apply](https://news.ycombinator.com/item?id=22671519) |
+| Pinterest Visual Search / Applied Computer Vision | Design Internship | REMOTE | Hacker News | [Apply](https://news.ycombinator.com/item?id=22670480) |
+| Cisco Umbrella | Design Internship | Jose, CA | Hacker News | [Apply](https://news.ycombinator.com/item?id=22670462) |
+| Ferrum Health | Design Internship | REMOTE | Hacker News | [Apply](https://news.ycombinator.com/item?id=22670240) |
+| Bauhaus | Design Internship | REMOTE | Hacker News | [Apply](https://news.ycombinator.com/item?id=22669872) |
+| Pioneer | Design Internship | REMOTE | Hacker News | [Apply](https://news.ycombinator.com/item?id=22669869) |
+| Braintree / Paypal | Design Internship | REMOTE | Hacker News | [Apply](https://news.ycombinator.com/item?id=22669473) |
+| Twitter | Design Internship | REMOTE | Hacker News | [Apply](https://news.ycombinator.com/item?id=22668688) |
+| Expensify | Design Internship | REMOTE | Hacker News | [Apply](https://news.ycombinator.com/item?id=22668400) |
+| Tesla | Design Internship | ONSITE | Hacker News | [Apply](https://news.ycombinator.com/item?id=22668326) |
+| Lateral | Design Internship | remote | Hacker News | [Apply](https://news.ycombinator.com/item?id=22668293) |
+| Nova Credit (YC W12) | Product Design Intern | Onsite | Hacker News | [Apply](https://news.ycombinator.com/item?id=22667928) |
+| Insider, | Design Internship | Onsite | Hacker News | [Apply](https://news.ycombinator.com/item?id=22667696) |
+| Flow Commerce | Design Internship | remote | Hacker News | [Apply](https://news.ycombinator.com/item?id=22667528) |
+| evervault | Design Internship | ONSITE | Hacker News | [Apply](https://news.ycombinator.com/item?id=22667507) |
+| Onai | Design Internship | Idris, or | Hacker News | [Apply](https://news.ycombinator.com/item?id=22667431) |
+| Ridgeline International | Design Internship | See posting | Hacker News | [Apply](https://news.ycombinator.com/item?id=22667040) |
+| Species File Group | Design Internship | REMOTE | Hacker News | [Apply](https://news.ycombinator.com/item?id=22667018) |
+| MeetKai | Design Internship | REMOTE | Hacker News | [Apply](https://news.ycombinator.com/item?id=22666892) |
+| Ribbon Health | Design Internship | See posting | Hacker News | [Apply](https://news.ycombinator.com/item?id=22666791) |
+| Routefusion | Design Internship | Austin, TX | Hacker News | [Apply](https://news.ycombinator.com/item?id=22666424) |
+| Frontapp | Design Internship | Francisco, CA | Hacker News | [Apply](https://news.ycombinator.com/item?id=22666404) |
+| dMetrics | Design Internship | NYC | Hacker News | [Apply](https://news.ycombinator.com/item?id=22666319) |
+| Natera | Design Internship | remote | Hacker News | [Apply](https://news.ycombinator.com/item?id=22666273) |
+| SumUp | Design Internship | Berlin | Hacker News | [Apply](https://news.ycombinator.com/item?id=22666138) |
+| HackerRank | Design Internship | Fulltime | Hacker News | [Apply](https://news.ycombinator.com/item?id=22665806) |
+| RepSpark | Design Internship | Irvine, CA | Hacker News | [Apply](https://news.ycombinator.com/item?id=22665747) |
+| CodeWeavers | Design Internship | REMOTE | Hacker News | [Apply](https://news.ycombinator.com/item?id=22665560) |
 
 ---
 
 ## Companies Currently Hiring
 
+- **7-Eleven** (1 position)
+- **ACLU** (1 position)
 - **Activision Blizzard** (1 position)
+- **Adobe** (1 position)
 - **Airbnb** (1 position)
+- **American Civil Liberties Union** (1 position)
+- **Atlassian** (1 position)
+- **BMW Group** (1 position)
+- **Bauhaus** (1 position)
+- **Braintree / Paypal** (1 position)
 - **Brunswick** (1 position)
+- **Circadian Risk** (1 position)
+- **Cisco Umbrella** (1 position)
+- **CodeWeavers** (1 position)
 - **Coinbase** (2 positions)
+- **DELSYS** (1 position)
 - **Daimler Truck North America** (1 position)
 - **Databricks** (1 position)
+- **Delta Air Lines** (1 position)
 - **DraconX** (1 position)
+- **Expensify** (1 position)
+- **Ferrum Health** (1 position)
 - **Figma** (1 position)
+- **Flo Labs R&D** (1 position)
+- **Flow Commerce** (1 position)
+- **Frontapp** (1 position)
+- **HackerRank** (1 position)
+- **Hy-Vee, Inc.** (1 position)
+- **IDEO** (1 position)
+- **IOMED** (1 position)
+- **Insider,** (1 position)
+- **Insomniac Games** (2 positions)
+- **Jack Henry & Associates** (1 position)
+- **Keenfinity** (1 position)
+- **L.L. Bean, Inc.** (1 position)
+- **Lateral** (1 position)
+- **Lenovo** (1 position)
+- **Little Caesars Pizza** (1 position)
 - **Lyft** (1 position)
 - **Mastercard** (1 position)
+- **MeetKai** (1 position)
+- **Minimax Labs** (1 position)
 - **Mitsubishi Electric US** (1 position)
 - **Musing AI** (2 positions)
+- **Natera** (1 position)
+- **Nightwatch.io** (1 position)
 - **Notion** (1 position)
+- **Nova Credit (YC W12)** (1 position)
+- **Onai** (1 position)
+- **Open** (1 position)
+- **Oscaro** (1 position)
+- **Pinterest Visual Search / Applied Computer Vision** (1 position)
+- **Pioneer** (1 position)
+- **PlayStation** (1 position)
+- **PlayStation Global** (1 position)
+- **Proton Technologies AG** (1 position)
+- **Remarkinfo Software Solutions** (1 position)
+- **RepSpark** (1 position)
+- **Ribbon Health** (1 position)
+- **Ridgeline International** (1 position)
+- **Rivian** (1 position)
+- **Routefusion** (1 position)
+- **S&P Global** (1 position)
+- **SAS** (1 position)
+- **Sotheby's** (1 position)
+- **Sourceability** (1 position)
+- **Species File Group** (1 position)
+- **Sr Web Developer, Engineers, Internships** (1 position)
 - **Staples** (1 position)
+- **Strateos (YC W15)** (1 position)
+- **Streamroot** (1 position)
+- **SumUp** (1 position)
 - **TELUS Digital** (1 position)
 - **Tanium** (1 position)
+- **Telehealth** (1 position)
+- **Tesla** (1 position)
+- **The Mind Palace Academy** (1 position)
 - **Token Metrics** (1 position)
+- **Topia** (1 position)
+- **Travelers** (1 position)
+- **Twitter** (1 position)
+- **Unknown** (1 position)
 - **Volvo Group** (1 position)
 - **Wisdom Software** (1 position)
 - **Zurn Elkay Water Solutions** (1 position)
+- **Zynga** (1 position)
+- **dMetrics** (1 position)
 - **elixivity** (1 position)
+- **evervault** (1 position)
 
 ---
 
 ## About This Repo
 
-This repository is automatically updated daily using GitHub Actions. Jobs are aggregated from:
+This repository is automatically updated daily using GitHub Actions. Jobs are aggregated from multiple sources:
 
+### Active Sources (No API Key Required)
 - **Greenhouse** - Direct company job boards (50+ tech companies)
 - **Lever** - Direct company job boards
-- **Ashby** - Direct company job boards (design-focused: Notion, OpenAI, Linear)
+- **Ashby** - Direct company job boards (design-focused: Notion, OpenAI, Linear, Ramp)
 - **RemoteOK** - Remote job aggregator
-- **The Muse** - Internship-focused job board with design category
-- **Adzuna** - Broad coverage job search aggregator
+- **Y Combinator** - Hacker News job board (startup internships)
+
+### Additional Sources (Require Free API Keys)
+- **The Muse** - Internship-focused job board with design category ([Get API Key](https://www.themuse.com/developers/api/v2))
+- **Adzuna** - Broad coverage job search aggregator ([Get API Key](https://developer.adzuna.com/))
+- **Jooble** - Job aggregator with explicit internship category ([Get API Key](https://jooble.org/api/about))
+
+See `.env.example` for setup instructions. Without API keys, the scraper still finds 5-15 internships. With API keys: 30-100+ internships.
 
 All listings are filtered for UI/UX design internship relevance using keyword matching and scoring algorithms.
 
