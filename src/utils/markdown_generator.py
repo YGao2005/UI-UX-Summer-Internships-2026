@@ -62,8 +62,8 @@ class MarkdownGenerator:
 |---------|------|----------|--------|-------|
 """
 
-        # Add all jobs to table, sorted by company then title
-        sorted_jobs = sorted(jobs, key=lambda x: (x['company'], x['title']))
+        # Add all jobs to table, sorted by date (newest first)
+        sorted_jobs = sorted(jobs, key=lambda x: x.get('posted_date', ''), reverse=True)
 
         for job in sorted_jobs:
             company = job.get('company', 'Unknown')
@@ -96,14 +96,21 @@ class MarkdownGenerator:
 
 ## About This Repo
 
-This repository is automatically updated daily using GitHub Actions. Jobs are aggregated from:
+This repository is automatically updated daily using GitHub Actions. Jobs are aggregated from multiple sources:
 
+### Active Sources (No API Key Required)
 - **Greenhouse** - Direct company job boards (50+ tech companies)
 - **Lever** - Direct company job boards
-- **Ashby** - Direct company job boards (design-focused: Notion, OpenAI, Linear)
+- **Ashby** - Direct company job boards (design-focused: Notion, OpenAI, Linear, Ramp)
 - **RemoteOK** - Remote job aggregator
-- **The Muse** - Internship-focused job board with design category
-- **Adzuna** - Broad coverage job search aggregator
+- **Y Combinator** - Hacker News job board (startup internships)
+
+### Additional Sources (Require Free API Keys)
+- **The Muse** - Internship-focused job board with design category ([Get API Key](https://www.themuse.com/developers/api/v2))
+- **Adzuna** - Broad coverage job search aggregator ([Get API Key](https://developer.adzuna.com/))
+- **Jooble** - Job aggregator with explicit internship category ([Get API Key](https://jooble.org/api/about))
+
+See `.env.example` for setup instructions. Without API keys, the scraper still finds 5-15 internships. With API keys: 30-100+ internships.
 
 All listings are filtered for UI/UX design internship relevance using keyword matching and scoring algorithms.
 

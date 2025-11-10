@@ -11,6 +11,10 @@ import yaml
 import logging
 from pathlib import Path
 from datetime import datetime
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
 
 # Add src directory to path
 sys.path.insert(0, str(Path(__file__).parent))
@@ -21,6 +25,11 @@ from scrapers.ashby_scraper import AshbyScraper
 from scrapers.remoteok_scraper import RemoteOKScraper
 from scrapers.themuse_scraper import TheMuseScraper
 from scrapers.adzuna_scraper import AdzunaScraper
+from scrapers.jooble_scraper import JoobleScraper
+from scrapers.ycombinator_scraper import YCombinatorScraper
+from scrapers.jobspy_scraper import JobSpyScraper
+from scrapers.hackernews_scraper import HackerNewsScraper
+from scrapers.rss_scraper import RSSJobScraper
 from filters.keyword_filter import KeywordFilter
 from utils.deduplicator import JobDeduplicator
 from utils.markdown_generator import MarkdownGenerator
@@ -60,6 +69,11 @@ class InternshipScraper:
         self.remoteok = RemoteOKScraper()
         self.themuse = TheMuseScraper()
         self.adzuna = AdzunaScraper()
+        self.jooble = JoobleScraper()
+        self.ycombinator = YCombinatorScraper()
+        self.jobspy = JobSpyScraper()
+        self.hackernews = HackerNewsScraper()
+        self.rss = RSSJobScraper()
         self.filter = KeywordFilter()
         self.deduplicator = JobDeduplicator()
         self.markdown = MarkdownGenerator()
@@ -92,40 +106,74 @@ class InternshipScraper:
         logger.info("="*80)
 
         # 1. Greenhouse (company-specific)
-        logger.info("\n[1/6] Scraping Greenhouse...")
+        logger.info("\n[1/11] Scraping Greenhouse...")
         greenhouse_jobs = self.greenhouse.fetch_multiple_companies(self.companies)
         logger.info(f"  → Found {len(greenhouse_jobs)} jobs from Greenhouse")
         all_jobs.extend(greenhouse_jobs)
 
         # 2. Lever (company-specific)
-        logger.info("\n[2/6] Scraping Lever...")
+        logger.info("\n[2/11] Scraping Lever...")
         lever_jobs = self.lever.fetch_multiple_companies(self.companies)
         logger.info(f"  → Found {len(lever_jobs)} jobs from Lever")
         all_jobs.extend(lever_jobs)
 
         # 3. Ashby (company-specific)
-        logger.info("\n[3/6] Scraping Ashby...")
+        logger.info("\n[3/11] Scraping Ashby...")
         ashby_jobs = self.ashby.fetch_multiple_companies(self.companies)
         logger.info(f"  → Found {len(ashby_jobs)} jobs from Ashby")
         all_jobs.extend(ashby_jobs)
 
         # 4. RemoteOK (general job board)
-        logger.info("\n[4/6] Scraping RemoteOK...")
+        logger.info("\n[4/11] Scraping RemoteOK...")
         remoteok_jobs = self.remoteok.fetch_jobs(search_tag='design')
         logger.info(f"  → Found {len(remoteok_jobs)} design jobs from RemoteOK")
         all_jobs.extend(remoteok_jobs)
 
         # 5. The Muse (internship-focused)
-        logger.info("\n[5/6] Scraping The Muse...")
+        logger.info("\n[5/11] Scraping The Muse...")
         themuse_jobs = self.themuse.fetch_jobs(category='Design', level='Internship')
         logger.info(f"  → Found {len(themuse_jobs)} design internships from The Muse")
         all_jobs.extend(themuse_jobs)
 
         # 6. Adzuna (broad coverage)
-        logger.info("\n[6/6] Scraping Adzuna...")
+        logger.info("\n[6/11] Scraping Adzuna...")
         adzuna_jobs = self.adzuna.fetch_jobs(query='UI UX design intern')
         logger.info(f"  → Found {len(adzuna_jobs)} jobs from Adzuna")
         all_jobs.extend(adzuna_jobs)
+
+        # 7. Jooble (internship category)
+        logger.info("\n[7/11] Scraping Jooble...")
+        jooble_jobs = self.jooble.fetch_jobs(keywords='UI UX design intern')
+        logger.info(f"  → Found {len(jooble_jobs)} jobs from Jooble")
+        all_jobs.extend(jooble_jobs)
+
+        # 8. Y Combinator (startup job board)
+        logger.info("\n[8/11] Scraping Y Combinator...")
+        yc_jobs = self.ycombinator.fetch_jobs()
+        logger.info(f"  → Found {len(yc_jobs)} startup internships from YC")
+        all_jobs.extend(yc_jobs)
+
+        # 9. JobSpy (Indeed, Glassdoor, ZipRecruiter)
+        logger.info("\n[9/11] Scraping with JobSpy (Indeed, Glassdoor, ZipRecruiter)...")
+        jobspy_jobs = self.jobspy.fetch_jobs(
+            search_term='UI UX design intern',
+            location='United States',
+            results_wanted=50  # Per site, so up to 150 total
+        )
+        logger.info(f"  → Found {len(jobspy_jobs)} jobs from JobSpy")
+        all_jobs.extend(jobspy_jobs)
+
+        # 10. Hacker News "Who is Hiring?"
+        logger.info("\n[10/11] Scraping Hacker News...")
+        hn_jobs = self.hackernews.fetch_jobs()
+        logger.info(f"  → Found {len(hn_jobs)} startup jobs from Hacker News")
+        all_jobs.extend(hn_jobs)
+
+        # 11. RSS Feeds (We Work Remotely, Remotive, Himalayas, Jobicy)
+        logger.info("\n[11/11] Scraping RSS Feeds...")
+        rss_jobs = self.rss.fetch_jobs()
+        logger.info(f"  → Found {len(rss_jobs)} jobs from RSS feeds")
+        all_jobs.extend(rss_jobs)
 
         logger.info(f"\n✓ Total jobs scraped: {len(all_jobs)}")
 

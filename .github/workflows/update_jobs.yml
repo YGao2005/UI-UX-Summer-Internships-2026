@@ -31,8 +31,12 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install --upgrade pip
+          python -m pip install --upgrade pip
           pip install -r requirements.txt
+
+      - name: Verify JobSpy installation
+        run: |
+          python -c "import jobspy; print('✓ JobSpy installed successfully')"
 
       - name: Run scraper
         run: |
@@ -42,6 +46,7 @@ jobs:
           ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
           ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
           THEMUSE_API_KEY: ${{ secrets.THEMUSE_API_KEY }}
+          JOOBLE_API_KEY: ${{ secrets.JOOBLE_API_KEY }}
           TZ: 'UTC'
 
       - name: Check for changes

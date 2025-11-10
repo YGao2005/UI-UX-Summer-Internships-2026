@@ -1,111 +1,237 @@
 # Curated list of tech companies known for UI/UX design internships
-# Format: company name and their ATS platform
+# Only includes companies with PUBLIC ATS APIs (Greenhouse, Lever, Ashby)
+# Last updated: 2025-11-09
 
 companies:
-  # Design-Forward Tech Companies (Ashby)
+  # ============================================================================
+  # ASHBY COMPANIES (Design-focused startups)
+  # ============================================================================
+
   - name: "Notion"
     ashby: "notion"
+
   - name: "OpenAI"
     ashby: "openai"
-  - name: "Anthropic"
-    ashby: "anthropic"
-  - name: "Scale AI"
-    ashby: "scaleai"
+
   - name: "Ramp"
     ashby: "ramp"
 
-  # Major Tech Companies (Greenhouse)
-  - name: "Airbnb"
-    greenhouse: "airbnb"
-  - name: "Spotify"
-    greenhouse: "spotify"
-  - name: "Pinterest"
-    greenhouse: "pinterest"
-  - name: "DoorDash"
-    greenhouse: "doordash"
-  - name: "Lyft"
-    greenhouse: "lyft"
-  - name: "HubSpot"
-    greenhouse: "hubspot"
-  - name: "Robinhood"
-    greenhouse: "robinhood"
-  - name: "Coinbase"
-    greenhouse: "coinbase"
-  - name: "Dropbox"
-    greenhouse: "dropbox"
+  - name: "Linear"
+    ashby: "Linear"  # Note: Capital L
+
+  - name: "Scale AI"
+    ashby: "scale"  # Fixed: was "scaleai"
+
+  # ============================================================================
+  # GREENHOUSE COMPANIES (Major tech companies & startups)
+  # ============================================================================
+
+  # Top Design-Focused Companies
   - name: "Figma"
     greenhouse: "figma"
-  - name: "Canva"
-    greenhouse: "canva"
-  - name: "Discord"
-    greenhouse: "discord"
-  - name: "Roblox"
-    greenhouse: "roblox"
+
+  - name: "Airbnb"
+    greenhouse: "airbnb"
+
+  - name: "Pinterest"
+    greenhouse: "pinterest"
+
+  - name: "Dropbox"
+    greenhouse: "dropbox"
+
   - name: "Stripe"
     greenhouse: "stripe"
-  - name: "Square"
-    greenhouse: "squareup"
-  - name: "Snap Inc"
-    greenhouse: "snap"
+
+  # Major Tech Companies
+  - name: "DoorDash"
+    greenhouse: "doordashusa"  # Fixed: was "doordash"
+
+  - name: "Lyft"
+    greenhouse: "lyft"
+
+  - name: "Coinbase"
+    greenhouse: "coinbase"
+
+  - name: "Discord"
+    greenhouse: "discord"
+
   - name: "Reddit"
     greenhouse: "reddit"
-  - name: "Atlassian"
-    greenhouse: "atlassian"
+
+  - name: "Roblox"
+    greenhouse: "roblox"
+
   - name: "Asana"
     greenhouse: "asana"
+
   - name: "Duolingo"
     greenhouse: "duolingo"
+
   - name: "Instacart"
     greenhouse: "instacart"
+
+  - name: "HubSpot"
+    greenhouse: "hubspot"
+
+  - name: "Robinhood"
+    greenhouse: "robinhood"
+
   - name: "Databricks"
     greenhouse: "databricks"
+
   - name: "GitLab"
     greenhouse: "gitlab"
+
   - name: "Airtable"
     greenhouse: "airtable"
+
   - name: "Grammarly"
     greenhouse: "grammarly"
 
-  # Design Agencies & Studios (Lever)
-  - name: "IDEO"
-    lever: "ideo"
-  - name: "Netflix"
-    greenhouse: "netflix"
-  - name: "Shopify"
-    lever: "shopify"
-  - name: "Eventbrite"
-    lever: "eventbrite"
-  - name: "Zillow"
-    lever: "zillow"
-  - name: "MongoDB"
-    lever: "mongodb"
-  - name: "Twitch"
-    lever: "twitch"
-  - name: "SurveyMonkey"
-    lever: "surveymonkey"
-  - name: "Box"
-    lever: "box"
-  - name: "Postmates"
-    lever: "postmates"
-
-  # Additional promising companies
-  - name: "Linear"
-    ashby: "linear"
   - name: "Vercel"
     greenhouse: "vercel"
+
   - name: "Webflow"
     greenhouse: "webflow"
-  - name: "Framer"
-    greenhouse: "framer"
-  - name: "Miro"
-    greenhouse: "miro"
-  - name: "Adobe"
-    greenhouse: "adobe"
-  - name: "Microsoft"
-    greenhouse: "microsoft"
-  - name: "Apple"
-    greenhouse: "apple"
-  - name: "Google"
-    greenhouse: "google"
-  - name: "Meta"
-    greenhouse: "metacareers"
+
+  # Formerly Listed as Lever, Now on Greenhouse
+  - name: "IDEO"
+    greenhouse: "ideo"
+
+  - name: "MongoDB"
+    greenhouse: "mongodb"
+
+  - name: "Twitch"
+    greenhouse: "twitch"
+
+  - name: "SurveyMonkey"
+    greenhouse: "surveymonkey"
+
+  - name: "Anthropic"
+    greenhouse: "anthropic"  # Fixed: was listed as Ashby
+
+  # ============================================================================
+  # ADDITIONAL DESIGN-FORWARD COMPANIES
+  # ============================================================================
+
+  # Fintech
+  - name: "Affirm"
+    greenhouse: "affirm"
+
+  - name: "Gusto"
+    greenhouse: "gusto"
+
+  - name: "PhonePe"
+    greenhouse: "phonepe"
+
+  - name: "PayPay"
+    greenhouse: "paypay"
+
+  - name: "Adyen"
+    greenhouse: "adyen"
+
+  - name: "OKX"
+    greenhouse: "okx"
+
+  # E-commerce & Retail
+  - name: "Quince"
+    greenhouse: "quince"
+
+  - name: "Warby Parker"
+    greenhouse: "warbyparker"
+
+  - name: "Rent the Runway"
+    greenhouse: "renttherunway"
+
+  - name: "Sol de Janeiro"
+    greenhouse: "soldejaneiro"
+
+  - name: "Dollar Shave Club"
+    greenhouse: "dollarshaveclub"
+
+  - name: "Glossier"
+    greenhouse: "glossier"
+
+  - name: "Groupon"
+    greenhouse: "groupon"
+
+  - name: "Agoda"
+    greenhouse: "agoda"
+
+  # SaaS & Productivity
+  - name: "Glean"
+    greenhouse: "gleanwork"
+
+  - name: "Smartly"
+    greenhouse: "smartlyio"
+
+  - name: "Later"
+    greenhouse: "later"
+
+  - name: "Levanta"
+    greenhouse: "levanta"
+
+  - name: "Squarespace"
+    greenhouse: "squarespace"
+
+  - name: "CommerceTools"
+    greenhouse: "commercetools"
+
+  # Gaming
+  - name: "Insomniac Games"
+    greenhouse: "insomniac"
+
+  - name: "Zynga"
+    greenhouse: "zyngacareers"
+
+  # Health & Wellness
+  - name: "Calm"
+    greenhouse: "calm"
+
+  - name: "MyFitnessPal"
+    greenhouse: "myfitnesspal"
+
+  - name: "Future"
+    greenhouse: "future"
+
+  # Web3 & Crypto
+  - name: "ZetaChain"
+    greenhouse: "zetachain"
+
+  # EdTech
+  - name: "Newsela"
+    greenhouse: "newsela"
+
+  - name: "MasterClass"
+    greenhouse: "masterclass"
+
+  # Supply Chain & Biotech
+  - name: "Flexport"
+    greenhouse: "flexport"
+
+  - name: "Benchling"
+    greenhouse: "benchling"
+
+# ============================================================================
+# REMOVED COMPANIES (Custom ATS - Cannot be scraped via public APIs)
+# ============================================================================
+#
+# These companies use custom career systems or non-public ATS:
+# - Spotify (custom system)
+# - Canva (SmartRecruiters)
+# - Netflix (custom)
+# - Adobe (Workday)
+# - Microsoft (custom)
+# - Apple (custom)
+# - Google (custom)
+# - Meta (custom)
+# - Snap Inc (custom)
+# - Atlassian (iCIMS)
+# - Shopify (custom)
+# - Box (custom)
+# - Zillow (custom)
+# - Eventbrite (status unclear)
+# - Postmates (acquired by Uber)
+# - Square (status unclear)
+# - Framer (status unclear)
+# - Miro (status unclear)
