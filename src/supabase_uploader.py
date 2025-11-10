@@ -62,20 +62,23 @@ class SupabaseUploader:
 
     def transform_job_for_database(self, job: Dict[str, Any]) -> Dict[str, Any]:
         """Transform job data to match database schema"""
+        # Sanitize the entire job object first to catch any NaN/Infinity values
+        sanitized_job = self.sanitize_value(job)
+
         return {
-            'id': job.get('id'),
-            'title': job.get('title'),
-            'company': job.get('company'),
-            'location': job.get('location'),
-            'url': job.get('url'),
-            'description': job.get('description'),
-            'posted_date': job.get('posted_date'),
+            'id': sanitized_job.get('id'),
+            'title': sanitized_job.get('title'),
+            'company': sanitized_job.get('company'),
+            'location': sanitized_job.get('location'),
+            'url': sanitized_job.get('url'),
+            'description': sanitized_job.get('description'),
+            'posted_date': sanitized_job.get('posted_date'),
             'scraped_date': datetime.now().date().isoformat(),
-            'source': job.get('source'),
-            'job_type': job.get('job_type', 'internship'),
-            'salary': job.get('salary'),
-            'relevance_score': self.sanitize_value(job.get('relevance_score')),
-            'score_breakdown': self.sanitize_value(job.get('score_breakdown')),  # JSONB field
+            'source': sanitized_job.get('source'),
+            'job_type': sanitized_job.get('job_type', 'internship'),
+            'salary': sanitized_job.get('salary'),
+            'relevance_score': sanitized_job.get('relevance_score'),
+            'score_breakdown': sanitized_job.get('score_breakdown'),  # JSONB field
         }
 
     def upload_jobs(self, jobs: List[Dict[str, Any]]) -> None:
