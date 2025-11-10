@@ -2,7 +2,7 @@
 
 > Curated list of UI/UX design internships, updated daily via automated scraping.
 
-**Last Updated:** 2025-11-10 11:11 UTC
+**Last Updated:** 2025-11-10 11:29 UTC
 
 ## Quick Stats
 
@@ -51,7 +51,7 @@
 | Adobe | 2026 Intern - Experience Design | San Francisco, CA, US | JobSpy (Indeed) | [Apply](https://www.indeed.com/viewjob?jk=050bff18c8905e0b) |
 | BMW Group | Intern, UX Engineer - Winter/Spring 2026 | Mountain View, CA, US | JobSpy (Indeed) | [Apply](https://www.indeed.com/viewjob?jk=77f430a9b9b55331) |
 | Delta Air Lines | Intern, Innovation - Designer (Summer 2026) | Atlanta, GA, US | JobSpy (Indeed) | [Apply](https://www.indeed.com/viewjob?jk=a3b5b64fc9d6ca0c) |
-| Token Metrics | Crypto UI/UX Designer Intern | US, Texas, Travis County, A... | Adzuna | [Apply](https://www.adzuna.com/land/ad/5454190550?se=Tjom7iW-8BGsSP-45sJr_A&utm_medium=api&utm_source=2eec0eca&v=ACA2AA436EF71AA6D9EAE044ACB5C25E7594FE09) |
+| Token Metrics | Crypto UI/UX Designer Intern | US, Texas, Travis County, A... | Adzuna | [Apply](https://www.adzuna.com/land/ad/5454190550?se=1KkQhCi-8BGsV5zcenP3Hw&utm_medium=api&utm_source=2eec0eca&v=ACA2AA436EF71AA6D9EAE044ACB5C25E7594FE09) |
 | Rivian | Design Intern - Digital Product Designer (Winte... | Palo Alto, CA, US | JobSpy (Indeed) | [Apply](https://www.indeed.com/viewjob?jk=b8bf9f21c7f25221) |
 | Flo Labs R&D | UI/UX Design Intern | Remote | JobSpy (Glassdoor) | [Apply](https://www.glassdoor.com/job-listing/j?jl=1009907164835) |
 | 7-Eleven | Enterprise UX Designer Intern | Irving, TX, US | JobSpy (Indeed) | [Apply](https://www.indeed.com/viewjob?jk=f99970a1bc6f8bdc) |
@@ -65,9 +65,9 @@
 | Zurn Elkay Water Solutions | Intern – UI/UX Designer (Summer 2026) | US, Illinois, DuPage County... | Adzuna | [Apply](https://www.adzuna.com/details/5409169808?utm_medium=api&utm_source=2eec0eca) |
 | Databricks | Product Design Intern | Seattle, Washington | Greenhouse | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=8143588002) |
 | IDEO | Visual Communication Design Internship | Shanghai, China | Greenhouse | [Apply](https://job-boards.greenhouse.io/ideo/jobs/7244821) |
-| Brunswick | Mercury Marine UX/UI Design Intern- Summer 2026 | US, Wisconsin, Fond du Lac ... | Adzuna | [Apply](https://www.adzuna.com/land/ad/5391540029?se=Tjom7iW-8BGsSP-45sJr_A&utm_medium=api&utm_source=2eec0eca&v=1D3EE1852E1AC888FDDE70B734915D3D9E908904) |
+| Brunswick | Mercury Marine UX/UI Design Intern- Summer 2026 | US, Wisconsin, Fond du Lac ... | Adzuna | [Apply](https://www.adzuna.com/land/ad/5391540029?se=1KkQhCi-8BGsV5zcenP3Hw&utm_medium=api&utm_source=2eec0eca&v=1D3EE1852E1AC888FDDE70B734915D3D9E908904) |
 | DELSYS | Software Engineer - UI/UX (Intern) | Natick, MA, US | JobSpy (Indeed) | [Apply](https://www.indeed.com/viewjob?jk=0aa3b60a91ba064f) |
-| Mitsubishi Electric US | UX/UI Design CO-OP - REQ  1237 | US, Georgia, Gwinnett Count... | Adzuna | [Apply](https://www.adzuna.com/land/ad/5196031825?se=Tjom7iW-8BGsSP-45sJr_A&utm_medium=api&utm_source=2eec0eca&v=6A6EAD348A1D56249F8648315D3408DC2957A4E8) |
+| Mitsubishi Electric US | UX/UI Design CO-OP - REQ  1237 | US, Georgia, Gwinnett Count... | Adzuna | [Apply](https://www.adzuna.com/land/ad/5196031825?se=1KkQhCi-8BGsV5zcenP3Hw&utm_medium=api&utm_source=2eec0eca&v=6A6EAD348A1D56249F8648315D3408DC2957A4E8) |
 | elixivity | UI/UX Designer Intern | US, New York, New York City... | Adzuna | [Apply](https://www.adzuna.com/details/4805318854?utm_medium=api&utm_source=2eec0eca) |
 | Telehealth | Design Internship | REMOTE | Hacker News | [Apply](https://news.ycombinator.com/item?id=22753397) |
 | IOMED | Design Internship | See posting | Hacker News | [Apply](https://news.ycombinator.com/item?id=22749090) |

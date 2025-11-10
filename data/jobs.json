@@ -1,9 +1,9 @@
 {
-  "last_updated": "2025-11-10T11:11:06.239574",
+  "last_updated": "2025-11-10T11:29:37.286436",
   "total_jobs": 92,
   "jobs": [
     {
-      "id": "jobspy_glassdoor_5288785098685373365",
+      "id": "jobspy_glassdoor_8139713429212985619",
       "title": "UI/UX Design Intern",
       "company": "Flo Labs R&D",
       "location": "Remote",
@@ -39,7 +39,7 @@
       }
     },
     {
-      "id": "jobspy_indeed_6666685102269951772",
+      "id": "jobspy_indeed_4020163329400942505",
       "title": "Intern: UX/UI Design (Summer 2026)",
       "company": "Volvo Group",
       "location": "Greensboro, NC, US",
@@ -77,7 +77,7 @@
       }
     },
     {
-      "id": "jobspy_indeed_1983179819558342629",
+      "id": "jobspy_indeed_2420768054388036200",
       "title": "UX UI Design Intern",
       "company": "Daimler Truck North America",
       "location": "Portland, OR, US",
@@ -112,7 +112,7 @@
       }
     },
     {
-      "id": "jobspy_indeed_1895688421408570544",
+      "id": "jobspy_indeed_736921006963386664",
       "title": "UX Designer Intern- Summer 2026",
       "company": "Hy-Vee, Inc.",
       "location": "West Des Moines, IA, US",
@@ -147,7 +147,7 @@
       }
     },
     {
-      "id": "jobspy_indeed_7839361090347766908",
+      "id": "jobspy_indeed_5007454209979749940",
       "title": "Marketing - UX Designer Internship",
       "company": "L.L. Bean, Inc.",
       "location": "Freeport, ME, US",
@@ -182,7 +182,7 @@
       }
     },
     {
-      "id": "jobspy_indeed_1881990348202717776",
+      "id": "jobspy_indeed_5067979508789784500",
       "title": "Design Intern - Digital Product Designer (Winter 2026 Co-op Program)",
       "company": "Rivian",
       "location": "Palo Alto, CA, US",
@@ -213,7 +213,7 @@
       }
     },
     {
-      "id": "jobspy_indeed_5525202110585213570",
+      "id": "jobspy_indeed_8701718350203547971",
       "title": "Quill UX/UI Visual Designer Intern - June 2026",
       "company": "Staples",
       "location": "Lincolnshire, IL, US",
@@ -244,7 +244,7 @@
       }
     },
     {
-      "id": "jobspy_indeed_8330148265811333799",
+      "id": "jobspy_indeed_4659255219861171443",
       "title": "Product Design Intern (Spring 2026)",
       "company": "Unknown",
       "location": "Burlington, MA, US",
@@ -276,7 +276,7 @@
       }
     },
     {
-      "id": "jobspy_indeed_5729784534590244103",
+      "id": "jobspy_indeed_5479379342496155985",
       "title": "Enterprise UX Designer Intern",
       "company": "7-Eleven",
       "location": "Irving, TX, US",
@@ -308,7 +308,7 @@
       }
     },
     {
-      "id": "jobspy_indeed_163942147746134922",
+      "id": "jobspy_indeed_3682171951969305667",
       "title": "Enterprise Experience Design Intern",
       "company": "Travelers",
       "location": "Hartford, CT, US",
@@ -351,10 +351,10 @@
       "salary_max": 124800,
       "contract_type": "contract",
       "raw_data": {
-        "title": "User Experience Design Intern (UX/UI)",
+        "__CLASS__": "Adzuna::API::Response::Job",
         "location": {
-          "__CLASS__": "Adzuna::API::Response::Location",
           "display_name": "Durham, Durham County",
+          "__CLASS__": "Adzuna::API::Response::Location",
           "area": [
             "US",
             "North Carolina",
@@ -362,28 +362,28 @@
             "Durham"
           ]
         },
-        "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiVGpvbTdpVy04QkdzU1AtNDVzSnJfQSIsImkiOiI1NDQ0MjkzMjY2In0.BhilFa5mQO2RSRBCdo39F5zG-gRwLkxe3-ZH5W-7ntw",
-        "id": "5444293266",
         "category": {
-          "label": "Creative & Design Jobs",
           "tag": "creative-design-jobs",
+          "label": "Creative & Design Jobs",
           "__CLASS__": "Adzuna::API::Response::Category"
         },
-        "created": "2025-10-12T08:47:52Z",
-        "salary_max": 124800,
-        "__CLASS__": "Adzuna::API::Response::Job",
-        "company": {
-          "__CLASS__": "Adzuna::API::Response::Company",
-          "display_name": "Tanium"
-        },
-        "salary_is_predicted": "0",
-        "salary_min": 93600,
-        "contract_type": "contract",
-        "description": "User Experience Design Intern (UX/UI) The Basics: In this graduate-level position as a Tanium User Experience Design Intern (UX Intern), you will be tasked with designing best-of-breed products as part of a small and highly agile design and development team. Assigned a 1-1 mentor with a senior member of the team, you\u2019ll experience what it\u2019s like to be a full-time employee in the interface design field while honing your skills in a real-world environment. Tanium\u2019s UX team focuses on a strong cus\u2026",
-        "latitude": 35.998121,
-        "redirect_url": "https://www.adzuna.com/details/5444293266?utm_medium=api&utm_source=2eec0eca",
         "longitude": -78.892044,
-        "contract_time": "full_time"
+        "contract_time": "full_time",
+        "salary_max": 124800,
+        "title": "User Experience Design Intern (UX/UI)",
+        "company": {
+          "display_name": "Tanium",
+          "__CLASS__": "Adzuna::API::Response::Company"
+        },
+        "contract_type": "contract",
+        "salary_min": 93600,
+        "description": "User Experience Design Intern (UX/UI) The Basics: In this graduate-level position as a Tanium User Experience Design Intern (UX Intern), you will be tasked with designing best-of-breed products as part of a small and highly agile design and development team. Assigned a 1-1 mentor with a senior member of the team, you\u2019ll experience what it\u2019s like to be a full-time employee in the interface design field while honing your skills in a real-world environment. Tanium\u2019s UX team focuses on a strong cus\u2026",
+        "redirect_url": "https://www.adzuna.com/details/5444293266?utm_medium=api&utm_source=2eec0eca",
+        "id": "5444293266",
+        "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiMUtrUWhDaS04QkdzVjV6Y2VuUDNIdyIsImkiOiI1NDQ0MjkzMjY2In0.SDBDCou6FPjdEjHkzIgTe0UH_84rESWSGVgpDKFW6yE",
+        "latitude": 35.998121,
+        "created": "2025-10-12T08:47:52Z",
+        "salary_is_predicted": "0"
       },
       "relevance_score": 11,
       "score_breakdown": {
@@ -405,7 +405,7 @@
       "title": "Crypto UI/UX Designer Intern",
       "company": "Token Metrics",
       "location": "US, Texas, Travis County, Austin",
-      "url": "https://www.adzuna.com/land/ad/5454190550?se=Tjom7iW-8BGsSP-45sJr_A&utm_medium=api&utm_source=2eec0eca&v=ACA2AA436EF71AA6D9EAE044ACB5C25E7594FE09",
+      "url": "https://www.adzuna.com/land/ad/5454190550?se=1KkQhCi-8BGsV5zcenP3Hw&utm_medium=api&utm_source=2eec0eca&v=ACA2AA436EF71AA6D9EAE044ACB5C25E7594FE09",
       "description": "Token Metrics is looking for a dynamic UI/UX Designer Intern who will be responsible for the UI and UX design of our various digital assets. You will ensure that all elements of the online user experience are optimized for improved usability, usefulness, and exceptional visual design. The UI/UX designer should have a passion for delivering adaptive and creative solutions to UI/UX design problems by staying up to date with best practices and emerging trends in user experience design and user int\u2026",
       "posted_date": "2025-10-18T11:45:00Z",
       "source": "Adzuna",
@@ -413,30 +413,28 @@
       "salary_max": 51061.25,
       "contract_type": "contract",
       "raw_data": {
-        "contract_time": "full_time",
-        "longitude": -97.744386,
-        "redirect_url": "https://www.adzuna.com/land/ad/5454190550?se=Tjom7iW-8BGsSP-45sJr_A&utm_medium=api&utm_source=2eec0eca&v=ACA2AA436EF71AA6D9EAE044ACB5C25E7594FE09",
         "contract_type": "contract",
-        "salary_min": 51061.25,
-        "description": "Token Metrics is looking for a dynamic UI/UX Designer Intern who will be responsible for the UI and UX design of our various digital assets. You will ensure that all elements of the online user experience are optimized for improved usability, usefulness, and exceptional visual design. The UI/UX designer should have a passion for delivering adaptive and creative solutions to UI/UX design problems by staying up to date with best practices and emerging trends in user experience design and user int\u2026",
-        "latitude": 30.272921,
-        "salary_is_predicted": "1",
         "company": {
           "display_name": "Token Metrics",
           "__CLASS__": "Adzuna::API::Response::Company"
         },
-        "__CLASS__": "Adzuna::API::Response::Job",
+        "title": "Crypto UI/UX Designer Intern",
+        "salary_is_predicted": "1",
         "created": "2025-10-18T11:45:00Z",
-        "salary_max": 51061.25,
-        "category": {
-          "__CLASS__": "Adzuna::API::Response::Category",
-          "tag": "it-jobs",
-          "label": "IT Jobs"
-        },
+        "latitude": 30.272921,
+        "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTQ1NDE5MDU1MCIsInMiOiIxS2tRaENpLThCR3NWNXpjZW5QM0h3In0.EDdu6emon7dHXaKZXJQRplSQgbPb2otkqx8q2Gb8RNE",
+        "redirect_url": "https://www.adzuna.com/land/ad/5454190550?se=1KkQhCi-8BGsV5zcenP3Hw&utm_medium=api&utm_source=2eec0eca&v=ACA2AA436EF71AA6D9EAE044ACB5C25E7594FE09",
         "id": "5454190550",
+        "description": "Token Metrics is looking for a dynamic UI/UX Designer Intern who will be responsible for the UI and UX design of our various digital assets. You will ensure that all elements of the online user experience are optimized for improved usability, usefulness, and exceptional visual design. The UI/UX designer should have a passion for delivering adaptive and creative solutions to UI/UX design problems by staying up to date with best practices and emerging trends in user experience design and user int\u2026",
+        "salary_min": 51061.25,
+        "category": {
+          "tag": "it-jobs",
+          "label": "IT Jobs",
+          "__CLASS__": "Adzuna::API::Response::Category"
+        },
         "location": {
-          "__CLASS__": "Adzuna::API::Response::Location",
           "display_name": "Austin, Travis County",
+          "__CLASS__": "Adzuna::API::Response::Location",
           "area": [
             "US",
             "Texas",
@@ -444,8 +442,10 @@
             "Austin"
           ]
         },
-        "title": "Crypto UI/UX Designer Intern",
-        "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTQ1NDE5MDU1MCIsInMiOiJUam9tN2lXLThCR3NTUC00NXNKcl9BIn0.Cw1alwWFuRok6XcAy0Spn4bHN3hG4jZ1eBlNEJlSMjk"
+        "__CLASS__": "Adzuna::API::Response::Job",
+        "salary_max": 51061.25,
+        "longitude": -97.744386,
+        "contract_time": "full_time"
       },
       "relevance_score": 10,
       "score_breakdown": {
@@ -476,38 +476,38 @@
       "salary_max": 104661.34,
       "contract_type": "contract",
       "raw_data": {
-        "salary_min": 104661.34,
-        "contract_type": "contract",
+        "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTQ2NjIwNTUwNCIsInMiOiIxS2tRaENpLThCR3NWNXpjZW5QM0h3In0.ZZRB_exOtgz8RJMJJujrwj9zftco_RV3oa8rFWI0bh0",
         "description": "About the Role You will design interfaces that feel intuitive, warm, and human for seniors. This role blends design creativity with empathy-driven research, ensuring our technology is accessible and emotionally supportive. Responsibilities Create wireframes, prototypes, and design systems for companion apps Conduct usability testing with seniors and caregivers Translate complex data into simple, understandable interfaces Collaborate with engineers to ensure smooth implementation Ideal Backgroun\u2026",
-        "latitude": 40.441694,
-        "salary_is_predicted": "1",
-        "longitude": -79.990086,
+        "salary_min": 104661.34,
         "redirect_url": "https://www.adzuna.com/details/5466205504?utm_medium=api&utm_source=2eec0eca",
+        "id": "5466205504",
+        "created": "2025-10-27T09:51:20Z",
+        "salary_is_predicted": "1",
+        "latitude": 40.441694,
+        "company": {
+          "__CLASS__": "Adzuna::API::Response::Company",
+          "display_name": "Musing AI"
+        },
         "title": "UX/UI & Design Intern",
+        "contract_type": "contract",
+        "salary_max": 104661.34,
+        "longitude": -79.990086,
         "location": {
           "__CLASS__": "Adzuna::API::Response::Location",
-          "display_name": "Pittsburgh, Allegheny County",
           "area": [
             "US",
             "Pennsylvania",
             "Allegheny County",
             "Pittsburgh"
-          ]
+          ],
+          "display_name": "Pittsburgh, Allegheny County"
         },
-        "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiVGpvbTdpVy04QkdzU1AtNDVzSnJfQSIsImkiOiI1NDY2MjA1NTA0In0.SvA8NhpZ5mtRT1ouDk-SwP8tuFrw2zU43PpomYJxNrY",
-        "salary_max": 104661.34,
-        "created": "2025-10-27T09:51:20Z",
-        "__CLASS__": "Adzuna::API::Response::Job",
-        "company": {
-          "__CLASS__": "Adzuna::API::Response::Company",
-          "display_name": "Musing AI"
-        },
-        "id": "5466205504",
         "category": {
+          "__CLASS__": "Adzuna::API::Response::Category",
           "label": "IT Jobs",
-          "tag": "it-jobs",
-          "__CLASS__": "Adzuna::API::Response::Category"
-        }
+          "tag": "it-jobs"
+        },
+        "__CLASS__": "Adzuna::API::Response::Job"
       },
       "relevance_score": 10,
       "score_breakdown": {
@@ -538,38 +538,38 @@
       "salary_max": 100428.61,
       "contract_type": "contract",
       "raw_data": {
-        "id": "5466309393",
-        "category": {
-          "__CLASS__": "Adzuna::API::Response::Category",
-          "label": "IT Jobs",
-          "tag": "it-jobs"
-        },
-        "created": "2025-10-27T12:46:38Z",
+        "longitude": -79.990086,
         "salary_max": 100428.61,
         "__CLASS__": "Adzuna::API::Response::Job",
-        "company": {
-          "__CLASS__": "Adzuna::API::Response::Company",
-          "display_name": "Musing AI"
+        "category": {
+          "tag": "it-jobs",
+          "label": "IT Jobs",
+          "__CLASS__": "Adzuna::API::Response::Category"
         },
-        "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTQ2NjMwOTM5MyIsInMiOiJUam9tN2lXLThCR3NTUC00NXNKcl9BIn0.hVhPB3JEh1LX5tBA7tV94SGzAgMKXmhFmW9XKVkmNmc",
-        "title": "UX/UI & Design Intern - Summer 2026",
         "location": {
           "display_name": "Pittsburgh, Allegheny County",
+          "__CLASS__": "Adzuna::API::Response::Location",
           "area": [
             "US",
             "Pennsylvania",
             "Allegheny County",
             "Pittsburgh"
-          ],
-          "__CLASS__": "Adzuna::API::Response::Location"
+          ]
         },
-        "redirect_url": "https://www.adzuna.com/details/5466309393?utm_medium=api&utm_source=2eec0eca",
-        "longitude": -79.990086,
-        "salary_is_predicted": "1",
         "latitude": 40.441694,
+        "salary_is_predicted": "1",
+        "created": "2025-10-27T12:46:38Z",
+        "redirect_url": "https://www.adzuna.com/details/5466309393?utm_medium=api&utm_source=2eec0eca",
+        "id": "5466309393",
+        "description": "Role begins mid May 2026 About the Role You will design interfaces that feel intuitive, warm, and human for seniors. This role blends design creativity with empathy-driven research, ensuring our technology is accessible and emotionally supportive. Responsibilities Create wireframes, prototypes, and design systems for companion apps Conduct usability testing with seniors and caregivers Translate complex data into simple, understandable interfaces Collaborate with engineers to ensure smooth imple\u2026",
         "salary_min": 100428.61,
+        "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiMUtrUWhDaS04QkdzVjV6Y2VuUDNIdyIsImkiOiI1NDY2MzA5MzkzIn0.ZDncWfhwHSrGNJUeeUaqeaN_P6AxbMLlqWllwmJtMoY",
         "contract_type": "contract",
-        "description": "Role begins mid May 2026 About the Role You will design interfaces that feel intuitive, warm, and human for seniors. This role blends design creativity with empathy-driven research, ensuring our technology is accessible and emotionally supportive. Responsibilities Create wireframes, prototypes, and design systems for companion apps Conduct usability testing with seniors and caregivers Translate complex data into simple, understandable interfaces Collaborate with engineers to ensure smooth imple\u2026"
+        "title": "UX/UI & Design Intern - Summer 2026",
+        "company": {
+          "__CLASS__": "Adzuna::API::Response::Company",
+          "display_name": "Musing AI"
+        }
       },
       "relevance_score": 10,
       "score_breakdown": {
@@ -588,7 +588,7 @@
       }
     },
     {
-      "id": "jobspy_glassdoor_4627712052996588793",
+      "id": "jobspy_glassdoor_3461866989259120082",
       "title": "UI Artist Intern - Undergraduate",
       "company": "PlayStation Global",
       "location": "Remote",
@@ -618,7 +618,7 @@
       }
     },
     {
-      "id": "jobspy_indeed_5558417824899637881",
+      "id": "jobspy_indeed_8772272476879465121",
       "title": "UI Artist Intern - Undergraduate",
       "company": "PlayStation",
       "location": "Remote, US",
@@ -648,7 +648,7 @@
       }
     },
     {
-      "id": "jobspy_indeed_8619139132777266513",
+      "id": "jobspy_indeed_3103295373593245287",
       "title": "Summer 2026 \u2013 Product Design Intern",
       "company": "SAS",
       "location": "Cary, NC, US",
@@ -689,16 +689,25 @@
       "salary_max": 77325.07,
       "contract_type": "contract",
       "raw_data": {
-        "salary_is_predicted": "1",
-        "salary_min": 77325.07,
-        "contract_type": "contract",
+        "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiMUtrUWhDaS04QkdzVjV6Y2VuUDNIdyIsImkiOiI0ODA1MzE4ODU0In0.obrImuQA-ip1kmIbAZt-rZR2mL6SYk504FKZsGG2T7M",
         "description": "As a UX Design Intern at you will have the opportunity to work closely with our experienced UX design team and play a key role in shaping the future of our digital products. This internship is an excellent opportunity for individuals who are eager to learn, develop their design skills, and make a meaningful impact on the user experience. Key Responsibilities: Assist in conducting user research to understand the needs, preferences, and pain points of our target audience. Create wireframes and in\u2026",
-        "latitude": 40.75831,
+        "salary_min": 77325.07,
         "redirect_url": "https://www.adzuna.com/details/4805318854?utm_medium=api&utm_source=2eec0eca",
-        "contract_time": "full_time",
-        "longitude": -73.968041,
+        "id": "4805318854",
+        "created": "2024-08-01T10:52:54Z",
+        "salary_is_predicted": "1",
+        "latitude": 40.75831,
+        "company": {
+          "display_name": "elixivity",
+          "__CLASS__": "Adzuna::API::Response::Company"
+        },
         "title": "UI/UX Designer Intern",
+        "contract_type": "contract",
+        "salary_max": 77325.07,
+        "longitude": -73.968041,
+        "contract_time": "full_time",
         "location": {
+          "__CLASS__": "Adzuna::API::Response::Location",
           "area": [
             "US",
             "New York",
@@ -706,21 +715,12 @@
             "Manhattan",
             "Franklin D Roosevelt"
           ],
-          "display_name": "Franklin D Roosevelt, Manhattan",
-          "__CLASS__": "Adzuna::API::Response::Location"
+          "display_name": "Franklin D Roosevelt, Manhattan"
         },
-        "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNDgwNTMxODg1NCIsInMiOiJUam9tN2lXLThCR3NTUC00NXNKcl9BIn0.lFy8IbGu6E8YfDF9CUwAsQXts65Nn1zbYSi6W02A6Kc",
-        "id": "4805318854",
         "category": {
           "label": "IT Jobs",
           "tag": "it-jobs",
           "__CLASS__": "Adzuna::API::Response::Category"
-        },
-        "salary_max": 77325.07,
-        "created": "2024-08-01T10:52:54Z",
-        "company": {
-          "display_name": "elixivity",
-          "__CLASS__": "Adzuna::API::Response::Company"
         },
         "__CLASS__": "Adzuna::API::Response::Job"
       },
@@ -740,7 +740,7 @@
       }
     },
     {
-      "id": "jobspy_indeed_3470622035550167111",
+      "id": "jobspy_indeed_4553586031573214836",
       "title": "Product Design Intern - Summer 2026",
       "company": "S&P Global",
       "location": "Cambridge, MA, US",
@@ -768,7 +768,7 @@
       }
     },
     {
-      "id": "jobspy_indeed_1976992797734918250",
+      "id": "jobspy_indeed_8814798499343278953",
       "title": "Creative Design Intern - Summer 2026",
       "company": "Lenovo",
       "location": "Chicago, IL, US",
@@ -800,7 +800,7 @@
       "title": "Mercury Marine UX/UI Design Intern- Summer 2026",
       "company": "Brunswick",
       "location": "US, Wisconsin, Fond du Lac County, North Fond Du Lac",
-      "url": "https://www.adzuna.com/land/ad/5391540029?se=Tjom7iW-8BGsSP-45sJr_A&utm_medium=api&utm_source=2eec0eca&v=1D3EE1852E1AC888FDDE70B734915D3D9E908904",
+      "url": "https://www.adzuna.com/land/ad/5391540029?se=1KkQhCi-8BGsV5zcenP3Hw&utm_medium=api&utm_source=2eec0eca&v=1D3EE1852E1AC888FDDE70B734915D3D9E908904",
       "description": "_Are you ready for what's next?_ _Come explore opportunities within Brunswick, a global marine leader (https://youtube.com/watch?v=ksuQ6B2j\\_mA) committed to challenging conventions and innovating next-generation technologies that transform experiences on the water and beyond. Brunswick believes \"Next Never Rests,\" and we offer a variety of exciting careers and growth opportunities within united teams defining the future of marine recreation._ As a User Experience (UX/UI) Design Intern, you'll \u2026",
       "posted_date": "2025-09-09T18:07:44Z",
       "source": "Adzuna",
@@ -808,10 +808,16 @@
       "salary_max": 61072.52,
       "contract_type": null,
       "raw_data": {
-        "salary_is_predicted": "1",
-        "latitude": 43.773,
-        "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiVGpvbTdpVy04QkdzU1AtNDVzSnJfQSIsImkiOiI1MzkxNTQwMDI5In0.kjXm29UsA8X5wN-HxLQujXaBiDTcuUdThG4C1Sul-4g",
+        "company": {
+          "display_name": "Brunswick",
+          "__CLASS__": "Adzuna::API::Response::Company"
+        },
         "title": "Mercury Marine UX/UI Design Intern- Summer 2026",
+        "category": {
+          "__CLASS__": "Adzuna::API::Response::Category",
+          "tag": "creative-design-jobs",
+          "label": "Creative & Design Jobs"
+        },
         "location": {
           "area": [
             "US",
@@ -819,26 +825,20 @@
             "Fond du Lac County",
             "North Fond Du Lac"
           ],
-          "display_name": "North Fond Du Lac, Fond du Lac County",
-          "__CLASS__": "Adzuna::API::Response::Location"
+          "__CLASS__": "Adzuna::API::Response::Location",
+          "display_name": "North Fond Du Lac, Fond du Lac County"
         },
-        "description": "_Are you ready for what's next?_ _Come explore opportunities within Brunswick, a global marine leader (https://youtube.com/watch?v=ksuQ6B2j\\_mA) committed to challenging conventions and innovating next-generation technologies that transform experiences on the water and beyond. Brunswick believes \"Next Never Rests,\" and we offer a variety of exciting careers and growth opportunities within united teams defining the future of marine recreation._ As a User Experience (UX/UI) Design Intern, you'll \u2026",
-        "salary_min": 61072.52,
-        "redirect_url": "https://www.adzuna.com/land/ad/5391540029?se=Tjom7iW-8BGsSP-45sJr_A&utm_medium=api&utm_source=2eec0eca&v=1D3EE1852E1AC888FDDE70B734915D3D9E908904",
-        "id": "5391540029",
-        "category": {
-          "tag": "creative-design-jobs",
-          "label": "Creative & Design Jobs",
-          "__CLASS__": "Adzuna::API::Response::Category"
-        },
-        "created": "2025-09-09T18:07:44Z",
-        "salary_max": 61072.52,
-        "longitude": -88.4469,
         "__CLASS__": "Adzuna::API::Response::Job",
-        "company": {
-          "__CLASS__": "Adzuna::API::Response::Company",
-          "display_name": "Brunswick"
-        }
+        "salary_max": 61072.52,
+        "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTM5MTU0MDAyOSIsInMiOiIxS2tRaENpLThCR3NWNXpjZW5QM0h3In0.9LFLvp216J2QvP_MeSunrd_ZKEAe3fFQohfWBRenBeI",
+        "id": "5391540029",
+        "redirect_url": "https://www.adzuna.com/land/ad/5391540029?se=1KkQhCi-8BGsV5zcenP3Hw&utm_medium=api&utm_source=2eec0eca&v=1D3EE1852E1AC888FDDE70B734915D3D9E908904",
+        "description": "_Are you ready for what's next?_ _Come explore opportunities within Brunswick, a global marine leader (https://youtube.com/watch?v=ksuQ6B2j\\_mA) committed to challenging conventions and innovating next-generation technologies that transform experiences on the water and beyond. Brunswick believes \"Next Never Rests,\" and we offer a variety of exciting careers and growth opportunities within united teams defining the future of marine recreation._ As a User Experience (UX/UI) Design Intern, you'll \u2026",
+        "longitude": -88.4469,
+        "salary_min": 61072.52,
+        "salary_is_predicted": "1",
+        "created": "2025-09-09T18:07:44Z",
+        "latitude": 43.773
       },
       "relevance_score": 8,
       "score_breakdown": {
@@ -855,7 +855,7 @@
       }
     },
     {
-      "id": "jobspy_indeed_2440511176586819989",
+      "id": "jobspy_indeed_1899596328228200823",
       "title": "UI/UX Intern",
       "company": "Little Caesars Pizza",
       "location": "Detroit, MI, US",
@@ -882,7 +882,7 @@
       }
     },
     {
-      "id": "jobspy_indeed_551228579029555245",
+      "id": "jobspy_indeed_32187859007830493",
       "title": "Customer Experience and Design (UI/UX) Intern, Summer 2026 - St. Louis, MO",
       "company": "Mastercard",
       "location": "O'Fallon, MO, US",
@@ -921,39 +921,39 @@
       "salary_max": 58476.45,
       "contract_type": "contract",
       "raw_data": {
-        "salary_is_predicted": "1",
-        "salary_min": 58476.45,
-        "contract_type": "contract",
-        "description": "Intern \u2013 UI/UX Designer (Summer 2026) The Company Zurn Elkay Water Solutions Corporation is a thriving, values-driven company focused on doing the right things. We\u2019re a fast growing, publicly traded company (NYSE: ZWS), with an enduring reputation for integrity, giving back, and providing an engaging, inclusive environment where careers flourish and grow. Named by Newsweek as One of America\u2019s Most Responsible Companies and an Energage USA Top Workplace, at Zurn Elkay Water Solutions Corporation\u2026",
-        "latitude": 41.813291,
-        "redirect_url": "https://www.adzuna.com/details/5409169808?utm_medium=api&utm_source=2eec0eca",
-        "contract_time": "full_time",
         "longitude": -88.021633,
+        "contract_time": "full_time",
+        "salary_max": 58476.45,
+        "__CLASS__": "Adzuna::API::Response::Job",
         "location": {
+          "display_name": "Downers Grove, DuPage County",
           "__CLASS__": "Adzuna::API::Response::Location",
           "area": [
             "US",
             "Illinois",
             "DuPage County",
             "Downers Grove"
-          ],
-          "display_name": "Downers Grove, DuPage County"
+          ]
         },
-        "title": "Intern \u2013 UI/UX Designer (Summer 2026)",
-        "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTQwOTE2OTgwOCIsInMiOiJUam9tN2lXLThCR3NTUC00NXNKcl9BIn0.2knGDH5K6oMnhwwZ8ymPybxpXMGH33u-ebm0OUvojkI",
         "category": {
-          "tag": "it-jobs",
           "label": "IT Jobs",
+          "tag": "it-jobs",
           "__CLASS__": "Adzuna::API::Response::Category"
         },
+        "description": "Intern \u2013 UI/UX Designer (Summer 2026) The Company Zurn Elkay Water Solutions Corporation is a thriving, values-driven company focused on doing the right things. We\u2019re a fast growing, publicly traded company (NYSE: ZWS), with an enduring reputation for integrity, giving back, and providing an engaging, inclusive environment where careers flourish and grow. Named by Newsweek as One of America\u2019s Most Responsible Companies and an Energage USA Top Workplace, at Zurn Elkay Water Solutions Corporation\u2026",
+        "salary_min": 58476.45,
         "id": "5409169808",
+        "redirect_url": "https://www.adzuna.com/details/5409169808?utm_medium=api&utm_source=2eec0eca",
+        "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTQwOTE2OTgwOCIsInMiOiIxS2tRaENpLThCR3NWNXpjZW5QM0h3In0.PNif3iBaYMqZ3q-xQXFDrR0bKMA622TS-Ua6ATGaUy4",
+        "latitude": 41.813291,
+        "created": "2025-09-20T19:24:26Z",
+        "salary_is_predicted": "1",
+        "title": "Intern \u2013 UI/UX Designer (Summer 2026)",
         "company": {
-          "display_name": "Zurn Elkay Water Solutions",
-          "__CLASS__": "Adzuna::API::Response::Company"
+          "__CLASS__": "Adzuna::API::Response::Company",
+          "display_name": "Zurn Elkay Water Solutions"
         },
-        "__CLASS__": "Adzuna::API::Response::Job",
-        "salary_max": 58476.45,
-        "created": "2025-09-20T19:24:26Z"
+        "contract_type": "contract"
       },
       "relevance_score": 7,
       "score_breakdown": {
@@ -969,7 +969,7 @@
       }
     },
     {
-      "id": "jobspy_indeed_4385918328811760489",
+      "id": "jobspy_indeed_9155154642306607386",
       "title": "2026 Intern - Experience Design",
       "company": "Adobe",
       "location": "San Francisco, CA, US",
@@ -996,7 +996,7 @@
       }
     },
     {
-      "id": "jobspy_indeed_9152943621625715928",
+      "id": "jobspy_indeed_8330437386091650647",
       "title": "Software Engineer - UI/UX (Intern)",
       "company": "DELSYS",
       "location": "Natick, MA, US",
@@ -1022,7 +1022,7 @@
       }
     },
     {
-      "id": "jobspy_glassdoor_2675975283595065310",
+      "id": "jobspy_glassdoor_5018258041396815831",
       "title": "Figma Intern",
       "company": "Remarkinfo Software Solutions",
       "location": "Remote",
@@ -1048,7 +1048,7 @@
       }
     },
     {
-      "id": "jobspy_glassdoor_6128736874485480185",
+      "id": "jobspy_glassdoor_8035395771294616729",
       "title": "UX/UI Design (Remote Internship)",
       "company": "Topia",
       "location": "Remote",
@@ -1072,7 +1072,7 @@
       }
     },
     {
-      "id": "jobspy_glassdoor_8756874216949674449",
+      "id": "jobspy_glassdoor_548083961597373690",
       "title": "Scheduling Software Engineering Internship",
       "company": "The Mind Palace Academy",
       "location": "Remote",
@@ -1097,7 +1097,7 @@
       }
     },
     {
-      "id": "jobspy_glassdoor_631200518236445468",
+      "id": "jobspy_glassdoor_3004066549722234990",
       "title": "Spring 2026 Undergraduate Intern, Product Design- Technology and Analytics Department",
       "company": "ACLU",
       "location": "New York, NY",
@@ -1122,7 +1122,7 @@
       }
     },
     {
-      "id": "jobspy_indeed_5280376554023564494",
+      "id": "jobspy_indeed_182004616279174432",
       "title": "Spring 2026 Undergraduate Intern, Product Design- Technology and Analytics Department",
       "company": "American Civil Liberties Union",
       "location": "New York, NY, US",
@@ -1147,7 +1147,7 @@
       }
     },
     {
-      "id": "jobspy_indeed_3597353518228378719",
+      "id": "jobspy_indeed_7134229393867808319",
       "title": "Intern, UX Engineer - Winter/Spring 2026",
       "company": "BMW Group",
       "location": "Mountain View, CA, US",
@@ -1172,7 +1172,7 @@
       }
     },
     {
-      "id": "jobspy_indeed_216924329949728319",
+      "id": "jobspy_indeed_3830045839851323234",
       "title": "Intern, Innovation - Designer (Summer 2026)",
       "company": "Delta Air Lines",
       "location": "Atlanta, GA, US",
@@ -1225,7 +1225,7 @@
       "location": "San Francisco, California",
       "url": "https://jobs.ashbyhq.com/notion/fc762b58-24c9-4f34-bf5f-2af6e8adc644",
       "description": "<h1>About Us:</h1><p style=\"min-height:1.5em\">Notion helps you build beautiful tools for your life\u2019s work. In today's world of endless apps and tabs, Notion provides one place for teams to get everything done, seamlessly connecting docs, notes, projects, calendar, and email\u2014with AI built in to find answers and automate work. Millions of users, from individuals to large organizations like Toyota, Figma, and OpenAI, love Notion for its flexibility and choose it because it helps them save time and money.</p><p style=\"min-height:1.5em\"></p><p style=\"min-height:1.5em\">In-person collaboration is essential to Notion's culture. We require all team members to work from our offices on Mondays and Thursdays, our designated Anchor Days. Certain teams or positions may require additional in-office workdays. <em><strong>This internship will take place from Jan 26 - Apr 17 and you will need to be able to work out of our NY or SF office during this time.</strong></em></p><p style=\"min-height:1.5em\"></p><h1>About The Role:</h1><p style=\"min-height:1.5em\">Millions of people use Notion \u2014 and this number is increasing every day. That means a million people trust us to deliver a fast, reliable, and secure experience, and we value this more than anything. We want to keep earning trust, while also continuing to amaze our users with the tools they can build in Notion. This is where you come in. </p><p style=\"min-height:1.5em\"></p><p style=\"min-height:1.5em\">During your 12-week internship, you will be paired with a mentor that will help guide you as you work closely with our team to build and ship impactful projects. These projects will drive valuable impact to our customers and engineers. From product engineering, mobile, to infrastructure and security, we have opportunities available on different teams. Take a look at what our past intern cohort worked on with our Blog post <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://notion.notion.site/Notion-Intern-Spotlight-d0260c4e2317490db89f367d95cb4e68\">here</a> and <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.notion.so/blog/saluting-notions-winter-interns\">here</a> and <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.tiktok.com/@notionhq/video/7216440106356395306?lang=en\">TikTok</a> post.</p><p style=\"min-height:1.5em\"></p><h1>What You'll Achieve:</h1><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Write clean, secure, tested, and documented code.</p></li><li><p style=\"min-height:1.5em\">Design &amp; enhance the Notion platform with new capabilities, as and when the need arises.</p></li><li><p style=\"min-height:1.5em\">Design, develop, and own new product functionality and/or infrastructure leveraging modern frameworks and tooling.</p></li><li><p style=\"min-height:1.5em\">Develop, fix and debug software for web services, databases, applications, tools, networks.</p><p style=\"min-height:1.5em\"></p></li></ul><h1>Qualifications:</h1><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Pursuing a bachelor's or master\u2019s degree in computer science, engineering, or another related field. Must graduate before December 2026.</p></li><li><p style=\"min-height:1.5em\">Previous internship experience.</p></li><li><p style=\"min-height:1.5em\">Working towards a proficiency of one or more programming languages such as Typescript, Node.js, Go, Python, Java, Swift, Rust, or Kotlin.</p></li><li><p style=\"min-height:1.5em\">You find large challenges exciting and enjoy discovering problems as much as solving them.</p></li><li><p style=\"min-height:1.5em\">You are able to problem-solve and adapt to changing priorities in a fast-paced, dynamic environment.</p></li><li><p style=\"min-height:1.5em\">This internship will take place from Jan - Apr and you will need to be able to work out of our NY or SF office during this time.</p><p style=\"min-height:1.5em\"></p></li></ul><h1>Skills You\u2019ll Need To Bring:</h1><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\"><strong>Thoughtful problem-solving:</strong> For you, problem-solving starts with a clear and accurate understanding of the context. You can decompose tricky problems and work towards a clean solution, by yourself or with teammates. You're comfortable asking for help when you get stuck.</p></li><li><p style=\"min-height:1.5em\"><strong>For a backend internship:</strong> You have a passion for learning how parts of a system fit together\u2014from the user interface to the data model. Familiarity with relational database systems like Postgres or MySQL is a plus.</p></li><li><p style=\"min-height:1.5em\"><strong>For a frontend internship:</strong> You have a passion for learning technologies (CSS, Javascript, &amp; React) and best practices in front-end architecture, including performance, accessibility and usability.</p></li><li><p style=\"min-height:1.5em\"><strong>Put users first:</strong> You think critically about the implications of what you're building, and how it shapes real people's lives. You understand that reach comes with responsibility for our impact\u2014good and bad.</p></li><li><p style=\"min-height:1.5em\"><strong>Not ideological about technology:</strong> To you, technologies and programming languages are about tradeoffs. You may be opinionated, but you're not ideological and can learn new technologies as you go.</p></li><li><p style=\"min-height:1.5em\"><strong>Empathetic communication:</strong> You communicate nuanced ideas clearly, whether you're explaining technical decisions in writing or brainstorming in real time. In disagreements, you engage thoughtfully with other perspectives and compromise when needed.</p></li><li><p style=\"min-height:1.5em\"><strong>Team player:</strong> For you, work isn't a solo endeavor. You enjoy collaborating cross-functionally to accomplish shared goals, and you care about learning, growing, and helping others to do the same.</p><p style=\"min-height:1.5em\"></p></li></ul><h1>Nice to Haves:</h1><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">You have expertise with specific technologies that are part of our stack, including Typescript, React, Electron, Node.js, AWS, and Postgres.</p></li><li><p style=\"min-height:1.5em\">You've heard of computing pioneers like Ada Lovelace, Douglas Engelbart, Alan Kay, and others\u2014and understand why we're big fans of their work.</p></li><li><p style=\"min-height:1.5em\">You have interests outside of technology, such as in art, history, or social sciences.</p><p style=\"min-height:1.5em\"></p></li></ul><p style=\"min-height:1.5em\">Our customers come from all walks of life and so do we. We hire great people from a wide variety of backgrounds, not just because it's the right thing to do, but because it makes our company stronger. If you share our values and our enthusiasm for small businesses, you will find a home at Notion.</p><p style=\"min-height:1.5em\"></p><p style=\"min-height:1.5em\">Notion is proud to be an equal opportunity employer. We do not discriminate in hiring or any employment decision based on race, color, religion, national origin, age, sex (including pregnancy, childbirth, or related medical conditions), marital status, ancestry, physical or mental disability, genetic information, veteran status, gender identity or expression, sexual orientation, or other applicable legally protected characteristic. Notion considers qualified applicants with criminal histories, consistent with applicable federal, state and local law. Notion is also committed to providing reasonable accommodations for qualified individuals with disabilities and disabled veterans in our job application procedures. If you need assistance or an accommodation due to a disability, please let your recruiter know.</p><p style=\"min-height:1.5em\"></p><p style=\"min-height:1.5em\">Notion is committed to providing highly competitive cash compensation, equity, and benefits. The compensation offered for this role will be based on multiple factors such as location, the role\u2019s scope and complexity, and the candidate\u2019s experience and expertise, and may vary from the range provided below. For roles based in San Francisco or New York City, the estimated base hourly range for this role is $57/hr for Bachelors and $61/hr for Master\u2019s.</p><p style=\"min-height:1.5em\"></p><p style=\"min-height:1.5em\">#LI-Onsite</p>",
-      "posted_date": "2025-11-10T11:10:48.824197",
+      "posted_date": "2025-11-10T11:29:25.670872",
       "source": "Ashby",
       "department": "University",
       "employment_type": "Intern",
@@ -1289,34 +1289,34 @@
       "salary_max": 49357.58,
       "contract_type": "contract",
       "raw_data": {
-        "title": "UI/UX Developer Intern",
-        "salary_min": 49357.58,
-        "description": "This is a remote position. Job Description Position: UI/UX Designer Intern Duration: 3 months Location: Remote Role Overview: Draconx is looking for a creative and detail-oriented UI/UX Designer Intern to join our team and contribute to designing intuitive, user-centric digital experiences. This internship offers an exciting opportunity to work on real-world projects, learn from experienced designers, and build a strong foundation in UI/UX design. Key Responsibilities: Assist in creating wirefr\u2026",
+        "__CLASS__": "Adzuna::API::Response::Job",
         "contract_type": "contract",
+        "category": {
+          "__CLASS__": "Adzuna::API::Response::Category",
+          "tag": "it-jobs",
+          "label": "IT Jobs"
+        },
         "location": {
-          "display_name": "US",
           "area": [
             "US"
           ],
-          "__CLASS__": "Adzuna::API::Response::Location"
+          "__CLASS__": "Adzuna::API::Response::Location",
+          "display_name": "US"
         },
-        "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTQ4NDY2Njk5NiIsInMiOiJUam9tN2lXLThCR3NTUC00NXNKcl9BIn0.QKZavBZ8F0hblZ92qRApdcD-FBLQcNycleu6S1t1cVI",
-        "salary_is_predicted": "1",
-        "salary_max": 49357.58,
-        "created": "2025-11-06T22:12:40Z",
+        "title": "UI/UX Developer Intern",
         "company": {
-          "__CLASS__": "Adzuna::API::Response::Company",
-          "display_name": "DraconX"
+          "display_name": "DraconX",
+          "__CLASS__": "Adzuna::API::Response::Company"
         },
-        "__CLASS__": "Adzuna::API::Response::Job",
-        "contract_time": "full_time",
+        "salary_is_predicted": "1",
+        "created": "2025-11-06T22:12:40Z",
         "id": "5484666996",
-        "category": {
-          "__CLASS__": "Adzuna::API::Response::Category",
-          "label": "IT Jobs",
-          "tag": "it-jobs"
-        },
-        "redirect_url": "https://www.adzuna.com/details/5484666996?utm_medium=api&utm_source=2eec0eca"
+        "redirect_url": "https://www.adzuna.com/details/5484666996?utm_medium=api&utm_source=2eec0eca",
+        "salary_min": 49357.58,
+        "description": "This is a remote position. Job Description Position: UI/UX Designer Intern Duration: 3 months Location: Remote Role Overview: Draconx is looking for a creative and detail-oriented UI/UX Designer Intern to join our team and contribute to designing intuitive, user-centric digital experiences. This internship offers an exciting opportunity to work on real-world projects, learn from experienced designers, and build a strong foundation in UI/UX design. Key Responsibilities: Assist in creating wirefr\u2026",
+        "contract_time": "full_time",
+        "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiMUtrUWhDaS04QkdzVjV6Y2VuUDNIdyIsImkiOiI1NDg0NjY2OTk2In0.vA0qUWh9fQASSWokO8D2gFgYBQogCgDNlxYolilHb-U",
+        "salary_max": 49357.58
       },
       "relevance_score": 4,
       "score_breakdown": {
@@ -1343,22 +1343,28 @@
       "salary_max": 104000,
       "contract_type": "contract",
       "raw_data": {
-        "__CLASS__": "Adzuna::API::Response::Job",
+        "contract_type": "contract",
         "company": {
           "__CLASS__": "Adzuna::API::Response::Company",
           "display_name": "Activision Blizzard"
         },
-        "salary_max": 104000,
+        "title": "2026 US Summer Internships - UI/UX",
+        "salary_is_predicted": "0",
         "created": "2025-10-02T08:54:20Z",
+        "latitude": 33.751486,
+        "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTQyNzA0MzUwNiIsInMiOiIxS2tRaENpLThCR3NWNXpjZW5QM0h3In0.sFH4HzKYbQyZsH1aDnO8Dqw0j5lKrusZXCUzNEr9YC4",
+        "redirect_url": "https://www.adzuna.com/details/5427043506?utm_medium=api&utm_source=2eec0eca",
+        "id": "5427043506",
+        "description": "Team Name: Job Title: 2026 US Summer Internships - UI/UX Requisition ID: R025956 Job Description: At Activision Blizzard we are dedicated to creating the most epic entertainment experiences, driven by our company values and passion, Activision Blizzard creates worlds with the focus to entertain the universe. We are looking for talented and innovative students to join our team for the 2026 summer . All interns will receive a meaningful project and an unparalleled experience. We\u2019ll provide the to\u2026",
+        "salary_min": 41600,
         "category": {
           "__CLASS__": "Adzuna::API::Response::Category",
-          "tag": "creative-design-jobs",
-          "label": "Creative & Design Jobs"
+          "label": "Creative & Design Jobs",
+          "tag": "creative-design-jobs"
         },
-        "id": "5427043506",
         "location": {
-          "__CLASS__": "Adzuna::API::Response::Location",
           "display_name": "Irvine, Orange County",
+          "__CLASS__": "Adzuna::API::Response::Location",
           "area": [
             "US",
             "California",
@@ -1366,16 +1372,10 @@
             "Irvine"
           ]
         },
-        "title": "2026 US Summer Internships - UI/UX",
-        "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTQyNzA0MzUwNiIsInMiOiJUam9tN2lXLThCR3NTUC00NXNKcl9BIn0.dav_x59TabHsIUGxrbjmIjY9-YvTJjoUjKmgjWEuF5U",
-        "contract_time": "full_time",
+        "__CLASS__": "Adzuna::API::Response::Job",
+        "salary_max": 104000,
         "longitude": -117.75493,
-        "redirect_url": "https://www.adzuna.com/details/5427043506?utm_medium=api&utm_source=2eec0eca",
-        "description": "Team Name: Job Title: 2026 US Summer Internships - UI/UX Requisition ID: R025956 Job Description: At Activision Blizzard we are dedicated to creating the most epic entertainment experiences, driven by our company values and passion, Activision Blizzard creates worlds with the focus to entertain the universe. We are looking for talented and innovative students to join our team for the 2026 summer . All interns will receive a meaningful project and an unparalleled experience. We\u2019ll provide the to\u2026",
-        "contract_type": "contract",
-        "salary_min": 41600,
-        "latitude": 33.751486,
-        "salary_is_predicted": "0"
+        "contract_time": "full_time"
       },
       "relevance_score": 4,
       "score_breakdown": {
@@ -1394,7 +1394,7 @@
       "title": "UX/UI Design CO-OP - REQ  1237",
       "company": "Mitsubishi Electric US",
       "location": "US, Georgia, Gwinnett County, Suwanee",
-      "url": "https://www.adzuna.com/land/ad/5196031825?se=Tjom7iW-8BGsSP-45sJr_A&utm_medium=api&utm_source=2eec0eca&v=6A6EAD348A1D56249F8648315D3408DC2957A4E8",
+      "url": "https://www.adzuna.com/land/ad/5196031825?se=1KkQhCi-8BGsV5zcenP3Hw&utm_medium=api&utm_source=2eec0eca&v=6A6EAD348A1D56249F8648315D3408DC2957A4E8",
       "description": "Mitsubishi Electric Trane HVAC US LLC is looking for a UX/UI Design CO-OP - Controls Products in Suwanee, GA for Spring 2026 . The candidate will start in January 2026, ideally on 1/12/2026. Position Description Mitsubishi Electric Trane US HVAC designs and manufactures heat pump systems and controls for the North American market. Our focus is on comfort, sustainability, and energy efficiency. We\ufffdre passionate about developing heating and cooling solutions that provide personal comfort and stri\u2026",
       "posted_date": "2025-05-13T05:23:20Z",
       "source": "Adzuna",
@@ -1402,11 +1402,31 @@
       "salary_max": 47299,
       "contract_type": "contract",
       "raw_data": {
-        "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTE5NjAzMTgyNSIsInMiOiJUam9tN2lXLThCR3NTUC00NXNKcl9BIn0.rQz4gtn7FLk0ge6Ooi64HHhincZ8aOxzfVZfnE7OH6E",
+        "salary_is_predicted": "0",
+        "created": "2025-05-13T05:23:20Z",
+        "latitude": 34.05149,
+        "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiMUtrUWhDaS04QkdzVjV6Y2VuUDNIdyIsImkiOiI1MTk2MDMxODI1In0.obpXz96Y9ag5QS58fZnKWN1RDV9ATfr_svZlVd5JWO8",
+        "id": "5196031825",
+        "redirect_url": "https://www.adzuna.com/land/ad/5196031825?se=1KkQhCi-8BGsV5zcenP3Hw&utm_medium=api&utm_source=2eec0eca&v=6A6EAD348A1D56249F8648315D3408DC2957A4E8",
+        "description": "Mitsubishi Electric Trane HVAC US LLC is looking for a UX/UI Design CO-OP - Controls Products in Suwanee, GA for Spring 2026 . The candidate will start in January 2026, ideally on 1/12/2026. Position Description Mitsubishi Electric Trane US HVAC designs and manufactures heat pump systems and controls for the North American market. Our focus is on comfort, sustainability, and energy efficiency. We\ufffdre passionate about developing heating and cooling solutions that provide personal comfort and stri\u2026",
+        "salary_min": 34403,
+        "contract_type": "contract",
+        "company": {
+          "display_name": "Mitsubishi Electric US",
+          "__CLASS__": "Adzuna::API::Response::Company"
+        },
         "title": "UX/UI Design CO-OP - REQ  1237",
+        "salary_max": 47299,
+        "longitude": -84.0713,
+        "contract_time": "full_time",
+        "category": {
+          "label": "Creative & Design Jobs",
+          "tag": "creative-design-jobs",
+          "__CLASS__": "Adzuna::API::Response::Category"
+        },
         "location": {
-          "__CLASS__": "Adzuna::API::Response::Location",
           "display_name": "Suwanee, Gwinnett County",
+          "__CLASS__": "Adzuna::API::Response::Location",
           "area": [
             "US",
             "Georgia",
@@ -1414,27 +1434,7 @@
             "Suwanee"
           ]
         },
-        "id": "5196031825",
-        "category": {
-          "__CLASS__": "Adzuna::API::Response::Category",
-          "tag": "creative-design-jobs",
-          "label": "Creative & Design Jobs"
-        },
-        "salary_max": 47299,
-        "created": "2025-05-13T05:23:20Z",
-        "company": {
-          "__CLASS__": "Adzuna::API::Response::Company",
-          "display_name": "Mitsubishi Electric US"
-        },
-        "__CLASS__": "Adzuna::API::Response::Job",
-        "salary_is_predicted": "0",
-        "latitude": 34.05149,
-        "salary_min": 34403,
-        "contract_type": "contract",
-        "description": "Mitsubishi Electric Trane HVAC US LLC is looking for a UX/UI Design CO-OP - Controls Products in Suwanee, GA for Spring 2026 . The candidate will start in January 2026, ideally on 1/12/2026. Position Description Mitsubishi Electric Trane US HVAC designs and manufactures heat pump systems and controls for the North American market. Our focus is on comfort, sustainability, and energy efficiency. We\ufffdre passionate about developing heating and cooling solutions that provide personal comfort and stri\u2026",
-        "redirect_url": "https://www.adzuna.com/land/ad/5196031825?se=Tjom7iW-8BGsSP-45sJr_A&utm_medium=api&utm_source=2eec0eca&v=6A6EAD348A1D56249F8648315D3408DC2957A4E8",
-        "longitude": -84.0713,
-        "contract_time": "full_time"
+        "__CLASS__": "Adzuna::API::Response::Job"
       },
       "relevance_score": 4,
       "score_breakdown": {
@@ -2176,23 +2176,13 @@
       "salary_max": 68640,
       "contract_type": "contract",
       "raw_data": {
-        "created": "2025-10-25T08:01:01Z",
-        "salary_max": 68640,
-        "contract_time": "full_time",
-        "__CLASS__": "Adzuna::API::Response::Job",
-        "company": {
-          "display_name": "TELUS Digital",
-          "__CLASS__": "Adzuna::API::Response::Company"
-        },
-        "id": "5464027836",
-        "category": {
-          "tag": "it-jobs",
-          "label": "IT Jobs",
-          "__CLASS__": "Adzuna::API::Response::Category"
-        },
-        "redirect_url": "https://www.adzuna.com/details/5464027836?utm_medium=api&utm_source=2eec0eca",
         "title": "Design (UX/UI) Intern (US) - Summer 2026",
-        "description": "Who We Are Welcome to TELUS Digital \u2014 where innovation drives impact at a global scale. As an award-winning digital product consultancy and the digital division of TELUS , one of Canada\u2019s largest telecommunications providers, we design and deliver transformative customer experiences through cutting-edge technology, agile thinking, and a people-first culture. With a global team across North America, South America, Central America, Europe, and APAC, we offer end-to-end expertise across eight core\u2026",
+        "company": {
+          "__CLASS__": "Adzuna::API::Response::Company",
+          "display_name": "TELUS Digital"
+        },
+        "contract_type": "contract",
+        "__CLASS__": "Adzuna::API::Response::Job",
         "location": {
           "__CLASS__": "Adzuna::API::Response::Location",
           "area": [
@@ -2200,9 +2190,19 @@
           ],
           "display_name": "US"
         },
+        "category": {
+          "__CLASS__": "Adzuna::API::Response::Category",
+          "tag": "it-jobs",
+          "label": "IT Jobs"
+        },
+        "description": "Who We Are Welcome to TELUS Digital \u2014 where innovation drives impact at a global scale. As an award-winning digital product consultancy and the digital division of TELUS , one of Canada\u2019s largest telecommunications providers, we design and deliver transformative customer experiences through cutting-edge technology, agile thinking, and a people-first culture. With a global team across North America, South America, Central America, Europe, and APAC, we offer end-to-end expertise across eight core\u2026",
         "salary_min": 64480,
-        "contract_type": "contract",
-        "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiVGpvbTdpVy04QkdzU1AtNDVzSnJfQSIsImkiOiI1NDY0MDI3ODM2In0.DxSAscyTd0Phvd-nIVIMHILTbE44KYRNwgMBOZQuhak",
+        "contract_time": "full_time",
+        "id": "5464027836",
+        "redirect_url": "https://www.adzuna.com/details/5464027836?utm_medium=api&utm_source=2eec0eca",
+        "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiMUtrUWhDaS04QkdzVjV6Y2VuUDNIdyIsImkiOiI1NDY0MDI3ODM2In0.qXK_bPACRJ6aow6MRvM_HNlXsyeCGifxvLU-dL8A5Po",
+        "salary_max": 68640,
+        "created": "2025-10-25T08:01:01Z",
         "salary_is_predicted": "0"
       },
       "relevance_score": 3,
@@ -2228,8 +2228,11 @@
       "salary_max": 68395.83,
       "contract_type": null,
       "raw_data": {
-        "salary_is_predicted": "1",
-        "adref": "eyJhbGciOiJIUzI1NiJ9.eyJzIjoiVGpvbTdpVy04QkdzU1AtNDVzSnJfQSIsImkiOiI1NDM1NjE1MDEwIn0.3TdGbqzLFaJbipBZKXKoW9YM28lOBFvk87dJN-7JKxU",
+        "category": {
+          "tag": "part-time-jobs",
+          "label": "Part time Jobs",
+          "__CLASS__": "Adzuna::API::Response::Category"
+        },
         "location": {
           "display_name": "US",
           "area": [
@@ -2237,23 +2240,20 @@
           ],
           "__CLASS__": "Adzuna::API::Response::Location"
         },
-        "description": "Description: Wisdom is a company focusing on Business and Engineering solutions, we have getting achievements based on digital transformations and the human-oriented systems by finding solutions in high-performance and safety technologies for industry, services, medicals, entertainment and educations. It is located at the center of Ho Chi Minh City which is the largest economy of Vietnam. Candidates should have backgrounds from any programs: such as computer science, computer engineering, etc. \u2026",
-        "salary_min": 68395.83,
-        "title": "Ui/Ux Design-Full/Part-Time/Remote-Fresher/Intern",
-        "redirect_url": "https://www.adzuna.com/details/5435615010?utm_medium=api&utm_source=2eec0eca",
-        "category": {
-          "__CLASS__": "Adzuna::API::Response::Category",
-          "label": "Part time Jobs",
-          "tag": "part-time-jobs"
-        },
-        "id": "5435615010",
         "__CLASS__": "Adzuna::API::Response::Job",
         "company": {
           "__CLASS__": "Adzuna::API::Response::Company",
           "display_name": "Wisdom Software"
         },
+        "title": "Ui/Ux Design-Full/Part-Time/Remote-Fresher/Intern",
+        "salary_is_predicted": "1",
         "created": "2025-10-07T08:09:40Z",
-        "salary_max": 68395.83
+        "salary_max": 68395.83,
+        "adref": "eyJhbGciOiJIUzI1NiJ9.eyJpIjoiNTQzNTYxNTAxMCIsInMiOiIxS2tRaENpLThCR3NWNXpjZW5QM0h3In0.qzMdHO39C5tyR-G256MwddgsvNxaVrTKZv4NDSOTYAg",
+        "redirect_url": "https://www.adzuna.com/details/5435615010?utm_medium=api&utm_source=2eec0eca",
+        "id": "5435615010",
+        "salary_min": 68395.83,
+        "description": "Description: Wisdom is a company focusing on Business and Engineering solutions, we have getting achievements based on digital transformations and the human-oriented systems by finding solutions in high-performance and safety technologies for industry, services, medicals, entertainment and educations. It is located at the center of Ho Chi Minh City which is the largest economy of Vietnam. Candidates should have backgrounds from any programs: such as computer science, computer engineering, etc. \u2026"
       },
       "relevance_score": 3,
       "score_breakdown": {
@@ -2266,7 +2266,7 @@
       }
     },
     {
-      "id": "jobspy_indeed_5292180418071005342",
+      "id": "jobspy_indeed_1857209850734226694",
       "title": "Product Desginer, Intern - Summer 2026",
       "company": "Jack Henry & Associates",
       "location": "US",
@@ -3030,7 +3030,7 @@
       }
     },
     {
-      "id": "rss_we_work_remotely_662131329762436440",
+      "id": "rss_we_work_remotely_3266683689705177072",
       "title": "Keenfinity: Technical Design Internship (m/f/div.)",
       "company": "Keenfinity",
       "location": "Remote",
