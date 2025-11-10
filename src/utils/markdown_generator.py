@@ -5,6 +5,7 @@ Generate markdown README with job listings
 import logging
 from typing import List, Dict
 from datetime import datetime
+from zoneinfo import ZoneInfo
 from collections import defaultdict
 
 logger = logging.getLogger(__name__)
@@ -15,6 +16,61 @@ class MarkdownGenerator:
 
     def __init__(self):
         pass
+
+    @staticmethod
+    def format_relative_date(posted_date: str) -> str:
+        """
+        Convert ISO date string to relative time format
+
+        Args:
+            posted_date: ISO format date string (e.g., '2025-11-05')
+
+        Returns:
+            Relative time string (e.g., '5d ago', '2w ago', '3mo ago')
+        """
+        if not posted_date:
+            return 'Unknown'
+
+        try:
+            # Parse the posted date (handle various formats)
+            if 'T' in posted_date:
+                # ISO format with time: '2025-11-05T12:00:00'
+                posted = datetime.fromisoformat(posted_date.replace('Z', '+00:00'))
+                # Convert to naive datetime for comparison
+                if posted.tzinfo is not None:
+                    posted = posted.replace(tzinfo=None)
+            else:
+                # Date only: '2025-11-05'
+                posted = datetime.strptime(posted_date[:10], '%Y-%m-%d')
+
+            # Calculate time difference
+            now = datetime.now()
+            diff = now - posted
+
+            # Handle future dates (edge case)
+            if diff.days < 0:
+                return 'Just posted'
+
+            # Format based on time difference
+            if diff.days == 0:
+                return 'Today'
+            elif diff.days == 1:
+                return '1d ago'
+            elif diff.days < 7:
+                return f'{diff.days}d ago'
+            elif diff.days < 30:
+                weeks = diff.days // 7
+                return f'{weeks}w ago'
+            elif diff.days < 365:
+                months = diff.days // 30
+                return f'{months}mo ago'
+            else:
+                years = diff.days // 365
+                return f'{years}y ago'
+
+        except (ValueError, AttributeError) as e:
+            logger.warning(f"Failed to parse date '{posted_date}': {e}")
+            return 'Unknown'
 
     def generate_readme(self, jobs: List[Dict], stats: Dict = None) -> str:
         """
@@ -27,12 +83,33 @@ class MarkdownGenerator:
         Returns:
             Markdown string
         """
-        now = datetime.now().strftime("%Y-%m-%d %H:%M UTC")
+        now_pt = datetime.now(ZoneInfo("America/Los_Angeles"))
+        now = now_pt.strftime("%Y-%m-%d %I:%M %p PT")
 
         # Calculate statistics
         total_jobs = len(jobs)
         companies = set(job['company'] for job in jobs)
         remote_jobs = [j for j in jobs if 'remote' in j.get('location', '').lower()]
+
+        # Calculate "new this week" count (jobs posted in last 7 days)
+        new_this_week = 0
+        for job in jobs:
+            posted_date = job.get('posted_date', '')
+            if posted_date:
+                try:
+                    if 'T' in posted_date:
+                        posted = datetime.fromisoformat(posted_date.replace('Z', '+00:00'))
+                        # Convert to naive datetime for comparison
+                        if posted.tzinfo is not None:
+                            posted = posted.replace(tzinfo=None)
+                    else:
+                        posted = datetime.strptime(posted_date[:10], '%Y-%m-%d')
+
+                    days_ago = (datetime.now() - posted).days
+                    if days_ago <= 7:
+                        new_this_week += 1
+                except (ValueError, AttributeError):
+                    pass
 
         # Group jobs by company
         jobs_by_company = defaultdict(list)
@@ -51,6 +128,7 @@ class MarkdownGenerator:
 | Metric | Count |
 |--------|-------|
 | Total Internships | {total_jobs} |
+| New This Week | {new_this_week} |
 | Companies Hiring | {len(companies)} |
 | Remote Opportunities | {len(remote_jobs)} |
 
@@ -58,8 +136,8 @@ class MarkdownGenerator:
 
 ## All Internships
 
-| Company | Role | Location | Source | Apply |
-|---------|------|----------|--------|-------|
+| Company | Role | Location | Posted | Source | Apply |
+|---------|------|----------|--------|--------|-------|
 """
 
         # Add all jobs to table, sorted by date (newest first)
@@ -69,8 +147,12 @@ class MarkdownGenerator:
             company = job.get('company', 'Unknown')
             title = job.get('title', 'Untitled')
             location = job.get('location', 'N/A')
+            posted_date = job.get('posted_date', '')
             source = job.get('source', 'Unknown')
             url = job.get('url', '#')
+
+            # Format the relative date
+            relative_date = self.format_relative_date(posted_date)
 
             # Truncate long titles
             if len(title) > 50:
@@ -80,7 +162,7 @@ class MarkdownGenerator:
             if len(location) > 30:
                 location = location[:27] + "..."
 
-            md += f"| {company} | {title} | {location} | {source} | [Apply]({url}) |\n"
+            md += f"| {company} | {title} | {location} | {relative_date} | {source} | [Apply]({url}) |\n"
 
         # Add companies section
         md += "\n---\n\n"
