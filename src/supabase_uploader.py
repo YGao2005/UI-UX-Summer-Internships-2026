@@ -6,6 +6,7 @@ Designed to run after main.py completes scraping
 import json
 import os
 import sys
+import math
 from datetime import datetime
 from typing import List, Dict, Any
 from supabase import create_client, Client
@@ -45,6 +46,20 @@ class SupabaseUploader:
             print(f"✗ Error parsing JSON: {e}")
             sys.exit(1)
 
+    def sanitize_value(self, value: Any) -> Any:
+        """Sanitize values to be JSON compliant (handle NaN, Infinity)"""
+        # Handle numeric values that aren't JSON compliant
+        if isinstance(value, float):
+            if math.isnan(value) or math.isinf(value):
+                return None  # Replace NaN/Infinity with None
+        # Recursively handle dicts (for score_breakdown JSONB)
+        elif isinstance(value, dict):
+            return {k: self.sanitize_value(v) for k, v in value.items()}
+        # Recursively handle lists
+        elif isinstance(value, list):
+            return [self.sanitize_value(item) for item in value]
+        return value
+
     def transform_job_for_database(self, job: Dict[str, Any]) -> Dict[str, Any]:
         """Transform job data to match database schema"""
         return {
@@ -59,8 +74,8 @@ class SupabaseUploader:
             'source': job.get('source'),
             'job_type': job.get('job_type', 'internship'),
             'salary': job.get('salary'),
-            'relevance_score': job.get('relevance_score'),
-            'score_breakdown': job.get('score_breakdown'),  # JSONB field
+            'relevance_score': self.sanitize_value(job.get('relevance_score')),
+            'score_breakdown': self.sanitize_value(job.get('score_breakdown')),  # JSONB field
         }
 
     def upload_jobs(self, jobs: List[Dict[str, Any]]) -> None:
