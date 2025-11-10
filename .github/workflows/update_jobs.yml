@@ -1,17 +1,17 @@
 name: Update Job Listings
 
 on:
-  # Run daily at midnight UTC
+  # Run daily at 4pm UTC (noon EST, 9am PST)
   schedule:
-    - cron: '0 0 * * *'
+    - cron: '0 16 * * *'
 
   # Allow manual trigger
   workflow_dispatch:
 
-  # Also run on push to main (for testing)
+  # Also run on push to master (for testing)
   push:
     branches:
-      - main
+      - master
 
 jobs:
   scrape-and-update:
@@ -40,19 +40,31 @@ jobs:
 
       - name: Run scraper
         run: |
+          echo "Starting job scraper..."
           python src/main.py
         env:
-          # API keys from GitHub Secrets
+          # API keys from GitHub Secrets (optional - scrapers will skip if not set)
           ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
           ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
           THEMUSE_API_KEY: ${{ secrets.THEMUSE_API_KEY }}
           JOOBLE_API_KEY: ${{ secrets.JOOBLE_API_KEY }}
           TZ: 'UTC'
+        continue-on-error: false
 
       - name: Check for changes
         id: check_changes
         run: |
-          git diff --quiet README.md data/jobs.json || echo "changed=true" >> $GITHUB_OUTPUT
+          if ! git diff --quiet README.md data/jobs.json; then
+            echo "changed=true" >> $GITHUB_OUTPUT
+            echo "✓ Changes detected in README.md and/or data/jobs.json"
+            # Extract job count from jobs.json
+            JOB_COUNT=$(python -c "import json; data=json.load(open('data/jobs.json')); print(data.get('total_jobs', 0))")
+            echo "job_count=$JOB_COUNT" >> $GITHUB_OUTPUT
+            echo "Found $JOB_COUNT internships"
+          else
+            echo "changed=false" >> $GITHUB_OUTPUT
+            echo "No changes detected"
+          fi
 
       - name: Commit and push if changed
         if: steps.check_changes.outputs.changed == 'true'
@@ -60,10 +72,29 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "Job Scraper Bot"
           git add README.md data/jobs.json
-          git commit -m "Update job listings - $(date -u +'%Y-%m-%d %H:%M UTC')"
+
+          # Create commit with job count
+          JOB_COUNT="${{ steps.check_changes.outputs.job_count }}"
+          git commit -m "Update job listings - $JOB_COUNT internships ($(date -u +'%Y-%m-%d %H:%M UTC'))"
+
+          echo "✓ Committed changes"
           git push
+          echo "✓ Pushed to remote"
 
       - name: No changes
         if: steps.check_changes.outputs.changed != 'true'
         run: |
-          echo "No new jobs found - README unchanged"
+          echo "ℹ No new jobs found - README unchanged"
+
+      - name: Summary
+        if: always()
+        run: |
+          echo "## Workflow Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          if [ "${{ steps.check_changes.outputs.changed }}" == "true" ]; then
+            echo "✅ Successfully updated job listings" >> $GITHUB_STEP_SUMMARY
+            echo "- Total internships: ${{ steps.check_changes.outputs.job_count }}" >> $GITHUB_STEP_SUMMARY
+            echo "- Updated: $(date -u +'%Y-%m-%d %H:%M UTC')" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "ℹ️ No changes - job listings up to date" >> $GITHUB_STEP_SUMMARY
+          fi
