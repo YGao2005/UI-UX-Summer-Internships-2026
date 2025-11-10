@@ -1,9 +1,9 @@
 name: Update Job Listings
 
 on:
-  # Run daily at 4pm UTC (noon EST, 9am PST)
+  # Run daily at midnight UTC (4pm PST / 5pm PDT)
   schedule:
-    - cron: '0 16 * * *'
+    - cron: '0 0 * * *'
 
   # Allow manual trigger
   workflow_dispatch:
@@ -51,6 +51,15 @@ jobs:
           TZ: 'UTC'
         continue-on-error: false
 
+      - name: Upload jobs to Supabase
+        run: |
+          echo "Uploading jobs to Supabase..."
+          python src/supabase_uploader.py
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+        continue-on-error: true  # Don't fail workflow if upload fails
+
       - name: Check for changes
         id: check_changes
         run: |
@@ -75,7 +84,7 @@ jobs:
 
           # Create commit with job count
           JOB_COUNT="${{ steps.check_changes.outputs.job_count }}"
-          git commit -m "Update job listings - $JOB_COUNT internships ($(date -u +'%Y-%m-%d %H:%M UTC'))"
+          git commit -m "Update job listings - $JOB_COUNT internships ($(TZ='America/Los_Angeles' date +'%Y-%m-%d %I:%M %p PT'))"
 
           echo "✓ Committed changes"
           git push
@@ -94,7 +103,7 @@ jobs:
           if [ "${{ steps.check_changes.outputs.changed }}" == "true" ]; then
             echo "✅ Successfully updated job listings" >> $GITHUB_STEP_SUMMARY
             echo "- Total internships: ${{ steps.check_changes.outputs.job_count }}" >> $GITHUB_STEP_SUMMARY
-            echo "- Updated: $(date -u +'%Y-%m-%d %H:%M UTC')" >> $GITHUB_STEP_SUMMARY
+            echo "- Updated: $(TZ='America/Los_Angeles' date +'%Y-%m-%d %I:%M %p PT')" >> $GITHUB_STEP_SUMMARY
           else
             echo "ℹ️ No changes - job listings up to date" >> $GITHUB_STEP_SUMMARY
           fi
