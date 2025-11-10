@@ -61,13 +61,26 @@ class AshbyScraper:
     def _normalize_job(self, job: Dict, company_name: str) -> Dict:
         """Convert Ashby job format to standardized format"""
 
-        # Extract location
-        location = job.get('location', {}).get('name', 'Remote')
+        # Extract location (handle both string and dict formats)
+        location_raw = job.get('location', 'Remote')
+        if isinstance(location_raw, dict):
+            location = location_raw.get('name', 'Remote')
+        elif isinstance(location_raw, str):
+            location = location_raw
+        else:
+            location = 'Remote'
+
         if not location:
             location = 'Remote'
 
-        # Extract department/team
-        department = job.get('department', {}).get('name', '')
+        # Extract department/team (handle both string and dict formats)
+        department_raw = job.get('department', '')
+        if isinstance(department_raw, dict):
+            department = department_raw.get('name', '')
+        elif isinstance(department_raw, str):
+            department = department_raw
+        else:
+            department = ''
 
         # Get job description
         description = job.get('descriptionHtml', '') or job.get('description', '')

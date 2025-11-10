@@ -1,5 +1,426 @@
 {
-  "last_updated": null,
-  "total_jobs": 0,
-  "jobs": []
+  "last_updated": "2025-11-09T22:37:07.065787",
+  "total_jobs": 7,
+  "jobs": [
+    {
+      "id": "ashby_fc762b58-24c9-4f34-bf5f-2af6e8adc644",
+      "title": "Software Engineer Intern (Winter 2026)",
+      "company": "Notion",
+      "location": "San Francisco, California",
+      "url": "https://jobs.ashbyhq.com/notion/fc762b58-24c9-4f34-bf5f-2af6e8adc644",
+      "description": "<h1>About Us:</h1><p style=\"min-height:1.5em\">Notion helps you build beautiful tools for your life\u2019s work. In today's world of endless apps and tabs, Notion provides one place for teams to get everything done, seamlessly connecting docs, notes, projects, calendar, and email\u2014with AI built in to find answers and automate work. Millions of users, from individuals to large organizations like Toyota, Figma, and OpenAI, love Notion for its flexibility and choose it because it helps them save time and money.</p><p style=\"min-height:1.5em\"></p><p style=\"min-height:1.5em\">In-person collaboration is essential to Notion's culture. We require all team members to work from our offices on Mondays and Thursdays, our designated Anchor Days. Certain teams or positions may require additional in-office workdays. <em><strong>This internship will take place from Jan 26 - Apr 17 and you will need to be able to work out of our NY or SF office during this time.</strong></em></p><p style=\"min-height:1.5em\"></p><h1>About The Role:</h1><p style=\"min-height:1.5em\">Millions of people use Notion \u2014 and this number is increasing every day. That means a million people trust us to deliver a fast, reliable, and secure experience, and we value this more than anything. We want to keep earning trust, while also continuing to amaze our users with the tools they can build in Notion. This is where you come in. </p><p style=\"min-height:1.5em\"></p><p style=\"min-height:1.5em\">During your 12-week internship, you will be paired with a mentor that will help guide you as you work closely with our team to build and ship impactful projects. These projects will drive valuable impact to our customers and engineers. From product engineering, mobile, to infrastructure and security, we have opportunities available on different teams. Take a look at what our past intern cohort worked on with our Blog post <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://notion.notion.site/Notion-Intern-Spotlight-d0260c4e2317490db89f367d95cb4e68\">here</a> and <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.notion.so/blog/saluting-notions-winter-interns\">here</a> and <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.tiktok.com/@notionhq/video/7216440106356395306?lang=en\">TikTok</a> post.</p><p style=\"min-height:1.5em\"></p><h1>What You'll Achieve:</h1><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Write clean, secure, tested, and documented code.</p></li><li><p style=\"min-height:1.5em\">Design &amp; enhance the Notion platform with new capabilities, as and when the need arises.</p></li><li><p style=\"min-height:1.5em\">Design, develop, and own new product functionality and/or infrastructure leveraging modern frameworks and tooling.</p></li><li><p style=\"min-height:1.5em\">Develop, fix and debug software for web services, databases, applications, tools, networks.</p><p style=\"min-height:1.5em\"></p></li></ul><h1>Qualifications:</h1><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Pursuing a bachelor's or master\u2019s degree in computer science, engineering, or another related field. Must graduate before December 2026.</p></li><li><p style=\"min-height:1.5em\">Previous internship experience.</p></li><li><p style=\"min-height:1.5em\">Working towards a proficiency of one or more programming languages such as Typescript, Node.js, Go, Python, Java, Swift, Rust, or Kotlin.</p></li><li><p style=\"min-height:1.5em\">You find large challenges exciting and enjoy discovering problems as much as solving them.</p></li><li><p style=\"min-height:1.5em\">You are able to problem-solve and adapt to changing priorities in a fast-paced, dynamic environment.</p></li><li><p style=\"min-height:1.5em\">This internship will take place from Jan - Apr and you will need to be able to work out of our NY or SF office during this time.</p><p style=\"min-height:1.5em\"></p></li></ul><h1>Skills You\u2019ll Need To Bring:</h1><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\"><strong>Thoughtful problem-solving:</strong> For you, problem-solving starts with a clear and accurate understanding of the context. You can decompose tricky problems and work towards a clean solution, by yourself or with teammates. You're comfortable asking for help when you get stuck.</p></li><li><p style=\"min-height:1.5em\"><strong>For a backend internship:</strong> You have a passion for learning how parts of a system fit together\u2014from the user interface to the data model. Familiarity with relational database systems like Postgres or MySQL is a plus.</p></li><li><p style=\"min-height:1.5em\"><strong>For a frontend internship:</strong> You have a passion for learning technologies (CSS, Javascript, &amp; React) and best practices in front-end architecture, including performance, accessibility and usability.</p></li><li><p style=\"min-height:1.5em\"><strong>Put users first:</strong> You think critically about the implications of what you're building, and how it shapes real people's lives. You understand that reach comes with responsibility for our impact\u2014good and bad.</p></li><li><p style=\"min-height:1.5em\"><strong>Not ideological about technology:</strong> To you, technologies and programming languages are about tradeoffs. You may be opinionated, but you're not ideological and can learn new technologies as you go.</p></li><li><p style=\"min-height:1.5em\"><strong>Empathetic communication:</strong> You communicate nuanced ideas clearly, whether you're explaining technical decisions in writing or brainstorming in real time. In disagreements, you engage thoughtfully with other perspectives and compromise when needed.</p></li><li><p style=\"min-height:1.5em\"><strong>Team player:</strong> For you, work isn't a solo endeavor. You enjoy collaborating cross-functionally to accomplish shared goals, and you care about learning, growing, and helping others to do the same.</p><p style=\"min-height:1.5em\"></p></li></ul><h1>Nice to Haves:</h1><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">You have expertise with specific technologies that are part of our stack, including Typescript, React, Electron, Node.js, AWS, and Postgres.</p></li><li><p style=\"min-height:1.5em\">You've heard of computing pioneers like Ada Lovelace, Douglas Engelbart, Alan Kay, and others\u2014and understand why we're big fans of their work.</p></li><li><p style=\"min-height:1.5em\">You have interests outside of technology, such as in art, history, or social sciences.</p><p style=\"min-height:1.5em\"></p></li></ul><p style=\"min-height:1.5em\">Our customers come from all walks of life and so do we. We hire great people from a wide variety of backgrounds, not just because it's the right thing to do, but because it makes our company stronger. If you share our values and our enthusiasm for small businesses, you will find a home at Notion.</p><p style=\"min-height:1.5em\"></p><p style=\"min-height:1.5em\">Notion is proud to be an equal opportunity employer. We do not discriminate in hiring or any employment decision based on race, color, religion, national origin, age, sex (including pregnancy, childbirth, or related medical conditions), marital status, ancestry, physical or mental disability, genetic information, veteran status, gender identity or expression, sexual orientation, or other applicable legally protected characteristic. Notion considers qualified applicants with criminal histories, consistent with applicable federal, state and local law. Notion is also committed to providing reasonable accommodations for qualified individuals with disabilities and disabled veterans in our job application procedures. If you need assistance or an accommodation due to a disability, please let your recruiter know.</p><p style=\"min-height:1.5em\"></p><p style=\"min-height:1.5em\">Notion is committed to providing highly competitive cash compensation, equity, and benefits. The compensation offered for this role will be based on multiple factors such as location, the role\u2019s scope and complexity, and the candidate\u2019s experience and expertise, and may vary from the range provided below. For roles based in San Francisco or New York City, the estimated base hourly range for this role is $57/hr for Bachelors and $61/hr for Master\u2019s.</p><p style=\"min-height:1.5em\"></p><p style=\"min-height:1.5em\">#LI-Onsite</p>",
+      "posted_date": "2025-11-09T22:37:06.654727",
+      "source": "Ashby",
+      "department": "University",
+      "employment_type": "Intern",
+      "raw_data": {
+        "id": "fc762b58-24c9-4f34-bf5f-2af6e8adc644",
+        "title": "Software Engineer Intern (Winter 2026)",
+        "department": "University",
+        "team": "University",
+        "employmentType": "Intern",
+        "location": "San Francisco, California",
+        "secondaryLocations": [
+          {
+            "location": "New York, New York",
+            "address": {
+              "postalAddress": {
+                "addressRegion": "New York",
+                "addressCountry": "United States",
+                "addressLocality": "New York"
+              }
+            }
+          }
+        ],
+        "publishedAt": "2025-08-08T19:20:06.939+00:00",
+        "isListed": true,
+        "isRemote": null,
+        "address": {
+          "postalAddress": {
+            "addressRegion": "California",
+            "addressCountry": "United States",
+            "addressLocality": "San Francisco"
+          }
+        },
+        "jobUrl": "https://jobs.ashbyhq.com/notion/fc762b58-24c9-4f34-bf5f-2af6e8adc644",
+        "applyUrl": "https://jobs.ashbyhq.com/notion/fc762b58-24c9-4f34-bf5f-2af6e8adc644/application",
+        "descriptionHtml": "<h1>About Us:</h1><p style=\"min-height:1.5em\">Notion helps you build beautiful tools for your life\u2019s work. In today's world of endless apps and tabs, Notion provides one place for teams to get everything done, seamlessly connecting docs, notes, projects, calendar, and email\u2014with AI built in to find answers and automate work. Millions of users, from individuals to large organizations like Toyota, Figma, and OpenAI, love Notion for its flexibility and choose it because it helps them save time and money.</p><p style=\"min-height:1.5em\"></p><p style=\"min-height:1.5em\">In-person collaboration is essential to Notion's culture. We require all team members to work from our offices on Mondays and Thursdays, our designated Anchor Days. Certain teams or positions may require additional in-office workdays. <em><strong>This internship will take place from Jan 26 - Apr 17 and you will need to be able to work out of our NY or SF office during this time.</strong></em></p><p style=\"min-height:1.5em\"></p><h1>About The Role:</h1><p style=\"min-height:1.5em\">Millions of people use Notion \u2014 and this number is increasing every day. That means a million people trust us to deliver a fast, reliable, and secure experience, and we value this more than anything. We want to keep earning trust, while also continuing to amaze our users with the tools they can build in Notion. This is where you come in. </p><p style=\"min-height:1.5em\"></p><p style=\"min-height:1.5em\">During your 12-week internship, you will be paired with a mentor that will help guide you as you work closely with our team to build and ship impactful projects. These projects will drive valuable impact to our customers and engineers. From product engineering, mobile, to infrastructure and security, we have opportunities available on different teams. Take a look at what our past intern cohort worked on with our Blog post <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://notion.notion.site/Notion-Intern-Spotlight-d0260c4e2317490db89f367d95cb4e68\">here</a> and <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.notion.so/blog/saluting-notions-winter-interns\">here</a> and <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.tiktok.com/@notionhq/video/7216440106356395306?lang=en\">TikTok</a> post.</p><p style=\"min-height:1.5em\"></p><h1>What You'll Achieve:</h1><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Write clean, secure, tested, and documented code.</p></li><li><p style=\"min-height:1.5em\">Design &amp; enhance the Notion platform with new capabilities, as and when the need arises.</p></li><li><p style=\"min-height:1.5em\">Design, develop, and own new product functionality and/or infrastructure leveraging modern frameworks and tooling.</p></li><li><p style=\"min-height:1.5em\">Develop, fix and debug software for web services, databases, applications, tools, networks.</p><p style=\"min-height:1.5em\"></p></li></ul><h1>Qualifications:</h1><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">Pursuing a bachelor's or master\u2019s degree in computer science, engineering, or another related field. Must graduate before December 2026.</p></li><li><p style=\"min-height:1.5em\">Previous internship experience.</p></li><li><p style=\"min-height:1.5em\">Working towards a proficiency of one or more programming languages such as Typescript, Node.js, Go, Python, Java, Swift, Rust, or Kotlin.</p></li><li><p style=\"min-height:1.5em\">You find large challenges exciting and enjoy discovering problems as much as solving them.</p></li><li><p style=\"min-height:1.5em\">You are able to problem-solve and adapt to changing priorities in a fast-paced, dynamic environment.</p></li><li><p style=\"min-height:1.5em\">This internship will take place from Jan - Apr and you will need to be able to work out of our NY or SF office during this time.</p><p style=\"min-height:1.5em\"></p></li></ul><h1>Skills You\u2019ll Need To Bring:</h1><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\"><strong>Thoughtful problem-solving:</strong> For you, problem-solving starts with a clear and accurate understanding of the context. You can decompose tricky problems and work towards a clean solution, by yourself or with teammates. You're comfortable asking for help when you get stuck.</p></li><li><p style=\"min-height:1.5em\"><strong>For a backend internship:</strong> You have a passion for learning how parts of a system fit together\u2014from the user interface to the data model. Familiarity with relational database systems like Postgres or MySQL is a plus.</p></li><li><p style=\"min-height:1.5em\"><strong>For a frontend internship:</strong> You have a passion for learning technologies (CSS, Javascript, &amp; React) and best practices in front-end architecture, including performance, accessibility and usability.</p></li><li><p style=\"min-height:1.5em\"><strong>Put users first:</strong> You think critically about the implications of what you're building, and how it shapes real people's lives. You understand that reach comes with responsibility for our impact\u2014good and bad.</p></li><li><p style=\"min-height:1.5em\"><strong>Not ideological about technology:</strong> To you, technologies and programming languages are about tradeoffs. You may be opinionated, but you're not ideological and can learn new technologies as you go.</p></li><li><p style=\"min-height:1.5em\"><strong>Empathetic communication:</strong> You communicate nuanced ideas clearly, whether you're explaining technical decisions in writing or brainstorming in real time. In disagreements, you engage thoughtfully with other perspectives and compromise when needed.</p></li><li><p style=\"min-height:1.5em\"><strong>Team player:</strong> For you, work isn't a solo endeavor. You enjoy collaborating cross-functionally to accomplish shared goals, and you care about learning, growing, and helping others to do the same.</p><p style=\"min-height:1.5em\"></p></li></ul><h1>Nice to Haves:</h1><ul style=\"min-height:1.5em\"><li><p style=\"min-height:1.5em\">You have expertise with specific technologies that are part of our stack, including Typescript, React, Electron, Node.js, AWS, and Postgres.</p></li><li><p style=\"min-height:1.5em\">You've heard of computing pioneers like Ada Lovelace, Douglas Engelbart, Alan Kay, and others\u2014and understand why we're big fans of their work.</p></li><li><p style=\"min-height:1.5em\">You have interests outside of technology, such as in art, history, or social sciences.</p><p style=\"min-height:1.5em\"></p></li></ul><p style=\"min-height:1.5em\">Our customers come from all walks of life and so do we. We hire great people from a wide variety of backgrounds, not just because it's the right thing to do, but because it makes our company stronger. If you share our values and our enthusiasm for small businesses, you will find a home at Notion.</p><p style=\"min-height:1.5em\"></p><p style=\"min-height:1.5em\">Notion is proud to be an equal opportunity employer. We do not discriminate in hiring or any employment decision based on race, color, religion, national origin, age, sex (including pregnancy, childbirth, or related medical conditions), marital status, ancestry, physical or mental disability, genetic information, veteran status, gender identity or expression, sexual orientation, or other applicable legally protected characteristic. Notion considers qualified applicants with criminal histories, consistent with applicable federal, state and local law. Notion is also committed to providing reasonable accommodations for qualified individuals with disabilities and disabled veterans in our job application procedures. If you need assistance or an accommodation due to a disability, please let your recruiter know.</p><p style=\"min-height:1.5em\"></p><p style=\"min-height:1.5em\">Notion is committed to providing highly competitive cash compensation, equity, and benefits. The compensation offered for this role will be based on multiple factors such as location, the role\u2019s scope and complexity, and the candidate\u2019s experience and expertise, and may vary from the range provided below. For roles based in San Francisco or New York City, the estimated base hourly range for this role is $57/hr for Bachelors and $61/hr for Master\u2019s.</p><p style=\"min-height:1.5em\"></p><p style=\"min-height:1.5em\">#LI-Onsite</p>",
+        "descriptionPlain": "ABOUT US:\n\nNotion helps you build beautiful tools for your life\u2019s work. In today's world of endless apps and tabs, Notion provides one place for teams to get everything done, seamlessly connecting docs, notes, projects, calendar, and email\u2014with AI built in to find answers and automate work. Millions of users, from individuals to large organizations like Toyota, Figma, and OpenAI, love Notion for its flexibility and choose it because it helps them save time and money.\n\nIn-person collaboration is essential to Notion's culture. We require all team members to work from our offices on Mondays and Thursdays, our designated Anchor Days. Certain teams or positions may require additional in-office workdays. This internship will take place from Jan 26 - Apr 17 and you will need to be able to work out of our NY or SF office during this time.\n\n\nABOUT THE ROLE:\n\nMillions of people use Notion \u2014 and this number is increasing every day. That means a million people trust us to deliver a fast, reliable, and secure experience, and we value this more than anything. We want to keep earning trust, while also continuing to amaze our users with the tools they can build in Notion. This is where you come in.\n\nDuring your 12-week internship, you will be paired with a mentor that will help guide you as you work closely with our team to build and ship impactful projects. These projects will drive valuable impact to our customers and engineers. From product engineering, mobile, to infrastructure and security, we have opportunities available on different teams. Take a look at what our past intern cohort worked on with our Blog post here https://notion.notion.site/Notion-Intern-Spotlight-d0260c4e2317490db89f367d95cb4e68 and here https://www.notion.so/blog/saluting-notions-winter-interns and TikTok https://www.tiktok.com/@notionhq/video/7216440106356395306?lang=en post.\n\n\nWHAT YOU'LL ACHIEVE:\n\n - Write clean, secure, tested, and documented code.\n\n - Design & enhance the Notion platform with new capabilities, as and when the need arises.\n\n - Design, develop, and own new product functionality and/or infrastructure leveraging modern frameworks and tooling.\n\n - Develop, fix and debug software for web services, databases, applications, tools, networks.\n\n\nQUALIFICATIONS:\n\n - Pursuing a bachelor's or master\u2019s degree in computer science, engineering, or another related field. Must graduate before December 2026.\n\n - Previous internship experience.\n\n - Working towards a proficiency of one or more programming languages such as Typescript, Node.js, Go, Python, Java, Swift, Rust, or Kotlin.\n\n - You find large challenges exciting and enjoy discovering problems as much as solving them.\n\n - You are able to problem-solve and adapt to changing priorities in a fast-paced, dynamic environment.\n\n - This internship will take place from Jan - Apr and you will need to be able to work out of our NY or SF office during this time.\n\n\nSKILLS YOU\u2019LL NEED TO BRING:\n\n - Thoughtful problem-solving: For you, problem-solving starts with a clear and accurate understanding of the context. You can decompose tricky problems and work towards a clean solution, by yourself or with teammates. You're comfortable asking for help when you get stuck.\n\n - For a backend internship: You have a passion for learning how parts of a system fit together\u2014from the user interface to the data model. Familiarity with relational database systems like Postgres or MySQL is a plus.\n\n - For a frontend internship: You have a passion for learning technologies (CSS, Javascript, & React) and best practices in front-end architecture, including performance, accessibility and usability.\n\n - Put users first: You think critically about the implications of what you're building, and how it shapes real people's lives. You understand that reach comes with responsibility for our impact\u2014good and bad.\n\n - Not ideological about technology: To you, technologies and programming languages are about tradeoffs. You may be opinionated, but you're not ideological and can learn new technologies as you go.\n\n - Empathetic communication: You communicate nuanced ideas clearly, whether you're explaining technical decisions in writing or brainstorming in real time. In disagreements, you engage thoughtfully with other perspectives and compromise when needed.\n\n - Team player: For you, work isn't a solo endeavor. You enjoy collaborating cross-functionally to accomplish shared goals, and you care about learning, growing, and helping others to do the same.\n\n\nNICE TO HAVES:\n\n - You have expertise with specific technologies that are part of our stack, including Typescript, React, Electron, Node.js, AWS, and Postgres.\n\n - You've heard of computing pioneers like Ada Lovelace, Douglas Engelbart, Alan Kay, and others\u2014and understand why we're big fans of their work.\n\n - You have interests outside of technology, such as in art, history, or social sciences.\n\nOur customers come from all walks of life and so do we. We hire great people from a wide variety of backgrounds, not just because it's the right thing to do, but because it makes our company stronger. If you share our values and our enthusiasm for small businesses, you will find a home at Notion.\n\nNotion is proud to be an equal opportunity employer. We do not discriminate in hiring or any employment decision based on race, color, religion, national origin, age, sex (including pregnancy, childbirth, or related medical conditions), marital status, ancestry, physical or mental disability, genetic information, veteran status, gender identity or expression, sexual orientation, or other applicable legally protected characteristic. Notion considers qualified applicants with criminal histories, consistent with applicable federal, state and local law. Notion is also committed to providing reasonable accommodations for qualified individuals with disabilities and disabled veterans in our job application procedures. If you need assistance or an accommodation due to a disability, please let your recruiter know.\n\nNotion is committed to providing highly competitive cash compensation, equity, and benefits. The compensation offered for this role will be based on multiple factors such as location, the role\u2019s scope and complexity, and the candidate\u2019s experience and expertise, and may vary from the range provided below. For roles based in San Francisco or New York City, the estimated base hourly range for this role is $57/hr for Bachelors and $61/hr for Master\u2019s.\n\n#LI-Onsite"
+      },
+      "relevance_score": 4,
+      "score_breakdown": {
+        "title_matches": [],
+        "title_excludes": [],
+        "description_matches": [
+          "figma",
+          "user interface",
+          "usability",
+          "accessibility"
+        ],
+        "total_score": 4
+      }
+    },
+    {
+      "id": "greenhouse_7256544",
+      "title": "Lead Experience Designer, International",
+      "company": "Airbnb",
+      "location": "China",
+      "url": "https://careers.airbnb.com/positions/7256544?gh_jid=7256544",
+      "description": "",
+      "posted_date": "2025-10-08T14:08:45-04:00",
+      "source": "Greenhouse",
+      "departments": [],
+      "raw_data": {
+        "absolute_url": "https://careers.airbnb.com/positions/7256544?gh_jid=7256544",
+        "data_compliance": [
+          {
+            "type": "gdpr",
+            "requires_consent": false,
+            "requires_processing_consent": false,
+            "requires_retention_consent": false,
+            "retention_period": null,
+            "demographic_data_consent_applies": false
+          }
+        ],
+        "internal_job_id": 3248861,
+        "location": {
+          "name": "China"
+        },
+        "metadata": [
+          {
+            "id": 9245691,
+            "name": "Is this job part of ACC?",
+            "value": false,
+            "value_type": "yes_no"
+          },
+          {
+            "id": 10216612,
+            "name": "Workplace Type",
+            "value": "Remote",
+            "value_type": "single_select"
+          }
+        ],
+        "id": 7256544,
+        "updated_at": "2025-10-08T14:08:45-04:00",
+        "requisition_id": "ONE",
+        "title": "Lead Experience Designer, International",
+        "company_name": "Airbnb",
+        "first_published": "2025-09-18T04:12:01-04:00",
+        "language": "en"
+      },
+      "relevance_score": 3,
+      "score_breakdown": {
+        "title_matches": [
+          "experience designer"
+        ],
+        "title_excludes": [],
+        "description_matches": [],
+        "total_score": 3
+      }
+    },
+    {
+      "id": "greenhouse_8151582002",
+      "title": "Product Design Intern (Summer 2026)",
+      "company": "Lyft",
+      "location": "Toronto, Canada",
+      "url": "https://app.careerpuck.com/job-board/lyft/job/8151582002?gh_jid=8151582002",
+      "description": "",
+      "posted_date": "2025-09-26T20:28:24-04:00",
+      "source": "Greenhouse",
+      "departments": [],
+      "raw_data": {
+        "absolute_url": "https://app.careerpuck.com/job-board/lyft/job/8151582002?gh_jid=8151582002",
+        "data_compliance": [
+          {
+            "type": "gdpr",
+            "requires_consent": false,
+            "requires_processing_consent": false,
+            "requires_retention_consent": false,
+            "retention_period": null,
+            "demographic_data_consent_applies": false
+          }
+        ],
+        "employment": "employment_optional",
+        "internal_job_id": 6230221002,
+        "location": {
+          "name": "Toronto, Canada"
+        },
+        "metadata": [
+          {
+            "id": 4345907002,
+            "name": "Career Site Category",
+            "value": "University",
+            "value_type": "single_select"
+          }
+        ],
+        "id": 8151582002,
+        "updated_at": "2025-09-26T20:28:24-04:00",
+        "requisition_id": "110200",
+        "title": "Product Design Intern (Summer 2026)",
+        "company_name": "Lyft",
+        "first_published": "2025-09-05T12:42:02-04:00",
+        "language": "en"
+      },
+      "relevance_score": 3,
+      "score_breakdown": {
+        "title_matches": [
+          "design intern"
+        ],
+        "title_excludes": [],
+        "description_matches": [],
+        "total_score": 3
+      }
+    },
+    {
+      "id": "greenhouse_6972733",
+      "title": "Product Designer II (Consumer) - International ",
+      "company": "Coinbase",
+      "location": "Remote - Canada",
+      "url": "https://www.coinbase.com/careers/positions/6972733?gh_jid=6972733",
+      "description": "",
+      "posted_date": "2025-10-30T06:58:43-04:00",
+      "source": "Greenhouse",
+      "departments": [],
+      "raw_data": {
+        "absolute_url": "https://www.coinbase.com/careers/positions/6972733?gh_jid=6972733",
+        "data_compliance": [
+          {
+            "type": "gdpr",
+            "requires_consent": false,
+            "requires_processing_consent": false,
+            "requires_retention_consent": false,
+            "retention_period": null,
+            "demographic_data_consent_applies": false
+          }
+        ],
+        "education": "education_required",
+        "employment": "employment_required",
+        "internal_job_id": 3168825,
+        "location": {
+          "name": "Remote - Canada"
+        },
+        "metadata": [
+          {
+            "id": 11090754,
+            "name": "HM Employee ID (WD)",
+            "value": "207937",
+            "value_type": "short_text"
+          },
+          {
+            "id": 3174030,
+            "name": "Careersite Department (for job postings)",
+            "value": "Design & User Research",
+            "value_type": "single_select"
+          },
+          {
+            "id": 13234829,
+            "name": "mule_sourcers_counter_custom",
+            "value": "0.0",
+            "value_type": "number"
+          },
+          {
+            "id": 13234830,
+            "name": "mule_recruiters_counter_custom",
+            "value": "0.0",
+            "value_type": "number"
+          }
+        ],
+        "id": 6972733,
+        "updated_at": "2025-10-30T06:58:43-04:00",
+        "requisition_id": "P71108",
+        "title": "Product Designer II (Consumer) - International ",
+        "company_name": "Coinbase Careers Page",
+        "first_published": "2025-06-11T11:31:20-04:00",
+        "language": "en"
+      },
+      "relevance_score": 3,
+      "score_breakdown": {
+        "title_matches": [
+          "product designer"
+        ],
+        "title_excludes": [],
+        "description_matches": [],
+        "total_score": 3
+      }
+    },
+    {
+      "id": "greenhouse_7325051",
+      "title": "Product Design Intern",
+      "company": "Coinbase",
+      "location": "Hybrid - San Francisco",
+      "url": "https://www.coinbase.com/careers/positions/7325051?gh_jid=7325051",
+      "description": "",
+      "posted_date": "2025-10-28T12:41:19-04:00",
+      "source": "Greenhouse",
+      "departments": [],
+      "raw_data": {
+        "absolute_url": "https://www.coinbase.com/careers/positions/7325051?gh_jid=7325051",
+        "data_compliance": [
+          {
+            "type": "gdpr",
+            "requires_consent": false,
+            "requires_processing_consent": false,
+            "requires_retention_consent": false,
+            "retention_period": null,
+            "demographic_data_consent_applies": false
+          }
+        ],
+        "education": "education_required",
+        "employment": "employment_required",
+        "internal_job_id": 3263104,
+        "location": {
+          "name": "Hybrid - San Francisco"
+        },
+        "metadata": [
+          {
+            "id": 11090754,
+            "name": "HM Employee ID (WD)",
+            "value": null,
+            "value_type": "short_text"
+          },
+          {
+            "id": 3174030,
+            "name": "Careersite Department (for job postings)",
+            "value": "Internships & Emerging Talent Positions",
+            "value_type": "single_select"
+          },
+          {
+            "id": 13234829,
+            "name": "mule_sourcers_counter_custom",
+            "value": "0.0",
+            "value_type": "number"
+          },
+          {
+            "id": 13234830,
+            "name": "mule_recruiters_counter_custom",
+            "value": "0.0",
+            "value_type": "number"
+          }
+        ],
+        "id": 7325051,
+        "updated_at": "2025-10-28T12:41:19-04:00",
+        "requisition_id": "GETR00D26",
+        "title": "Product Design Intern",
+        "company_name": "Coinbase Careers Page",
+        "first_published": "2025-10-13T19:48:31-04:00",
+        "language": "en"
+      },
+      "relevance_score": 3,
+      "score_breakdown": {
+        "title_matches": [
+          "design intern"
+        ],
+        "title_excludes": [],
+        "description_matches": [],
+        "total_score": 3
+      }
+    },
+    {
+      "id": "greenhouse_5616453004",
+      "title": "Product Design Intern (2026)  ",
+      "company": "Figma",
+      "location": "San Francisco, CA \u2022 New York, NY",
+      "url": "https://boards.greenhouse.io/figma/jobs/5616453004?gh_jid=5616453004",
+      "description": "",
+      "posted_date": "2025-10-28T11:09:00-04:00",
+      "source": "Greenhouse",
+      "departments": [],
+      "raw_data": {
+        "absolute_url": "https://boards.greenhouse.io/figma/jobs/5616453004?gh_jid=5616453004",
+        "data_compliance": [
+          {
+            "type": "gdpr",
+            "requires_consent": false,
+            "requires_processing_consent": false,
+            "requires_retention_consent": false,
+            "retention_period": null,
+            "demographic_data_consent_applies": false
+          }
+        ],
+        "internal_job_id": 4965313004,
+        "location": {
+          "name": "San Francisco, CA \u2022 New York, NY"
+        },
+        "metadata": null,
+        "id": 5616453004,
+        "updated_at": "2025-10-28T11:09:00-04:00",
+        "requisition_id": "1814",
+        "title": "Product Design Intern (2026)  ",
+        "company_name": "Figma",
+        "first_published": "2025-08-19T11:49:03-04:00",
+        "language": "en"
+      },
+      "relevance_score": 3,
+      "score_breakdown": {
+        "title_matches": [
+          "design intern"
+        ],
+        "title_excludes": [],
+        "description_matches": [],
+        "total_score": 3
+      }
+    },
+    {
+      "id": "greenhouse_8143588002",
+      "title": "Product Design Intern",
+      "company": "Databricks",
+      "location": "Seattle, Washington",
+      "url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8143588002",
+      "description": "",
+      "posted_date": "2025-09-11T15:10:26-04:00",
+      "source": "Greenhouse",
+      "departments": [],
+      "raw_data": {
+        "absolute_url": "https://databricks.com/company/careers/open-positions/job?gh_jid=8143588002",
+        "data_compliance": [
+          {
+            "type": "gdpr",
+            "requires_consent": false,
+            "requires_processing_consent": false,
+            "requires_retention_consent": false,
+            "retention_period": null,
+            "demographic_data_consent_applies": false
+          }
+        ],
+        "education": "education_required",
+        "internal_job_id": 6226767002,
+        "location": {
+          "name": "Seattle, Washington"
+        },
+        "metadata": [
+          {
+            "id": 9740521002,
+            "name": "Company Assignment",
+            "value": "Databricks, Inc.",
+            "value_type": "single_select"
+          },
+          {
+            "id": 24059030002,
+            "name": "Career Page Posting Category",
+            "value": [
+              "Operations",
+              "University Recruiting"
+            ],
+            "value_type": "multi_select"
+          }
+        ],
+        "id": 8143588002,
+        "updated_at": "2025-09-11T15:10:26-04:00",
+        "requisition_id": "RDQ227R1056",
+        "title": "Product Design Intern",
+        "company_name": "Databricks",
+        "first_published": "2025-09-01T02:51:15-04:00",
+        "language": "en"
+      },
+      "relevance_score": 3,
+      "score_breakdown": {
+        "title_matches": [
+          "design intern"
+        ],
+        "title_excludes": [],
+        "description_matches": [],
+        "total_score": 3
+      }
+    }
+  ]
 }

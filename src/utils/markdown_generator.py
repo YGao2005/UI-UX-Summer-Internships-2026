@@ -98,10 +98,12 @@ class MarkdownGenerator:
 
 This repository is automatically updated daily using GitHub Actions. Jobs are aggregated from:
 
-- **Greenhouse** - Direct company job boards
+- **Greenhouse** - Direct company job boards (50+ tech companies)
 - **Lever** - Direct company job boards
-- **Ashby** - Direct company job boards (design-focused companies)
+- **Ashby** - Direct company job boards (design-focused: Notion, OpenAI, Linear)
 - **RemoteOK** - Remote job aggregator
+- **The Muse** - Internship-focused job board with design category
+- **Adzuna** - Broad coverage job search aggregator
 
 All listings are filtered for UI/UX design internship relevance using keyword matching and scoring algorithms.
 

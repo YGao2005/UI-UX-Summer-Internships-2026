@@ -19,6 +19,8 @@ from scrapers.greenhouse_scraper import GreenhouseScraper
 from scrapers.lever_scraper import LeverScraper
 from scrapers.ashby_scraper import AshbyScraper
 from scrapers.remoteok_scraper import RemoteOKScraper
+from scrapers.themuse_scraper import TheMuseScraper
+from scrapers.adzuna_scraper import AdzunaScraper
 from filters.keyword_filter import KeywordFilter
 from utils.deduplicator import JobDeduplicator
 from utils.markdown_generator import MarkdownGenerator
@@ -56,6 +58,8 @@ class InternshipScraper:
         self.lever = LeverScraper()
         self.ashby = AshbyScraper()
         self.remoteok = RemoteOKScraper()
+        self.themuse = TheMuseScraper()
+        self.adzuna = AdzunaScraper()
         self.filter = KeywordFilter()
         self.deduplicator = JobDeduplicator()
         self.markdown = MarkdownGenerator()
@@ -88,28 +92,40 @@ class InternshipScraper:
         logger.info("="*80)
 
         # 1. Greenhouse (company-specific)
-        logger.info("\n[1/4] Scraping Greenhouse...")
+        logger.info("\n[1/6] Scraping Greenhouse...")
         greenhouse_jobs = self.greenhouse.fetch_multiple_companies(self.companies)
         logger.info(f"  → Found {len(greenhouse_jobs)} jobs from Greenhouse")
         all_jobs.extend(greenhouse_jobs)
 
         # 2. Lever (company-specific)
-        logger.info("\n[2/4] Scraping Lever...")
+        logger.info("\n[2/6] Scraping Lever...")
         lever_jobs = self.lever.fetch_multiple_companies(self.companies)
         logger.info(f"  → Found {len(lever_jobs)} jobs from Lever")
         all_jobs.extend(lever_jobs)
 
         # 3. Ashby (company-specific)
-        logger.info("\n[3/4] Scraping Ashby...")
+        logger.info("\n[3/6] Scraping Ashby...")
         ashby_jobs = self.ashby.fetch_multiple_companies(self.companies)
         logger.info(f"  → Found {len(ashby_jobs)} jobs from Ashby")
         all_jobs.extend(ashby_jobs)
 
         # 4. RemoteOK (general job board)
-        logger.info("\n[4/4] Scraping RemoteOK...")
+        logger.info("\n[4/6] Scraping RemoteOK...")
         remoteok_jobs = self.remoteok.fetch_jobs(search_tag='design')
         logger.info(f"  → Found {len(remoteok_jobs)} design jobs from RemoteOK")
         all_jobs.extend(remoteok_jobs)
+
+        # 5. The Muse (internship-focused)
+        logger.info("\n[5/6] Scraping The Muse...")
+        themuse_jobs = self.themuse.fetch_jobs(category='Design', level='Internship')
+        logger.info(f"  → Found {len(themuse_jobs)} design internships from The Muse")
+        all_jobs.extend(themuse_jobs)
+
+        # 6. Adzuna (broad coverage)
+        logger.info("\n[6/6] Scraping Adzuna...")
+        adzuna_jobs = self.adzuna.fetch_jobs(query='UI UX design intern')
+        logger.info(f"  → Found {len(adzuna_jobs)} jobs from Adzuna")
+        all_jobs.extend(adzuna_jobs)
 
         logger.info(f"\n✓ Total jobs scraped: {len(all_jobs)}")
 

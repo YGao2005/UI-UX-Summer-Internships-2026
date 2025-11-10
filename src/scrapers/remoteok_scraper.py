@@ -71,9 +71,21 @@ class RemoteOKScraper:
     def _normalize_job(self, job: Dict) -> Dict:
         """Convert RemoteOK job format to standardized format"""
 
-        # RemoteOK uses epoch timestamps
+        # RemoteOK uses epoch timestamps (handle both int and string)
         posted_timestamp = job.get('date', time.time())
-        posted_date = datetime.fromtimestamp(posted_timestamp).isoformat()
+        try:
+            if isinstance(posted_timestamp, str):
+                # Try to parse as ISO date string first
+                try:
+                    posted_date = posted_timestamp
+                except:
+                    # If that fails, try as timestamp
+                    posted_date = datetime.fromtimestamp(float(posted_timestamp)).isoformat()
+            else:
+                posted_date = datetime.fromtimestamp(posted_timestamp).isoformat()
+        except (ValueError, TypeError):
+            # Fallback to current time if parsing fails
+            posted_date = datetime.now().isoformat()
 
         # Extract location
         location = job.get('location', 'Remote')
