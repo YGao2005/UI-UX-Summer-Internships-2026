@@ -45,8 +45,8 @@ class KeywordFilter:
         Returns:
             True if job appears to be an internship
         """
-        title = job.get('title', '').lower()
-        description = job.get('description', '').lower()
+        title = str(job.get('title', '')).lower()
+        description = str(job.get('description', '')).lower()
 
         # Check title first (most reliable)
         for keyword in self.internship_keywords:
@@ -70,8 +70,8 @@ class KeywordFilter:
         Returns:
             Tuple of (score, breakdown) where breakdown shows how score was calculated
         """
-        title = job.get('title', '').lower()
-        description = job.get('description', '').lower()
+        title = str(job.get('title', '')).lower()
+        description = str(job.get('description', '')).lower()
 
         breakdown = {
             'title_matches': [],

@@ -18,6 +18,68 @@ class MarkdownGenerator:
         pass
 
     @staticmethod
+    def format_salary(job: Dict) -> str:
+        """
+        Format salary information for display
+
+        Args:
+            job: Job dictionary with salary information
+
+        Returns:
+            Formatted salary string or "-" if not available
+        """
+        # Check for formatted salary string (from JobSpy)
+        salary = job.get('salary')
+        if salary and isinstance(salary, str) and salary.strip():
+            # Remove " USD" suffix to save space
+            salary = salary.replace(' USD', '').replace(' usd', '')
+            # Add /hr suffix if it looks like hourly rate (under $100)
+            if '$' in salary and '-' in salary:
+                try:
+                    # Extract the max value to determine if hourly
+                    max_val = salary.split('-')[-1].strip().replace('$', '').replace(',', '')
+                    if float(max_val) < 100:
+                        salary += '/hr'
+                except (ValueError, IndexError):
+                    pass
+            return salary
+
+        # Check for separate min/max fields (from Adzuna, RemoteOK)
+        salary_min = job.get('salary_min')
+        salary_max = job.get('salary_max')
+
+        if salary_min or salary_max:
+            # If both are the same, just show one value
+            if salary_min == salary_max and salary_min:
+                amount = int(salary_min)
+                # Detect if annual (>$1000) or hourly (<$100)
+                if amount > 1000:
+                    return f"${amount:,}/yr"
+                else:
+                    return f"${amount}/hr"
+
+            # Different min/max - show range
+            parts = []
+            if salary_min:
+                parts.append(f"${int(salary_min):,}")
+            if salary_max:
+                parts.append(f"${int(salary_max):,}")
+
+            if parts:
+                range_str = ' - '.join(parts)
+                # Detect if this looks like annual salary
+                try:
+                    max_val = int(salary_max) if salary_max else int(salary_min)
+                    if max_val > 1000:
+                        return f"{range_str}/yr"
+                    else:
+                        return f"{range_str}/hr"
+                except (ValueError, TypeError):
+                    return range_str
+
+        return '-'
+
+    @staticmethod
     def format_relative_date(posted_date: str) -> str:
         """
         Convert ISO date string to relative time format
@@ -136,8 +198,8 @@ class MarkdownGenerator:
 
 ## All Internships
 
-| Company | Role | Location | Posted | Source | Apply |
-|---------|------|----------|--------|--------|-------|
+| Company | Role | Location | Salary | Posted | Source | Apply |
+|---------|------|----------|--------|--------|--------|-------|
 """
 
         # Add all jobs to table, sorted by date (newest first)
@@ -151,8 +213,9 @@ class MarkdownGenerator:
             source = job.get('source', 'Unknown')
             url = job.get('url', '#')
 
-            # Format the relative date
+            # Format the relative date and salary
             relative_date = self.format_relative_date(posted_date)
+            salary = self.format_salary(job)
 
             # Truncate long titles
             if len(title) > 50:
@@ -162,7 +225,7 @@ class MarkdownGenerator:
             if len(location) > 30:
                 location = location[:27] + "..."
 
-            md += f"| {company} | {title} | {location} | {relative_date} | {source} | [Apply]({url}) |\n"
+            md += f"| {company} | {title} | {location} | {salary} | {relative_date} | {source} | [Apply]({url}) |\n"
 
         # Add companies section
         md += "\n---\n\n"

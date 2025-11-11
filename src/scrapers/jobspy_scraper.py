@@ -17,13 +17,15 @@ class JobSpyScraper:
 
     def __init__(self):
         """Initialize JobSpy scraper"""
-        self.site_names = ["indeed", "glassdoor", "zip_recruiter"]  # Skipping LinkedIn to avoid rate limits
+        # Removed zip_recruiter (known library issue - returns 0 jobs)
+        # See: https://github.com/speedyapply/JobSpy/issues/283, #302, #273
+        self.site_names = ["indeed", "glassdoor", "linkedin"]
 
     def fetch_jobs(
         self,
-        search_term: str = "UI UX design intern",
+        search_term: str = "UX intern",  # Simplified for LinkedIn compatibility
         location: str = "United States",
-        results_wanted: int = 50
+        results_wanted: int = 100
     ) -> List[Dict]:
         """
         Fetch jobs from multiple sources using JobSpy
@@ -40,7 +42,7 @@ class JobSpyScraper:
             # Import here to provide clearer error message if not installed
             from jobspy import scrape_jobs
         except ImportError:
-            logger.error("✗ JobSpy: python-jobspy not installed. Run: pip install python-jobspy")
+            logger.error("✗ JobSpy: jobspy not installed. Run: pip install jobspy")
             return []
 
         try:
@@ -50,15 +52,16 @@ class JobSpyScraper:
             time.sleep(2)
 
             # Scrape jobs from multiple sites
+            # Note: job_type removed - conflicts with hours_old on Indeed
+            # Note: hours_old removed - LinkedIn performs much better without it (53 vs 19 jobs)
+            # Our keyword filter handles both internship detection and recency filtering
             jobs_df = scrape_jobs(
                 site_name=self.site_names,
                 search_term=search_term,
                 location=location,
                 distance=50,  # 50 mile radius
                 is_remote=True,  # Include remote jobs
-                job_type="internship",  # Filter for internships
                 results_wanted=results_wanted,  # Per site
-                hours_old=720,  # Jobs from last 30 days
             )
 
             if jobs_df is None or jobs_df.empty:

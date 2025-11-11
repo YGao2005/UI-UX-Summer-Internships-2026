@@ -1,6 +1,6 @@
 # Curated list of tech companies known for UI/UX design internships
-# Only includes companies with PUBLIC ATS APIs (Greenhouse, Lever, Ashby)
-# Last updated: 2025-11-09
+# Only includes companies with PUBLIC ATS APIs (Greenhouse, Lever, Ashby, Workable)
+# Last updated: 2025-11-10
 
 companies:
   # ============================================================================
@@ -211,6 +211,34 @@ companies:
 
   - name: "Benchling"
     greenhouse: "benchling"
+
+  # ============================================================================
+  # WORKABLE COMPANIES (Modern ATS platform)
+  # ============================================================================
+
+  - name: "Revolut"
+    workable: "revolut"
+
+  - name: "Delivery Hero"
+    workable: "deliveryhero"
+
+  - name: "Blinkist"
+    workable: "blinkist"
+
+  - name: "SoundCloud"
+    workable: "soundcloud"
+
+  - name: "N26"
+    workable: "n26"
+
+  - name: "GetYourGuide"
+    workable: "getyourguide"
+
+  - name: "Klarna"
+    workable: "klarna"
+
+  - name: "Personio"
+    workable: "personio"
 
 # ============================================================================
 # REMOVED COMPANIES (Custom ATS - Cannot be scraped via public APIs)
