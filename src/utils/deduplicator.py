@@ -50,23 +50,31 @@ class JobDeduplicator:
         if job1.get('id') == job2.get('id'):
             return True, "Exact ID match"
 
-        # Same company check
-        company1 = job1.get('company', '').lower().strip()
-        company2 = job2.get('company', '').lower().strip()
+        # Same company check - handle non-string values (float, NaN, etc)
+        company1_raw = job1.get('company', '')
+        company2_raw = job2.get('company', '')
 
-        if not company1 or not company2:
-            return False, "Missing company"
+        # Convert to string if not already (handles float, NaN, etc)
+        company1 = str(company1_raw).lower().strip() if company1_raw not in [None, ''] else ''
+        company2 = str(company2_raw).lower().strip() if company2_raw not in [None, ''] else ''
+
+        # Skip if NaN or invalid company names
+        if company1 in ['nan', 'none', ''] or company2 in ['nan', 'none', '']:
+            return False, "Missing or invalid company"
 
         # Different companies = not duplicate
         if company1 != company2:
             return False, "Different companies"
 
-        # Same company - check title similarity
-        title1 = job1.get('title', '').lower().strip()
-        title2 = job2.get('title', '').lower().strip()
+        # Same company - check title similarity - handle non-string values
+        title1_raw = job1.get('title', '')
+        title2_raw = job2.get('title', '')
 
-        if not title1 or not title2:
-            return False, "Missing title"
+        title1 = str(title1_raw).lower().strip() if title1_raw not in [None, ''] else ''
+        title2 = str(title2_raw).lower().strip() if title2_raw not in [None, ''] else ''
+
+        if title1 in ['nan', 'none', ''] or title2 in ['nan', 'none', '']:
+            return False, "Missing or invalid title"
 
         # Exact title match
         if title1 == title2:

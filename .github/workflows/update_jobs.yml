@@ -38,27 +38,24 @@ jobs:
         run: |
           python -c "import jobspy; print('✓ JobSpy installed successfully')"
 
-      - name: Run scraper
+      - name: Run scraper (with Supabase upload and Discord notifications)
         run: |
           echo "Starting job scraper..."
           python src/main.py
+
+          echo "Uploading jobs to Supabase..."
+          python src/supabase_uploader.py
         env:
           # API keys from GitHub Secrets (optional - scrapers will skip if not set)
           ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
           ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
           THEMUSE_API_KEY: ${{ secrets.THEMUSE_API_KEY }}
           JOOBLE_API_KEY: ${{ secrets.JOOBLE_API_KEY }}
-          TZ: 'UTC'
-        continue-on-error: false
-
-      - name: Upload jobs to Supabase
-        run: |
-          echo "Uploading jobs to Supabase..."
-          python src/supabase_uploader.py
-        env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
-        continue-on-error: true  # Don't fail workflow if upload fails
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          TZ: 'UTC'
+        continue-on-error: false
 
       - name: Check for changes
         id: check_changes

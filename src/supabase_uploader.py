@@ -30,6 +30,7 @@ class SupabaseUploader:
         self.uploaded_count = 0
         self.updated_count = 0
         self.error_count = 0
+        self.new_jobs_count = 0  # Track newly inserted jobs
 
     def load_jobs_from_file(self, file_path: str = "data/jobs.json") -> List[Dict[str, Any]]:
         """Load jobs from jobs.json file"""
@@ -81,16 +82,35 @@ class SupabaseUploader:
             'score_breakdown': sanitized_job.get('score_breakdown'),  # JSONB field
         }
 
-    def upload_jobs(self, jobs: List[Dict[str, Any]]) -> None:
-        """Upload jobs to Supabase using upsert"""
+    def upload_jobs(self, jobs: List[Dict[str, Any]]) -> int:
+        """
+        Upload jobs to Supabase using upsert
+
+        Returns:
+            Number of new jobs inserted (not updated)
+        """
         if not jobs:
             print("⚠ No jobs to upload")
-            return
+            return 0
 
         print(f"\n⬆ Uploading {len(jobs)} jobs to Supabase...")
 
+        # Get existing job IDs to determine which are new
+        try:
+            existing_ids = set()
+            response = self.client.table('intern_jobs').select('id').execute()
+            if response.data:
+                existing_ids = {job['id'] for job in response.data}
+        except Exception as e:
+            print(f"⚠ Warning: Could not fetch existing job IDs: {e}")
+            existing_ids = set()
+
         # Transform all jobs
         transformed_jobs = [self.transform_job_for_database(job) for job in jobs]
+
+        # Count new jobs (jobs with IDs not in existing set)
+        new_job_ids = {job['id'] for job in transformed_jobs if job['id'] not in existing_ids}
+        self.new_jobs_count = len(new_job_ids)
 
         # Batch upsert (insert or update if exists)
         try:
@@ -102,11 +122,15 @@ class SupabaseUploader:
 
             self.uploaded_count = len(response.data)
             print(f"✓ Successfully upserted {self.uploaded_count} jobs")
+            print(f"  → {self.new_jobs_count} new jobs added")
+            print(f"  → {self.uploaded_count - self.new_jobs_count} existing jobs updated")
 
         except Exception as e:
             print(f"✗ Error during batch upload: {e}")
             print("⚠ Falling back to individual uploads...")
             self._upload_jobs_individually(transformed_jobs)
+
+        return self.new_jobs_count
 
     def _upload_jobs_individually(self, jobs: List[Dict[str, Any]]) -> None:
         """Fallback: Upload jobs one by one"""
@@ -133,12 +157,18 @@ class SupabaseUploader:
             response = self.client.table('intern_jobs').select('id', count='exact').execute()
             total_jobs = response.count
 
-            # Count jobs scraped today
+            # Count jobs POSTED today (by companies, not scraped today)
             today = datetime.now().date().isoformat()
             response = self.client.table('intern_jobs').select(
                 'id', count='exact'
+            ).eq('posted_date', today).execute()
+            jobs_posted_today = response.count
+
+            # Count jobs scraped today (for debugging)
+            response = self.client.table('intern_jobs').select(
+                'id', count='exact'
             ).eq('scraped_date', today).execute()
-            jobs_today = response.count
+            jobs_scraped_today = response.count
 
             # Count total users
             response = self.client.table('intern_users').select('discord_id', count='exact').execute()
@@ -150,7 +180,9 @@ class SupabaseUploader:
 
             return {
                 'total_jobs': total_jobs,
-                'jobs_today': jobs_today,
+                'jobs_posted_today': jobs_posted_today,  # Changed from jobs_today
+                'jobs_scraped_today': jobs_scraped_today,
+                'new_jobs_count': self.new_jobs_count,  # Jobs newly added to DB
                 'total_users': total_users,
                 'total_applications': total_applications
             }
@@ -164,12 +196,14 @@ class SupabaseUploader:
         print("📊 UPLOAD SUMMARY")
         print("="*50)
         print(f"Uploaded/Updated: {self.uploaded_count}")
+        print(f"New jobs added:   {self.new_jobs_count}")
         print(f"Errors:           {self.error_count}")
         print("\n📈 DATABASE STATISTICS")
         print("-"*50)
         if stats:
             print(f"Total jobs in DB:      {stats.get('total_jobs', 'N/A')}")
-            print(f"Jobs scraped today:    {stats.get('jobs_today', 'N/A')}")
+            print(f"Jobs posted today:     {stats.get('jobs_posted_today', 'N/A')}")
+            print(f"Jobs scraped today:    {stats.get('jobs_scraped_today', 'N/A')}")
             print(f"Total users:           {stats.get('total_users', 'N/A')}")
             print(f"Total applications:    {stats.get('total_applications', 'N/A')}")
         print("="*50 + "\n")

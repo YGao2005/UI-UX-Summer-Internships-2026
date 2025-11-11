@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/opt/homebrew/bin/python3.10
 """
 Main orchestrator for UI/UX Internship Scraper
 Coordinates all scrapers, filtering, deduplication, and output generation
@@ -22,6 +22,7 @@ sys.path.insert(0, str(Path(__file__).parent))
 from scrapers.greenhouse_scraper import GreenhouseScraper
 from scrapers.lever_scraper import LeverScraper
 from scrapers.ashby_scraper import AshbyScraper
+from scrapers.workable_scraper import WorkableScraper
 from scrapers.remoteok_scraper import RemoteOKScraper
 from scrapers.themuse_scraper import TheMuseScraper
 from scrapers.adzuna_scraper import AdzunaScraper
@@ -33,6 +34,8 @@ from scrapers.rss_scraper import RSSJobScraper
 from filters.keyword_filter import KeywordFilter
 from utils.deduplicator import JobDeduplicator
 from utils.markdown_generator import MarkdownGenerator
+from utils.discord_notifier import DiscordNotifier
+from supabase_uploader import SupabaseUploader
 
 # Configure logging
 logging.basicConfig(
@@ -66,6 +69,7 @@ class InternshipScraper:
         self.greenhouse = GreenhouseScraper()
         self.lever = LeverScraper()
         self.ashby = AshbyScraper()
+        self.workable = WorkableScraper()
         self.remoteok = RemoteOKScraper()
         self.themuse = TheMuseScraper()
         self.adzuna = AdzunaScraper()
@@ -77,6 +81,15 @@ class InternshipScraper:
         self.filter = KeywordFilter()
         self.deduplicator = JobDeduplicator()
         self.markdown = MarkdownGenerator()
+        self.discord = DiscordNotifier()
+
+        # Initialize Supabase uploader (optional - only if credentials are set)
+        try:
+            self.supabase = SupabaseUploader()
+            logger.info("Supabase integration enabled")
+        except ValueError:
+            self.supabase = None
+            logger.warning("Supabase credentials not set - Discord stats will be limited")
 
         # Load company list
         self.companies = self._load_companies()
@@ -106,71 +119,77 @@ class InternshipScraper:
         logger.info("="*80)
 
         # 1. Greenhouse (company-specific)
-        logger.info("\n[1/11] Scraping Greenhouse...")
+        logger.info("\n[1/12] Scraping Greenhouse...")
         greenhouse_jobs = self.greenhouse.fetch_multiple_companies(self.companies)
         logger.info(f"  → Found {len(greenhouse_jobs)} jobs from Greenhouse")
         all_jobs.extend(greenhouse_jobs)
 
         # 2. Lever (company-specific)
-        logger.info("\n[2/11] Scraping Lever...")
+        logger.info("\n[2/12] Scraping Lever...")
         lever_jobs = self.lever.fetch_multiple_companies(self.companies)
         logger.info(f"  → Found {len(lever_jobs)} jobs from Lever")
         all_jobs.extend(lever_jobs)
 
         # 3. Ashby (company-specific)
-        logger.info("\n[3/11] Scraping Ashby...")
+        logger.info("\n[3/12] Scraping Ashby...")
         ashby_jobs = self.ashby.fetch_multiple_companies(self.companies)
         logger.info(f"  → Found {len(ashby_jobs)} jobs from Ashby")
         all_jobs.extend(ashby_jobs)
 
-        # 4. RemoteOK (general job board)
-        logger.info("\n[4/11] Scraping RemoteOK...")
+        # 4. Workable (company-specific)
+        logger.info("\n[4/12] Scraping Workable...")
+        workable_jobs = self.workable.fetch_multiple_companies(self.companies)
+        logger.info(f"  → Found {len(workable_jobs)} jobs from Workable")
+        all_jobs.extend(workable_jobs)
+
+        # 5. RemoteOK (general job board)
+        logger.info("\n[5/12] Scraping RemoteOK...")
         remoteok_jobs = self.remoteok.fetch_jobs(search_tag='design')
         logger.info(f"  → Found {len(remoteok_jobs)} design jobs from RemoteOK")
         all_jobs.extend(remoteok_jobs)
 
-        # 5. The Muse (internship-focused)
-        logger.info("\n[5/11] Scraping The Muse...")
+        # 6. The Muse (internship-focused)
+        logger.info("\n[6/12] Scraping The Muse...")
         themuse_jobs = self.themuse.fetch_jobs(category='Design', level='Internship')
         logger.info(f"  → Found {len(themuse_jobs)} design internships from The Muse")
         all_jobs.extend(themuse_jobs)
 
-        # 6. Adzuna (broad coverage)
-        logger.info("\n[6/11] Scraping Adzuna...")
+        # 7. Adzuna (broad coverage)
+        logger.info("\n[7/12] Scraping Adzuna...")
         adzuna_jobs = self.adzuna.fetch_jobs(query='UI UX design intern')
         logger.info(f"  → Found {len(adzuna_jobs)} jobs from Adzuna")
         all_jobs.extend(adzuna_jobs)
 
-        # 7. Jooble (internship category)
-        logger.info("\n[7/11] Scraping Jooble...")
+        # 8. Jooble (internship category)
+        logger.info("\n[8/12] Scraping Jooble...")
         jooble_jobs = self.jooble.fetch_jobs(keywords='UI UX design intern')
         logger.info(f"  → Found {len(jooble_jobs)} jobs from Jooble")
         all_jobs.extend(jooble_jobs)
 
-        # 8. Y Combinator (startup job board)
-        logger.info("\n[8/11] Scraping Y Combinator...")
+        # 9. Y Combinator (startup job board)
+        logger.info("\n[9/12] Scraping Y Combinator...")
         yc_jobs = self.ycombinator.fetch_jobs()
         logger.info(f"  → Found {len(yc_jobs)} startup internships from YC")
         all_jobs.extend(yc_jobs)
 
-        # 9. JobSpy (Indeed, Glassdoor, ZipRecruiter)
-        logger.info("\n[9/11] Scraping with JobSpy (Indeed, Glassdoor, ZipRecruiter)...")
+        # 10. JobSpy (Indeed, Glassdoor, LinkedIn)
+        logger.info("\n[10/12] Scraping with JobSpy (Indeed, Glassdoor, LinkedIn)...")
         jobspy_jobs = self.jobspy.fetch_jobs(
-            search_term='UI UX design intern',
+            search_term='UX intern',  # Optimized: Simple term works better than boolean for LinkedIn
             location='United States',
-            results_wanted=50  # Per site, so up to 150 total
+            results_wanted=100  # Per site, optimized from experiments
         )
         logger.info(f"  → Found {len(jobspy_jobs)} jobs from JobSpy")
         all_jobs.extend(jobspy_jobs)
 
-        # 10. Hacker News "Who is Hiring?"
-        logger.info("\n[10/11] Scraping Hacker News...")
+        # 11. Hacker News "Who is Hiring?"
+        logger.info("\n[11/12] Scraping Hacker News...")
         hn_jobs = self.hackernews.fetch_jobs()
         logger.info(f"  → Found {len(hn_jobs)} startup jobs from Hacker News")
         all_jobs.extend(hn_jobs)
 
-        # 11. RSS Feeds (We Work Remotely, Remotive, Himalayas, Jobicy)
-        logger.info("\n[11/11] Scraping RSS Feeds...")
+        # 12. RSS Feeds (We Work Remotely, Remotive, Himalayas, Jobicy)
+        logger.info("\n[12/12] Scraping RSS Feeds...")
         rss_jobs = self.rss.fetch_jobs()
         logger.info(f"  → Found {len(rss_jobs)} jobs from RSS feeds")
         all_jobs.extend(rss_jobs)
@@ -294,8 +313,31 @@ class InternshipScraper:
             logger.info(f"✓ README.md updated")
             logger.info(f"\nFinished at: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
 
+            # Send Discord notification with daily reminder
+            logger.info("\n" + "="*80)
+            logger.info("PHASE 6: Discord Notifications")
+            logger.info("="*80)
+
+            # Get statistics from Supabase (if available) for accurate counts
+            jobs_posted_today = 0
+            total_jobs = len(unique_jobs)
+
+            if self.supabase:
+                try:
+                    stats = self.supabase.get_statistics()
+                    jobs_posted_today = stats.get('jobs_posted_today', 0)
+                    total_jobs = stats.get('total_jobs', total_jobs)
+                    logger.info(f"📊 Supabase Stats: {total_jobs} total jobs, {jobs_posted_today} posted today")
+                except Exception as e:
+                    logger.warning(f"Could not fetch Supabase stats: {e}")
+
+            # Send daily reminder (always sent, regardless of new jobs)
+            self.discord.send_daily_reminder(total_jobs=total_jobs, jobs_today=jobs_posted_today)
+
         except Exception as e:
             logger.error(f"✗ Error during scraping: {str(e)}", exc_info=True)
+            # Send error notification to Discord
+            self.discord.send_error_notification(str(e))
             sys.exit(1)
 
 
