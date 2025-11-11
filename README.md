@@ -2,15 +2,15 @@
 
 > Curated list of UI/UX design internships, updated daily via automated scraping.
 
-**Last Updated:** 2025-11-10 03:41 AM PT
+**Last Updated:** 2025-11-10 05:17 PM PT
 
 ## Quick Stats
 
 | Metric | Count |
 |--------|-------|
-| Total Internships | 92 |
+| Total Internships | 93 |
 | New This Week | 13 |
-| Companies Hiring | 89 |
+| Companies Hiring | 90 |
 | Remote Opportunities | 28 |
 
 ---
@@ -20,30 +20,31 @@
 | Company | Role | Location | Posted | Source | Apply |
 |---------|------|----------|--------|--------|-------|
 | Notion | Software Engineer Intern (Winter 2026) | San Francisco, California | Today | Ashby | [Apply](https://jobs.ashbyhq.com/notion/fc762b58-24c9-4f34-bf5f-2af6e8adc644) |
-| S&P Global | Product Design Intern - Summer 2026 | Cambridge, MA, US | 3d ago | JobSpy (Indeed) | [Apply](https://www.indeed.com/viewjob?jk=3c02dc51e8187093) |
-| DraconX | UI/UX Developer Intern | US | 3d ago | Adzuna | [Apply](https://www.adzuna.com/details/5484666996?utm_medium=api&utm_source=2eec0eca) |
-| Insomniac Games | Design Intern - Undergraduate | United States, Burbank, CA | 3d ago | Greenhouse | [Apply](https://job-boards.greenhouse.io/insomniac/jobs/5686240004) |
-| Insomniac Games | User Experience Research Intern - Master's | United States, Burbank, CA | 3d ago | Greenhouse | [Apply](https://job-boards.greenhouse.io/insomniac/jobs/5685582004) |
-| Volvo Group | Intern: UX/UI Design (Summer 2026) | Greensboro, NC, US | 5d ago | JobSpy (Indeed) | [Apply](https://www.indeed.com/viewjob?jk=bff7aada8a2e0f50) |
-| Daimler Truck North America | UX UI Design Intern | Portland, OR, US | 5d ago | JobSpy (Indeed) | [Apply](https://www.indeed.com/viewjob?jk=546866e15d9a6392) |
+| Mitsubishi Electric US, Inc. | UX/UI Design CO-OP - REQ  1237 | US, Georgia, Gwinnett Count... | Today | Adzuna | [Apply](https://www.adzuna.com/details/5489631174?utm_medium=api&utm_source=2eec0eca) |
+| Musing AI | UX/UI & Design Intern - Summer 2026 | US, Pennsylvania, Allegheny... | Today | Adzuna | [Apply](https://www.adzuna.com/details/5489614653?utm_medium=api&utm_source=2eec0eca) |
+| S&P Global | Product Design Intern - Summer 2026 | Cambridge, MA, US | 4d ago | JobSpy (Indeed) | [Apply](https://www.indeed.com/viewjob?jk=3c02dc51e8187093) |
+| DraconX | UI/UX Developer Intern | US | 4d ago | Adzuna | [Apply](https://www.adzuna.com/details/5484666996?utm_medium=api&utm_source=2eec0eca) |
+| Insomniac Games | Design Intern - Undergraduate | United States, Burbank, CA | 4d ago | Greenhouse | [Apply](https://job-boards.greenhouse.io/insomniac/jobs/5686240004) |
+| Insomniac Games | User Experience Research Intern - Master's | United States, Burbank, CA | 4d ago | Greenhouse | [Apply](https://job-boards.greenhouse.io/insomniac/jobs/5685582004) |
+| Volvo Group | Intern: UX/UI Design (Summer 2026) | Greensboro, NC, US | 6d ago | JobSpy (Indeed) | [Apply](https://www.indeed.com/viewjob?jk=bff7aada8a2e0f50) |
+| Daimler Truck North America | UX UI Design Intern | Portland, OR, US | 6d ago | JobSpy (Indeed) | [Apply](https://www.indeed.com/viewjob?jk=546866e15d9a6392) |
 | Zynga | Level Design Intern | Barcelona, Spain | 6d ago | Greenhouse | [Apply](https://job-boards.greenhouse.io/zyngacareers/jobs/5659131004) |
-| PlayStation Global | UI Artist Intern - Undergraduate | Remote | 6d ago | JobSpy (Glassdoor) | [Apply](https://www.glassdoor.com/job-listing/j?jl=1009927778651) |
-| Keenfinity | Keenfinity: Technical Design Internship (m/f/div.) | Remote | 6d ago | RSS (We Work Remotely) | [Apply](https://weworkremotely.com/remote-jobs/keenfinity-technical-design-internship-m-f-div) |
-| PlayStation | UI Artist Intern - Undergraduate | Remote, US | 1w ago | JobSpy (Indeed) | [Apply](https://www.indeed.com/viewjob?jk=c5f26a8b136e4349) |
+| PlayStation Global | UI Artist Intern - Undergraduate | Remote | 1w ago | JobSpy (Glassdoor) | [Apply](https://www.glassdoor.com/job-listing/j?jl=1009927778651) |
 | Topia | UX/UI Design (Remote Internship) | Remote | 1w ago | JobSpy (Glassdoor) | [Apply](https://www.glassdoor.com/job-listing/j?jl=1009927021441) |
+| Keenfinity | Keenfinity: Technical Design Internship (m/f/div.) | Remote | 1w ago | RSS (We Work Remotely) | [Apply](https://weworkremotely.com/remote-jobs/keenfinity-technical-design-internship-m-f-div) |
+| PlayStation | UI Artist Intern - Undergraduate | Remote, US | 1w ago | JobSpy (Indeed) | [Apply](https://www.indeed.com/viewjob?jk=c5f26a8b136e4349) |
 | Jack Henry & Associates | Product Desginer, Intern - Summer 2026 | US | 1w ago | JobSpy (Indeed) | [Apply](https://www.indeed.com/viewjob?jk=1c4fbeee7419c024) |
 | Hy-Vee, Inc. | UX Designer Intern- Summer 2026 | West Des Moines, IA, US | 1w ago | JobSpy (Indeed) | [Apply](https://www.indeed.com/viewjob?jk=fc970198a01d4da3) |
 | L.L. Bean, Inc. | Marketing - UX Designer Internship | Freeport, ME, US | 1w ago | JobSpy (Indeed) | [Apply](https://www.indeed.com/viewjob?jk=23ba5a4c7b394884) |
+| The Mind Palace Academy | Scheduling Software Engineering Internship | Remote | 1w ago | JobSpy (Glassdoor) | [Apply](https://www.glassdoor.com/job-listing/j?jl=1009923298898) |
 | Coinbase | Product Designer II (Consumer) - International  | Remote - Canada | 1w ago | Greenhouse | [Apply](https://www.coinbase.com/careers/positions/6972733?gh_jid=6972733) |
 | SAS | Summer 2026 – Product Design Intern | Cary, NC, US | 1w ago | JobSpy (Indeed) | [Apply](https://www.indeed.com/viewjob?jk=a921487733dadbd7) |
 | Lenovo | Creative Design Intern - Summer 2026 | Chicago, IL, US | 1w ago | JobSpy (Indeed) | [Apply](https://www.indeed.com/viewjob?jk=c31c3715cd2fa6c2) |
-| The Mind Palace Academy | Scheduling Software Engineering Internship | Remote | 1w ago | JobSpy (Glassdoor) | [Apply](https://www.glassdoor.com/job-listing/j?jl=1009923298898) |
 | Remarkinfo Software Solutions | Figma Intern | Remote | 1w ago | JobSpy (Glassdoor) | [Apply](https://www.glassdoor.com/job-listing/j?jl=1009920843799) |
 | ACLU | Spring 2026 Undergraduate Intern, Product Desig... | New York, NY | 1w ago | JobSpy (Glassdoor) | [Apply](https://www.glassdoor.com/job-listing/j?jl=1009921282817) |
 | Coinbase | Product Design Intern | Hybrid - San Francisco | 1w ago | Greenhouse | [Apply](https://www.coinbase.com/careers/positions/7325051?gh_jid=7325051) |
 | Figma | Product Design Intern (2026)   | San Francisco, CA • New Yor... | 1w ago | Greenhouse | [Apply](https://boards.greenhouse.io/figma/jobs/5616453004?gh_jid=5616453004) |
-| American Civil Liberties Union | Spring 2026 Undergraduate Intern, Product Desig... | New York, NY, US | 1w ago | JobSpy (Indeed) | [Apply](https://www.indeed.com/viewjob?jk=e309c5856114db5d) |
-| Musing AI | UX/UI & Design Intern - Summer 2026 | US, Pennsylvania, Allegheny... | 1w ago | Adzuna | [Apply](https://www.adzuna.com/details/5466309393?utm_medium=api&utm_source=2eec0eca) |
+| American Civil Liberties Union | Spring 2026 Undergraduate Intern, Product Desig... | New York, NY, US | 2w ago | JobSpy (Indeed) | [Apply](https://www.indeed.com/viewjob?jk=e309c5856114db5d) |
 | Musing AI | UX/UI & Design Intern | US, Pennsylvania, Allegheny... | 2w ago | Adzuna | [Apply](https://www.adzuna.com/details/5466205504?utm_medium=api&utm_source=2eec0eca) |
 | Unknown | Product Design Intern (Spring 2026) | Burlington, MA, US | 2w ago | JobSpy (Indeed) | [Apply](https://www.indeed.com/viewjob?jk=a11f0d2258ab6adb) |
 | Travelers | Enterprise Experience Design Intern | Hartford, CT, US | 2w ago | JobSpy (Indeed) | [Apply](https://www.indeed.com/viewjob?jk=b65e2d0adc2ee62d) |
@@ -51,24 +52,24 @@
 | TELUS Digital | Design (UX/UI) Intern (US) - Summer 2026 | US | 2w ago | Adzuna | [Apply](https://www.adzuna.com/details/5464027836?utm_medium=api&utm_source=2eec0eca) |
 | Adobe | 2026 Intern - Experience Design | San Francisco, CA, US | 2w ago | JobSpy (Indeed) | [Apply](https://www.indeed.com/viewjob?jk=050bff18c8905e0b) |
 | BMW Group | Intern, UX Engineer - Winter/Spring 2026 | Mountain View, CA, US | 2w ago | JobSpy (Indeed) | [Apply](https://www.indeed.com/viewjob?jk=77f430a9b9b55331) |
-| Delta Air Lines | Intern, Innovation - Designer (Summer 2026) | Atlanta, GA, US | 2w ago | JobSpy (Indeed) | [Apply](https://www.indeed.com/viewjob?jk=a3b5b64fc9d6ca0c) |
-| Token Metrics | Crypto UI/UX Designer Intern | US, Texas, Travis County, A... | 3w ago | Adzuna | [Apply](https://www.adzuna.com/land/ad/5454190550?se=qi1cNyq-8BGsSP-45sJr_A&utm_medium=api&utm_source=2eec0eca&v=ACA2AA436EF71AA6D9EAE044ACB5C25E7594FE09) |
+| Delta Air Lines | Intern, Innovation - Designer (Summer 2026) | Atlanta, GA, US | 3w ago | JobSpy (Indeed) | [Apply](https://www.indeed.com/viewjob?jk=a3b5b64fc9d6ca0c) |
+| Token Metrics | Crypto UI/UX Designer Intern | US, Texas, Travis County, A... | 3w ago | Adzuna | [Apply](https://www.adzuna.com/land/ad/5454190550?se=JCYuJpy-8BGW46znNPa1dw&utm_medium=api&utm_source=2eec0eca&v=ACA2AA436EF71AA6D9EAE044ACB5C25E7594FE09) |
 | Rivian | Design Intern - Digital Product Designer (Winte... | Palo Alto, CA, US | 3w ago | JobSpy (Indeed) | [Apply](https://www.indeed.com/viewjob?jk=b8bf9f21c7f25221) |
 | Flo Labs R&D | UI/UX Design Intern | Remote | 3w ago | JobSpy (Glassdoor) | [Apply](https://www.glassdoor.com/job-listing/j?jl=1009907164835) |
-| 7-Eleven | Enterprise UX Designer Intern | Irving, TX, US | 3w ago | JobSpy (Indeed) | [Apply](https://www.indeed.com/viewjob?jk=f99970a1bc6f8bdc) |
+| 7-Eleven | Enterprise UX Designer Intern | Irving, TX, US | 4w ago | JobSpy (Indeed) | [Apply](https://www.indeed.com/viewjob?jk=f99970a1bc6f8bdc) |
 | Mastercard | Customer Experience and Design (UI/UX) Intern, ... | O'Fallon, MO, US | 4w ago | JobSpy (Indeed) | [Apply](https://www.indeed.com/viewjob?jk=a57993582670b8af) |
+| Staples | Quill UX/UI Visual Designer Intern - June 2026 | US, Illinois, Lake County, ... | 4w ago | Adzuna | [Apply](https://www.adzuna.com/details/5444567113?utm_medium=api&utm_source=2eec0eca) |
 | Tanium | User Experience Design Intern (UX/UI) | US, North Carolina, Durham ... | 4w ago | Adzuna | [Apply](https://www.adzuna.com/details/5444293266?utm_medium=api&utm_source=2eec0eca) |
-| Staples | Quill UX/UI Visual Designer Intern - June 2026 | Lincolnshire, IL, US | 1mo ago | JobSpy (Indeed) | [Apply](https://www.indeed.com/viewjob?jk=0f4f2d4e2e19f69a) |
 | Airbnb | Lead Experience Designer, International | China | 1mo ago | Greenhouse | [Apply](https://careers.airbnb.com/positions/7256544?gh_jid=7256544) |
 | Wisdom Software | Ui/Ux Design-Full/Part-Time/Remote-Fresher/Intern | US | 1mo ago | Adzuna | [Apply](https://www.adzuna.com/details/5435615010?utm_medium=api&utm_source=2eec0eca) |
 | Activision Blizzard | 2026 US Summer Internships - UI/UX | US, California, Orange Coun... | 1mo ago | Adzuna | [Apply](https://www.adzuna.com/details/5427043506?utm_medium=api&utm_source=2eec0eca) |
 | Lyft | Product Design Intern (Summer 2026) | Toronto, Canada | 1mo ago | Greenhouse | [Apply](https://app.careerpuck.com/job-board/lyft/job/8151582002?gh_jid=8151582002) |
 | Zurn Elkay Water Solutions | Intern – UI/UX Designer (Summer 2026) | US, Illinois, DuPage County... | 1mo ago | Adzuna | [Apply](https://www.adzuna.com/details/5409169808?utm_medium=api&utm_source=2eec0eca) |
-| Databricks | Product Design Intern | Seattle, Washington | 1mo ago | Greenhouse | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=8143588002) |
+| Databricks | Product Design Intern | Seattle, Washington | 2mo ago | Greenhouse | [Apply](https://databricks.com/company/careers/open-positions/job?gh_jid=8143588002) |
 | IDEO | Visual Communication Design Internship | Shanghai, China | 2mo ago | Greenhouse | [Apply](https://job-boards.greenhouse.io/ideo/jobs/7244821) |
-| Brunswick | Mercury Marine UX/UI Design Intern- Summer 2026 | US, Wisconsin, Fond du Lac ... | 2mo ago | Adzuna | [Apply](https://www.adzuna.com/land/ad/5391540029?se=qi1cNyq-8BGsSP-45sJr_A&utm_medium=api&utm_source=2eec0eca&v=1D3EE1852E1AC888FDDE70B734915D3D9E908904) |
+| Brunswick | Mercury Marine UX/UI Design Intern- Summer 2026 | US, Wisconsin, Fond du Lac ... | 2mo ago | Adzuna | [Apply](https://www.adzuna.com/land/ad/5391540029?se=JCYuJpy-8BGW46znNPa1dw&utm_medium=api&utm_source=2eec0eca&v=1D3EE1852E1AC888FDDE70B734915D3D9E908904) |
 | DELSYS | Software Engineer - UI/UX (Intern) | Natick, MA, US | 5mo ago | JobSpy (Indeed) | [Apply](https://www.indeed.com/viewjob?jk=0aa3b60a91ba064f) |
-| Mitsubishi Electric US | UX/UI Design CO-OP - REQ  1237 | US, Georgia, Gwinnett Count... | 6mo ago | Adzuna | [Apply](https://www.adzuna.com/land/ad/5196031825?se=qi1cNyq-8BGsSP-45sJr_A&utm_medium=api&utm_source=2eec0eca&v=6A6EAD348A1D56249F8648315D3408DC2957A4E8) |
+| Mitsubishi Electric US | UX/UI Design CO-OP - REQ  1237 | US, Georgia, Gwinnett Count... | 6mo ago | Adzuna | [Apply](https://www.adzuna.com/land/ad/5196031825?se=JCYuJpy-8BGW46znNPa1dw&utm_medium=api&utm_source=2eec0eca&v=6A6EAD348A1D56249F8648315D3408DC2957A4E8) |
 | elixivity | UI/UX Designer Intern | US, New York, New York City... | 1y ago | Adzuna | [Apply](https://www.adzuna.com/details/4805318854?utm_medium=api&utm_source=2eec0eca) |
 | Telehealth | Design Internship | REMOTE | 5y ago | Hacker News | [Apply](https://news.ycombinator.com/item?id=22753397) |
 | IOMED | Design Internship | See posting | 5y ago | Hacker News | [Apply](https://news.ycombinator.com/item?id=22749090) |
@@ -159,6 +160,7 @@
 - **MeetKai** (1 position)
 - **Minimax Labs** (1 position)
 - **Mitsubishi Electric US** (1 position)
+- **Mitsubishi Electric US, Inc.** (1 position)
 - **Musing AI** (2 positions)
 - **Natera** (1 position)
 - **Nightwatch.io** (1 position)
