@@ -172,12 +172,12 @@ class InternshipScraper:
         logger.info(f"  → Found {len(yc_jobs)} startup internships from YC")
         all_jobs.extend(yc_jobs)
 
-        # 10. JobSpy (Indeed, Glassdoor, LinkedIn)
+        # 10. JobSpy (Indeed, Glassdoor, LinkedIn) - Multi-term search
         logger.info("\n[10/12] Scraping with JobSpy (Indeed, Glassdoor, LinkedIn)...")
         jobspy_jobs = self.jobspy.fetch_jobs(
-            search_term='UX intern',  # Optimized: Simple term works better than boolean for LinkedIn
+            search_terms=['UX intern', 'UI intern', 'design intern'],  # Multi-term for maximum coverage
             location='United States',
-            results_wanted=100  # Per site, optimized from experiments
+            results_wanted=100  # Per site per term, optimized from experiments
         )
         logger.info(f"  → Found {len(jobspy_jobs)} jobs from JobSpy")
         all_jobs.extend(jobspy_jobs)

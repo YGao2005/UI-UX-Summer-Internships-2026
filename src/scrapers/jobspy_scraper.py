@@ -23,21 +23,29 @@ class JobSpyScraper:
 
     def fetch_jobs(
         self,
-        search_term: str = "UX intern",  # Simplified for LinkedIn compatibility
+        search_terms: List[str] = None,  # Now accepts list of terms
         location: str = "United States",
         results_wanted: int = 100
     ) -> List[Dict]:
         """
         Fetch jobs from multiple sources using JobSpy
+        Runs multiple searches with different terms to maximize coverage
 
         Args:
-            search_term: Search query
+            search_terms: List of search queries (default: ['UX intern', 'UI intern', 'design intern'])
             location: Job location to search in
-            results_wanted: Number of results to fetch per site
+            results_wanted: Number of results to fetch per site per term
 
         Returns:
-            List of standardized job dictionaries
+            List of standardized job dictionaries (combined from all searches)
         """
+        if search_terms is None:
+            search_terms = ['UX intern', 'UI intern', 'design intern']
+
+        # Handle legacy single string parameter
+        if isinstance(search_terms, str):
+            search_terms = [search_terms]
+
         try:
             # Import here to provide clearer error message if not installed
             from jobspy import scrape_jobs
@@ -45,45 +53,55 @@ class JobSpyScraper:
             logger.error("✗ JobSpy: jobspy not installed. Run: pip install jobspy")
             return []
 
-        try:
-            logger.info(f"  Searching {', '.join(self.site_names)} for '{search_term}' in {location}")
+        all_jobs = []
 
-            # Add small delay before starting to be respectful
-            time.sleep(2)
+        logger.info(f"  Running {len(search_terms)} searches: {', '.join(search_terms)}")
 
-            # Scrape jobs from multiple sites
-            # Note: job_type removed - conflicts with hours_old on Indeed
-            # Note: hours_old removed - LinkedIn performs much better without it (53 vs 19 jobs)
-            # Our keyword filter handles both internship detection and recency filtering
-            jobs_df = scrape_jobs(
-                site_name=self.site_names,
-                search_term=search_term,
-                location=location,
-                distance=50,  # 50 mile radius
-                is_remote=True,  # Include remote jobs
-                results_wanted=results_wanted,  # Per site
-            )
+        for i, search_term in enumerate(search_terms, 1):
+            try:
+                logger.info(f"    [{i}/{len(search_terms)}] Searching for '{search_term}'...")
 
-            if jobs_df is None or jobs_df.empty:
-                logger.info(f"⊘ JobSpy: No jobs found")
-                return []
+                # Add small delay before starting to be respectful
+                if i > 1:
+                    time.sleep(10)  # Rate limiting between searches
 
-            # Convert DataFrame to list of dicts
-            jobs_list = jobs_df.to_dict('records')
+                # Scrape jobs from multiple sites
+                # Note: job_type removed - conflicts with hours_old on Indeed
+                # Note: hours_old removed - LinkedIn performs much better without it (53 vs 19 jobs)
+                # Our keyword filter handles both internship detection and recency filtering
+                jobs_df = scrape_jobs(
+                    site_name=self.site_names,
+                    search_term=search_term,
+                    location=location,
+                    distance=50,  # 50 mile radius
+                    is_remote=True,  # Include remote jobs
+                    results_wanted=results_wanted,  # Per site
+                )
 
-            logger.info(f"✓ JobSpy: {len(jobs_list)} jobs found across {len(self.site_names)} sites")
+                if jobs_df is None or jobs_df.empty:
+                    logger.info(f"      ⊘ No jobs found for '{search_term}'")
+                    continue
 
-            # Convert to standardized format
-            standardized = [self._normalize_job(job) for job in jobs_list]
+                # Convert DataFrame to list of dicts
+                jobs_list = jobs_df.to_dict('records')
 
-            # Filter out any jobs that failed normalization
-            standardized = [job for job in standardized if job is not None]
+                logger.info(f"      ✓ {len(jobs_list)} jobs found for '{search_term}'")
 
-            return standardized
+                # Convert to standardized format
+                standardized = [self._normalize_job(job) for job in jobs_list]
 
-        except Exception as e:
-            logger.error(f"✗ JobSpy: Error during scraping: {str(e)}")
-            return []
+                # Filter out any jobs that failed normalization
+                standardized = [job for job in standardized if job is not None]
+
+                all_jobs.extend(standardized)
+
+            except Exception as e:
+                logger.error(f"      ✗ Error searching '{search_term}': {str(e)}")
+                continue
+
+        logger.info(f"✓ JobSpy: {len(all_jobs)} total jobs from {len(search_terms)} searches (before deduplication)")
+
+        return all_jobs
 
     def _normalize_job(self, job: Dict) -> Dict:
         """
