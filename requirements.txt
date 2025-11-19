@@ -1,0 +1,18 @@
+# Core dependencies
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+pyyaml>=6.0.1
+python-dateutil>=2.8.2
+python-dotenv>=1.0.0
+
+# Data processing
+pandas>=2.1.0
+
+# Job scraping
+python-jobspy>=1.1.82
+feedparser>=6.0.10  # RSS feed parsing
+
+# Database
+supabase>=2.0.0  # Supabase database client for Discord bot integration
+
+# Optional: For future enhancements
