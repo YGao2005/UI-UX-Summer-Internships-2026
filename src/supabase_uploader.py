@@ -53,6 +53,10 @@ class SupabaseUploader:
         if isinstance(value, float):
             if math.isnan(value) or math.isinf(value):
                 return None  # Replace NaN/Infinity with None
+        # Handle string "nan" (from pandas/jobspy)
+        elif isinstance(value, str):
+            if value.lower() in ('nan', 'none', 'null', ''):
+                return None
         # Recursively handle dicts (for score_breakdown JSONB)
         elif isinstance(value, dict):
             return {k: self.sanitize_value(v) for k, v in value.items()}
@@ -95,29 +99,32 @@ class SupabaseUploader:
 
         print(f"\n⬆ Uploading {len(jobs)} jobs to Supabase...")
 
-        # Get existing job IDs to determine which are new
+        # Get existing job URLs to determine which are new
+        # Using URL as the dedup key since it's more stable than scraper-generated IDs
         try:
-            existing_ids = set()
-            response = self.client.table('intern_jobs').select('id').execute()
+            existing_urls = set()
+            response = self.client.table('intern_jobs').select('url').execute()
             if response.data:
-                existing_ids = {job['id'] for job in response.data}
+                existing_urls = {job['url'] for job in response.data}
         except Exception as e:
-            print(f"⚠ Warning: Could not fetch existing job IDs: {e}")
-            existing_ids = set()
+            print(f"⚠ Warning: Could not fetch existing job URLs: {e}")
+            existing_urls = set()
 
         # Transform all jobs
         transformed_jobs = [self.transform_job_for_database(job) for job in jobs]
 
-        # Count new jobs (jobs with IDs not in existing set)
-        new_job_ids = {job['id'] for job in transformed_jobs if job['id'] not in existing_ids}
-        self.new_jobs_count = len(new_job_ids)
+        # Count new jobs (jobs with URLs not in existing set)
+        new_job_urls = {job['url'] for job in transformed_jobs if job.get('url') and job['url'] not in existing_urls}
+        self.new_jobs_count = len(new_job_urls)
 
         # Batch upsert (insert or update if exists)
         try:
-            # Supabase upsert: insert new rows or update existing ones
+            # Use URL as conflict resolution since it's more stable than scraper IDs
+            # If same job appears from multiple scrapers with different IDs, it updates the existing one
+            # Requires: ALTER TABLE intern_jobs ADD CONSTRAINT intern_jobs_url_unique UNIQUE (url);
             response = self.client.table('intern_jobs').upsert(
                 transformed_jobs,
-                on_conflict='id'  # Use job ID as conflict resolution
+                on_conflict='url'  # URL-based deduplication (more reliable than ID)
             ).execute()
 
             self.uploaded_count = len(response.data)
