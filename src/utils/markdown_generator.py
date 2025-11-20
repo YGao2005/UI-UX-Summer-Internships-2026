@@ -241,23 +241,14 @@ class MarkdownGenerator:
 
 ## About This Repo
 
-This repository is automatically updated daily using GitHub Actions. Jobs are aggregated from multiple sources:
+This repository is automatically updated daily using GitHub Actions. Jobs are aggregated from multiple sources including Greenhouse, Lever, Ashby, RemoteOK, and more.
 
-### Active Sources (No API Key Required)
-- **Greenhouse** - Direct company job boards (50+ tech companies)
-- **Lever** - Direct company job boards
-- **Ashby** - Direct company job boards (design-focused: Notion, OpenAI, Linear, Ramp)
-- **RemoteOK** - Remote job aggregator
-- **Y Combinator** - Hacker News job board (startup internships)
+### How It Works
 
-### Additional Sources (Require Free API Keys)
-- **The Muse** - Internship-focused job board with design category ([Get API Key](https://www.themuse.com/developers/api/v2))
-- **Adzuna** - Broad coverage job search aggregator ([Get API Key](https://developer.adzuna.com/))
-- **Jooble** - Job aggregator with explicit internship category ([Get API Key](https://jooble.org/api/about))
-
-See `.env.example` for setup instructions. Without API keys, the scraper still finds 5-15 internships. With API keys: 30-100+ internships.
-
-All listings are filtered for UI/UX design internship relevance using keyword matching and scoring algorithms.
+- **Automated scraping** from 10+ job sources (APIs and company pages)
+- **Smart filtering** for UI/UX design internships using keyword matching
+- **Deduplication** across multiple sources
+- **Daily updates** via GitHub Actions
 
 ### Data Sources
 
@@ -265,11 +256,7 @@ Jobs are collected from public APIs and company career pages. This repo provides
 - Zero-cost automation via GitHub Actions
 - Smart filtering for UI/UX internships specifically
 - Deduplication across multiple sources
-- Daily updates
-
-### Contributing
-
-Found a great company we should track? Submit a PR adding them to `data/companies.yml`!
+- Daily updates at 12pm UTC
 
 ### Disclaimer
 
@@ -280,6 +267,8 @@ This is an automated aggregator. Always verify details on the company's official
 Remote jobs powered by [RemoteOK](https://remoteok.com) - the largest remote job board.
 
 ---
+
+**Want to contribute or run your own instance?** See [CONTRIBUTING.md](CONTRIBUTING.md) for setup instructions, architecture details, and how to add new job sources.
 
 **Built with Python & GitHub Actions** | [Report Issues](https://github.com/your-username/ui-ux-internships-2025/issues)
 """
