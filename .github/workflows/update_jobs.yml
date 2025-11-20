@@ -1,0 +1,106 @@
+name: Update Job Listings
+
+on:
+  # Run daily at midnight UTC (4pm PST / 5pm PDT)
+  schedule:
+    - cron: '0 0 * * *'
+
+  # Allow manual trigger
+  workflow_dispatch:
+
+  # Also run on push to master (for testing)
+  push:
+    branches:
+      - master
+
+jobs:
+  scrape-and-update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Full history for better git operations
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'  # Cache pip dependencies
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Verify JobSpy installation
+        run: |
+          python -c "import jobspy; print('✓ JobSpy installed successfully')"
+
+      - name: Run scraper (with Supabase upload and Discord notifications)
+        run: |
+          echo "Starting job scraper..."
+          python src/main.py
+
+          echo "Uploading jobs to Supabase..."
+          python src/supabase_uploader.py
+        env:
+          # API keys from GitHub Secrets (optional - scrapers will skip if not set)
+          ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
+          ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
+          THEMUSE_API_KEY: ${{ secrets.THEMUSE_API_KEY }}
+          JOOBLE_API_KEY: ${{ secrets.JOOBLE_API_KEY }}
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_KEY: ${{ secrets.SUPABASE_KEY }}
+          DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
+          TZ: 'UTC'
+        continue-on-error: false
+
+      - name: Check for changes
+        id: check_changes
+        run: |
+          if ! git diff --quiet README.md data/jobs.json; then
+            echo "changed=true" >> $GITHUB_OUTPUT
+            echo "✓ Changes detected in README.md and/or data/jobs.json"
+            # Extract job count from jobs.json
+            JOB_COUNT=$(python -c "import json; data=json.load(open('data/jobs.json')); print(data.get('total_jobs', 0))")
+            echo "job_count=$JOB_COUNT" >> $GITHUB_OUTPUT
+            echo "Found $JOB_COUNT internships"
+          else
+            echo "changed=false" >> $GITHUB_OUTPUT
+            echo "No changes detected"
+          fi
+
+      - name: Commit and push if changed
+        if: steps.check_changes.outputs.changed == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "Job Scraper Bot"
+          git add README.md data/jobs.json
+
+          # Create commit with job count
+          JOB_COUNT="${{ steps.check_changes.outputs.job_count }}"
+          git commit -m "Update job listings - $JOB_COUNT internships ($(TZ='America/Los_Angeles' date +'%Y-%m-%d %I:%M %p PT'))"
+
+          echo "✓ Committed changes"
+          git push
+          echo "✓ Pushed to remote"
+
+      - name: No changes
+        if: steps.check_changes.outputs.changed != 'true'
+        run: |
+          echo "ℹ No new jobs found - README unchanged"
+
+      - name: Summary
+        if: always()
+        run: |
+          echo "## Workflow Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          if [ "${{ steps.check_changes.outputs.changed }}" == "true" ]; then
+            echo "✅ Successfully updated job listings" >> $GITHUB_STEP_SUMMARY
+            echo "- Total internships: ${{ steps.check_changes.outputs.job_count }}" >> $GITHUB_STEP_SUMMARY
+            echo "- Updated: $(TZ='America/Los_Angeles' date +'%Y-%m-%d %I:%M %p PT')" >> $GITHUB_STEP_SUMMARY
+          else
+            echo "ℹ️ No changes - job listings up to date" >> $GITHUB_STEP_SUMMARY
+          fi
